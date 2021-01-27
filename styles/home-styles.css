@@ -1,8 +1,8 @@
 img {
-    width: 150px;
-    height: 35px;
-    border-right: solid white 5px;
+    width: 16em;
+    height: 3em;
     margin: auto;
+    padding: auto;
 }
 
 body {
@@ -12,7 +12,7 @@ body {
 a {
     text-decoration: none;
     color: black;
-
+    font-weight:  640;
 }
 
 #nav {
@@ -21,14 +21,13 @@ a {
     flex-wrap: wrap;
     list-style: none;
     padding: auto;
-    margin-bottom: auto;
+    margin:auto;
     width: 100%;
-    border-bottom: solid #ffe607 1px;
 }
 
 li {
-    padding: 8px;
     margin: auto;
+    padding: auto;
 }
 
 a:hover {
@@ -36,26 +35,26 @@ a:hover {
 }
 
 hr {
-    padding: 0;
-    margin: 0;
+    margin: auto;
 }
 
 .btn-warning {
-    color: #ffe607;
-    background-color: lightyellow;
-    border: solid #ffe607 2px;
-    font-weight: bold;
+    color: black;
+    background-color: #ffe607;
+    border: solid #ffe607 0.02em;
+    font-weight: light;
+    font-size: 1em;
 }
 
 
 .btn-warning:hover{
-    color: #ffe607;
-    background-color: lightyellow;
-    border: solid #ffe607 2px;
+    color: black;
+    background-color: yellow;
+    border: solid #ffe607 0.02em;
 }
 
   .btn-warning:active:focus, .btn-warning:focus, .btn-warning:active {
-    color: #ffe607; 
+    color: black; 
     border-color: #ffe607;
     background: yellow !important; 
     box-shadow: none;
@@ -64,5 +63,5 @@ hr {
   h3 {
       text-align: center;
       margin: auto;
-      margin-top: 50px;
+      margin-top: 1em;
   }
