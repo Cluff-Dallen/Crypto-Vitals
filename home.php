@@ -7,10 +7,16 @@
     <link rel="shortcut icon" type="image/jpg" href="/images/favicon.ico"/>
     <title>Crypto Vitals</title>
   </head>
+
+  <header>
+  <?php include 'header.php'; ?>
+  </header>
+
   <body>
-    <?php 
-    require ('header.php');
-    ?>
     <h3>*Home* Cryptocurrencies</h3>
   </body>
+
+  <footer>
+  <?php include 'footer.php'; ?>
+  </footer>
 </html>
