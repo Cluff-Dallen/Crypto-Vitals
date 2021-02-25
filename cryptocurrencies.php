@@ -1,6 +1,8 @@
 <html>
   <head>
-  <?php include 'inc/head.php'; ?>
+  <?php 
+  $pageTitle = 'Home';
+  include 'inc/head.php'; ?>
   </head>
 
   <header>

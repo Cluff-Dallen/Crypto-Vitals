@@ -1,5 +1,4 @@
-<?php 
-    echo '<ul id="nav">
+<html>
       <img src="/images/logoSlim.png" alt="Crypto Vitals logo">
       <li><a href="cryptocurrencies.php">Cryptocurrencies</a></li>
       <li><a href="exchanges.html">Exchanges</a></li>
@@ -11,5 +10,5 @@
       <li><button class="btn btn-warning shadow-none">Sign in</button>
       </li>
     </ul>
-    <hr>' 
-    ?>
+    <hr>
+    </html>

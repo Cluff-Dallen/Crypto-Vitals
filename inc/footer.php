@@ -1,10 +1,7 @@
-<?php 
-    echo '
+<html>
     <link rel="stylesheet" href="/styles/footer.css">
     <div id="footer">
     <hr>
-
-        <p>Test Footer</p>
+        <p><?php echo '$pageTitle'?></p>
     </div>
-    ' 
-    ?>
+</html>
