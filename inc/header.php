@@ -1,4 +1,6 @@
+
 <html>
+<link rel="stylesheet" href="../styles/home-styles.css">
       <img src="/images/logoSlim.png" alt="Crypto Vitals logo">
       <li><a href="cryptocurrencies.php">Cryptocurrencies</a></li>
       <li><a href="exchanges.html">Exchanges</a></li>
