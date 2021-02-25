@@ -1,10 +1,10 @@
 <html>
   <head>
-  <?php include '/inc/head.php'; ?>
+  <?php include 'inc/head.php'; ?>
   </head>
 
   <header>
-    <?php include '/inc/header.php'; ?>
+    <?php include 'inc/header.php'; ?>
   </header>
 
   <body>
@@ -15,7 +15,7 @@
 
   <footer>
    <?php 
-    include ('/inc/footer.php'); 
+    include ('inc/footer.php'); 
    ?>
   </footer>
 </html>
