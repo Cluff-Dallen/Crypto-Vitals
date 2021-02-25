@@ -1,27 +1,21 @@
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="/styles/home-styles.css">
-    <link rel="shortcut icon" type="image/jpg" href="/images/favicon.ico"/>
-    <title>Crypto Vitals</title>
+  <?php include 'inc/head.php'; ?>
   </head>
-  <body>
-    <ul id="nav">
-      <img src="/images/logoSlim.png" alt="Crypto Vitals logo">
-      <li><a href="cryptocurrencies.html">Cryptocurrencies</a></li>
-      <li><a href="exchanges.html">Exchanges</a></li>
-      <li><a href="favorites.html">Favorites</a></li>
-      <li><a href="portfolio.html">Portfolio</a></li>
-      <li><a href="news.html">News</a></li>
-      <li><a href="converter.html">Converter</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><button class='btn btn-warning shadow-none'>Sign in</button>
-      </li>
-    </ul>
-    <hr>
 
-    <h3>Portfolio</h3>
+  <header>
+    <?php include 'inc/header.php'; ?>
+  </header>
+
+  <body>
+    <?php $pageTitle = "Portfolio"; ?>
+    <h3><?php echo $pageTitle?></h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor consequuntur corrupti laudantium doloribus laborum vero accusantium rerum deserunt voluptatem dolorem, tempore temporibus magnam commodi dolore explicabo tempora eius, facilis sit.</p>
   </body>
+
+  <footer>
+   <?php 
+    include ('inc/footer.php'); 
+   ?>
+  </footer>
 </html>
