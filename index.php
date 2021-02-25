@@ -1,1 +1,1 @@
-<?php include_once("cryptocurrencies.html"); ?>
+<?php include_once("cryptocurrencies.php"); ?>
