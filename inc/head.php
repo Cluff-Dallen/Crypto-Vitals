@@ -5,4 +5,4 @@
     <link rel="stylesheet" href="../styles/home-styles.css">
     <link rel="shortcut icon" type="image/jpg" href="images/favicon.ico"/>
     <title>Crypto Vitals</title>
-    </html>
+</html>
