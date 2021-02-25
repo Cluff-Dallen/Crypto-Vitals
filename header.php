@@ -11,4 +11,5 @@
       <li><button class="btn btn-warning shadow-none">Sign in</button>
       </li>
     </ul>
-    <hr>' ?>
+    <hr>' 
+    ?>
