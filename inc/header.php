@@ -1,5 +1,5 @@
 <html>
-<link rel="stylesheet" href="styles/header.css">
+<link rel="stylesheet" href="../styles/header.css">
 <div id="nav">
       <img src="/images/logoSlim.png" alt="Crypto Vitals logo">
       <li><a href="pages/cryptocurrencies.php">Cryptocurrencies</a></li>
