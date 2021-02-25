@@ -1,7 +1,7 @@
 <?php 
     echo '<ul id="nav">
       <img src="/images/logoSlim.png" alt="Crypto Vitals logo">
-      <li><a href="cryptocurrencies.html">Cryptocurrencies</a></li>
+      <li><a href="cryptocurrencies.php">Cryptocurrencies</a></li>
       <li><a href="exchanges.html">Exchanges</a></li>
       <li><a href="favorites.html">Favorites</a></li>
       <li><a href="portfolio.html">Portfolio</a></li>
