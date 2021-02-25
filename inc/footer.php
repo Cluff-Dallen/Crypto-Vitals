@@ -3,6 +3,6 @@
     
     <div id="footer">
         <hr>
-        <p><?php echo 'Dallen R. Cluff - ' + $pageTitle?></p>
+        <p>Dallen R. Cluff - 2021 - <?php echo $pageTitle?> page</p>
     </div>
 </html>
