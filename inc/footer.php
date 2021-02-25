@@ -1,5 +1,5 @@
 <html>
-    <link rel="stylesheet" href="/styles/footer.css">
+    <link rel="stylesheet" href="styles/footer.css">
     
     <div id="footer">
         <hr>

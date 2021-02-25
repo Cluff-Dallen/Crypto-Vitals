@@ -1,13 +1,3 @@
-#nav {
-    background-color: white;
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: auto;
-    margin:auto;
-    width: 100%;
-}
-
 img {
     width: 16em;
     height: 3em;
@@ -23,6 +13,16 @@ a {
     text-decoration: none;
     color: black;
     font-weight:  640;
+}
+
+#nav {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: auto;
+    margin:auto;
+    width: 100%;
 }
 
 li {
@@ -46,6 +46,7 @@ hr {
     font-size: 1em;
 }
 
+
 .btn-warning:hover{
     color: black;
     background-color: yellow;
@@ -57,4 +58,10 @@ hr {
     border-color: #ffe607;
     background: yellow !important; 
     box-shadow: none;
+  }
+
+  h3 {
+      text-align: center;
+      margin: auto;
+      margin-top: 1em;
   }
