@@ -13,7 +13,6 @@
       <li><button class="btn btn-warning shadow-none">Sign in</button>
       </li>
     </ul>
+    <hr>
 </div>
-<link rel="stylesheet" href="styles/footer.css">
-
     </html>
