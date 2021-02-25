@@ -1,4 +1,3 @@
-
 <html>
 <link rel="stylesheet" href="styles/header.css">
 <div id="nav">
@@ -10,9 +9,12 @@
       <li><a href="news.html">News</a></li>
       <li><a href="converter.html">Converter</a></li>
       <li><a href="about.html">About</a></li>
-      <li><button class="btn btn-warning shadow-none">Sign in</button>
-      </li>
+      <li><button class="btn btn-warning shadow-none">Sign in</button></li>
     </ul>
     <hr>
 </div>
+<hr>
+<hr>
+<p>hello</p>
+<hr>
     </html>
