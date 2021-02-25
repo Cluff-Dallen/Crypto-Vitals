@@ -10,7 +10,7 @@
   </head>
 
   <header>
-  <?php include 'header.php'; ?>
+  <?php include '/inc/header.php'; ?>
   </header>
 
   <body>
@@ -18,6 +18,6 @@
   </body>
 
   <footer>
-  <?php include 'footer.php'; ?>
+  <?php include '/inc/footer.php'; ?>
   </footer>
 </html>
