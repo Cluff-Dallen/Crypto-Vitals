@@ -1,4 +1,4 @@
-#footer {
+#nav {
     background-color: white;
     display: flex;
     flex-wrap: wrap;
@@ -7,3 +7,55 @@
     margin:auto;
     width: 100%;
 }
+
+img {
+    width: 16em;
+    height: 3em;
+    margin: auto;
+    padding: auto;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight:  640;
+}
+
+li {
+    margin: auto;
+    padding: auto;
+}
+
+a:hover {
+    color: #ffe607;
+}
+
+hr {
+    margin: auto;
+}
+
+.btn-warning {
+    color: black;
+    background-color: #ffe607;
+    border: solid #ffe607 0.02em;
+    font-weight: light;
+    font-size: 1em;
+}
+
+
+.btn-warning:hover{
+    color: black;
+    background-color: yellow;
+    border: solid #ffe607 0.02em;
+}
+
+  .btn-warning:active:focus, .btn-warning:focus, .btn-warning:active {
+    color: black; 
+    border-color: #ffe607;
+    background: yellow !important; 
+    box-shadow: none;
+  }
