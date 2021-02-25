@@ -65,3 +65,13 @@ hr {
       margin: auto;
       margin-top: 1em;
   }
+
+  #nav {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: auto;
+    margin:auto;
+    width: 100%;
+}
