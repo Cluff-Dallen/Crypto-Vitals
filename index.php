@@ -1,1 +1,1 @@
-<?php include ("/pages/cryptocurrencies.php"); ?>
+<?php include ("cryptocurrencies.php"); ?>
