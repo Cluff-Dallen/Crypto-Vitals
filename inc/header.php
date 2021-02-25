@@ -13,6 +13,4 @@
     </ul>
 </div>
 <hr>
-<p>hello</p>
-<hr>
     </html>
