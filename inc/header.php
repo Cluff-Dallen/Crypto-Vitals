@@ -14,7 +14,6 @@
     <hr>
 </div>
 <hr>
-<hr>
 <p>hello</p>
 <hr>
     </html>
