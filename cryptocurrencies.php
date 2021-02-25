@@ -1,8 +1,6 @@
 <html>
   <head>
-  <?php 
-  $pageTitle = 'Home';
-  include 'inc/head.php'; ?>
+  <?php include 'inc/head.php'; ?>
   </head>
 
   <header>
@@ -14,7 +12,10 @@
   </body>
 
   <footer>
-   <?php include 'inc/footer.php'; ?>
+   <?php 
+    $pageTitle = "Home"; 
+    include 'inc/footer.php'; 
+   ?>
   </footer>
 
 </html>
