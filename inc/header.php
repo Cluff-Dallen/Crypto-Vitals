@@ -1,6 +1,7 @@
 
 <html>
 <link rel="stylesheet" href="styles/header.css">
+<div id="footer">
       <img src="/images/logoSlim.png" alt="Crypto Vitals logo">
       <li><a href="cryptocurrencies.php">Cryptocurrencies</a></li>
       <li><a href="exchanges.html">Exchanges</a></li>
@@ -13,4 +14,5 @@
       </li>
     </ul>
     <hr>
+</div>
     </html>
