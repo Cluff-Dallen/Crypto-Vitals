@@ -14,7 +14,7 @@
   <footer>
    <?php 
     $pageTitle = "Home"; 
-    include 'inc/footer.php'; 
+    include ('inc/footer.php'); 
    ?>
   </footer>
 
