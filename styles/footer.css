@@ -8,7 +8,7 @@
     height: 2.5rem;   
 }
 
-p {
+p, body {
     margin: auto;
     padding: auto;
     text-align: center;
