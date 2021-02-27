@@ -1,5 +1,5 @@
 #footer {
-    background-color: red;
+    background-color: yellow;
     padding: auto;
     margin: auto;
     width: 100%;
@@ -14,5 +14,5 @@ p, body {
     text-align: center;
     color: red;
     width: 100%;
-    background-color: pink;
+    background-color: green;
 }
