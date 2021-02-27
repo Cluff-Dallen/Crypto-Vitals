@@ -6,6 +6,13 @@
     position: absolute;
     bottom: 0;
     height: 2.5rem;   
+
+    margin: auto;
+    padding: auto;
+    text-align: center;
+    color: red;
+    width: 100%;
+    background-color: pink;
 }
 
 p {
