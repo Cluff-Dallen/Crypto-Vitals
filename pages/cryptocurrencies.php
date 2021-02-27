@@ -1,6 +1,7 @@
 <html>
   <head>
   <?php include '../inc/head.php'; ?>
+  <script type="text/javascript" src='../js/bitcoin.js'></script>
   </head>
 
   <header>
@@ -11,11 +12,24 @@
     <?php $pageTitle = "Home"; ?>
     <h3><?php echo $pageTitle?></h3>
 
+    <table id="priceTable" width="100%" cellspacing="0" cellpadding="0">
+        <tr>
+            <th>Logo</th>
+            <th>Name</th>
+            <th>Ticker</th>
+            <th>Price</th>
+            <th>Volume</th>
+        </tr>
 
-    <p><?php 
-    use Codenixsv\CoinGeckoApi\CoinGeckoClient;
-    $client = new CoinGeckoClient();
-    $data = $client->ping();?>
+        <tr>
+            <td><img class="logo" src="bitcoin.png" alt="bitcoin logo"></td>
+            <td onclick="f1()" id="Bitcoin">Bitcoin</td>
+            <td id="bitcoinTicker">Ticker</td>
+            <td id="bitcoinPrice">Price</td>
+            <td id="bitcoinVolume">Volume</td>
+        </tr>
+        </table>
+
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor consequuntur corrupti laudantium doloribus laborum vero accusantium rerum deserunt voluptatem dolorem, tempore temporibus magnam commodi dolore explicabo tempora eius, facilis sit.</p>
   </body>
