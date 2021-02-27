@@ -1,18 +1,11 @@
 #footer {
-    background-color: yellow;
+    background-color:#ffe607;
     padding: auto;
     margin: auto;
     width: 100%;
     position: absolute;
     bottom: 0;
     height: 2.5rem;   
-}
-
-p {
-    margin: auto;
-    padding: auto;
     text-align: center;
     color: red;
-    width: 100%;
-    background-color: pink;
 }
