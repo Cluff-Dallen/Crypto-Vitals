@@ -16,7 +16,6 @@
     use Codenixsv\CoinGeckoApi\CoinGeckoClient;
     $client = new CoinGeckoClient();
     $data = $client->ping();?>
-        <h3><?php echo $data?></h3>
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor consequuntur corrupti laudantium doloribus laborum vero accusantium rerum deserunt voluptatem dolorem, tempore temporibus magnam commodi dolore explicabo tempora eius, facilis sit.</p>
   </body>
