@@ -14,7 +14,7 @@ requestBitcoin.onload = function() {
     document.getElementById('bitcoinVolume').innerHTML = bitcoin.ticker.volume;
     document.getElementById('bitcoinChange').innerHTML = bitcoin.ticker.change;*/
 
-    var bitcoin = JSON.parse(requestBitcoin.responseText);
+    var ethereum = JSON.parse(requestBitcoin.responseText);
     document.getElementById('bitcoinPrice').innerHTML = ethereum.usd;
     document.getElementById('bitcoinVolume').innerHTML = ethereum.usd_24h_vol;
     document.getElementById('bitcoinChange').innerHTML = ethereum.usd_24h_change;
