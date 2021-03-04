@@ -1,6 +1,6 @@
 //var bitcoinRequestURL = 'https://www.cryptonator.com/api/full/btc-usd';
 
-var bitcoinRequestURL = 'https://api.coingecko.com/api/v3/simple/price?ids=Bitcoin&vs_currencies=USD&include_market_cap=true&include_24hr_vol=true&include_24hr_change=true';
+var bitcoinRequestURL = 'https://api.coingecko.com/api/v3/simple/price?ids=Ethereum&vs_currencies=USD&include_market_cap=true&include_24hr_vol=true&include_24hr_change=true';
 var requestBitcoin = new XMLHttpRequest();
 
 requestBitcoin.open('GET', bitcoinRequestURL);
@@ -15,7 +15,7 @@ requestBitcoin.onload = function() {
     document.getElementById('bitcoinChange').innerHTML = bitcoin.ticker.change;*/
 
     var bitcoin = JSON.parse(requestBitcoin.responseText);
-    document.getElementById('bitcoinPrice').innerHTML = bitcoin.usd;
-    document.getElementById('bitcoinVolume').innerHTML = bitcoin.usd_24h_vol;
-    document.getElementById('bitcoinChange').innerHTML = bitcoin.usd_24h_change;
+    document.getElementById('bitcoinPrice').innerHTML = ethereum.usd;
+    document.getElementById('bitcoinVolume').innerHTML = ethereum.usd_24h_vol;
+    document.getElementById('bitcoinChange').innerHTML = ethereum.usd_24h_change;
 }
