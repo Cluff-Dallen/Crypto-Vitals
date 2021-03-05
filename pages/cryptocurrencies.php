@@ -22,8 +22,6 @@
         </tr>
 
         <tr>
-            <td><img class="logo" src="currencyImage.png" alt="currency logo"></td>
-            <td onclick="f1()" id="Currency">Currency</td>
             <td id="currencyPrice">Price</td>
             <td id="currencyVolume">Volume</td>
         </tr>
