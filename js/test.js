@@ -11,10 +11,11 @@ myRequest.onload = function() {
     var table = document.getElementById("myTable");
 
     var x = 1;
+
       for (i in currency) {
           console.log(currency[i].id, currency[i].symbol);
-          var row = table.insertRow(x);
-          var cell = row.insertCell(x);
+          var row = table.insertRow(0);
+          var cell = row.insertCell(1);
           x += 1;
           cell.innerHTML = currency[i].id;
       }
