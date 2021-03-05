@@ -18,7 +18,7 @@
 
   <footer>
    <?php 
-   // include ('../inc/footer.php'); 
+   include ('../inc/footer.php'); 
    ?>
   </footer>
 </html>
