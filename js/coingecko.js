@@ -50,7 +50,7 @@ myRequest.onload = function() {
 
 
           var currency_price = row.insertCell(4);
-          currency_price.innerHTML = currency[i].current_price;
+          currency_price.innerHTML = "$" + currency[i].current_price;
           currency_price.setAttribute("width", "12.5%");
 
 
