@@ -37,12 +37,14 @@
         <tr>
             <th>Rank: </th>
             <th>Currency: </th>
-            <th>Ticker: </th>
+            <th>Symbol: </th>
             <th>Price: </th>
             <th>24h Change: </th>
             <th>24h Volume: </th>
             <th>Market Cap: </th>
         </tr>
+
+  
         </table>
 
 
