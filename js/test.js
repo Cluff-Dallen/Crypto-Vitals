@@ -8,12 +8,12 @@ myRequest.onload = function() {
 
     var currency = JSON.parse(myRequest.responseText);
 
-    var table = document.getElementById("currencyList");
-    for (let [key, value] of Object.entries(currency)) {
-        console.log(`${key}: ${value}`);
-      }
+    var table = document.getElementById("myTable");
 
       for (i in currency) {
           console.log(currency[i].id, currency[i].symbol);
+          var row = table.insertRow(i);
+          var cell = row.insertCell(i);
+          cell.innerHTML = currency[i].id;
       }
 }
