@@ -13,8 +13,7 @@ myRequest.onload = function() {
         console.log(`${key}: ${id}`);
       }
 
-      
-for (var key of Object.keys(currency)) {
-    console.log(key + " -> " + currency[key])
-}
+      for (i = 0; i < currency.length; i++) {
+          console.log(currency.id[i]);
+      }
 }
