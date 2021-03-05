@@ -15,7 +15,7 @@ requestEthereum.onload = function() {
     document.getElementById('bitcoinChange').innerHTML = bitcoin.ticker.change;*/
 
     var ethereum = JSON.parse(requestEthereum.responseText);
-    document.getElementById('ethereumPrice').innerHTML = ethereum.usd;
-    document.getElementById('ethereumVolume').innerHTML = ethereum.usd_24h_vol;
-    document.getElementById('ethereumChange').innerHTML = ethereum.usd_24h_change;
+    document.getElementById('ethereumPrice').innerHTML = ethereum.ethereum.usd;
+    document.getElementById('ethereumVolume').innerHTML = ethereum.ethereum.usd_24h_vol;
+    document.getElementById('ethereumChange').innerHTML = ethereum.ethereum.usd_24h_change;
 }
