@@ -1,6 +1,6 @@
 
 //Where is the data coming from?
-var coingeckoRequestURL = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false&price_change_percentage=7d';
+var coingeckoRequestURL = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=true&price_change_percentage=24h';
 var myRequest = new XMLHttpRequest();
 
 //How is the data coming? 
@@ -66,6 +66,5 @@ myRequest.onload = function() {
           var currency_marketcap = row.insertCell(7);
           currency_marketcap.innerHTML =  "$" + currency[i].market_cap;
           currency_marketcap.setAttribute("width", "20%");
-
       }
 }
