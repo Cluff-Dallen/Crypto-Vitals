@@ -3,6 +3,8 @@
   <?php include '../inc/head.php'; ?>
   <script type="text/javascript" src='../js/cryptonator.js'></script>
   <script type="text/javascript" src='../js/coingecko.js'></script>
+  <script type="text/javascript" src='../js/test.js'></script>
+
   </head>
 
   <header>
@@ -29,6 +31,12 @@
             <td id="vol2">vol2</td>
         </tr>
 
+        </table>
+
+        <table id="currencyList" width="100%" cellspacing="0" cellpadding="0">
+        <tr>
+            <th>test price</th>
+        </tr>
         </table>
 
 
