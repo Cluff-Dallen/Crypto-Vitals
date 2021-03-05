@@ -59,12 +59,12 @@ myRequest.onload = function() {
           currency_24h_change.setAttribute("width", "15%");
 
           var currency_24h_volume = row.insertCell(6);
-          currency_24h_volume.innerHTML = currency[i].total_volume;
+          currency_24h_volume.innerHTML =  "$" + currency[i].total_volume;
           currency_24h_volume.setAttribute("width", "15%");
 
 
           var currency_marketcap = row.insertCell(7);
-          currency_marketcap.innerHTML = currency[i].market_cap;
+          currency_marketcap.innerHTML =  "$" + currency[i].market_cap;
           currency_marketcap.setAttribute("width", "20%");
 
       }
