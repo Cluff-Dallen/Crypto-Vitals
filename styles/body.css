@@ -22,14 +22,18 @@ h3 {
       text-align: left;
       padding: 0px;
       margin: 0px;
-      width: fit-content;
-    }
+      border-collapse: separate;
+      border:0px;
+      border-collapse:collapse;
+      border-spacing:0px    }
 
     table {
-      height: auto;
       margin: auto;
-      padding: auto;
-      table-layout: auto;
+      padding: 0;
+      table-layout:auto;
       width: 80%;
       border-collapse: separate;
+      border:0px;
+      border-collapse:collapse;
+      border-spacing:0px
     }
