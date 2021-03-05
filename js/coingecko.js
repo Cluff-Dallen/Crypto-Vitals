@@ -40,9 +40,7 @@ myRequest.onload = function() {
 
 
           var currency_name = row.insertCell(2);
-          var a = document.createElement('a');
-          a.setAttribute('href', "www.google.com");
-          currency_name.innerHTML = dcurrency[i].name;  
+          currency_name.innerHTML = currency[i].name;  
           currency_name.setAttribute("width", "12.5%");
 
 
