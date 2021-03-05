@@ -28,7 +28,7 @@ myRequest.onload = function() {
           //Create cells and add data inside
           var currency_rank = row.insertCell(0);
           currency_rank.innerHTML = currency[i].market_cap_rank;
-          currency_rank.setAttribute("width", "10%");
+          currency_rank.setAttribute("width", "5%");
 
 
           var currency_image = row.insertCell(1);
@@ -36,12 +36,12 @@ myRequest.onload = function() {
           img.setAttribute("class", "currencyImage");
           img.src = currency[i].image;
           currency_image.appendChild(img);
-          currency_image.setAttribute("width", "10%");
+          currency_image.setAttribute("width", "5%");
 
 
           var currency_name = row.insertCell(2);
           currency_name.innerHTML = currency[i].name;  
-          currency_name.setAttribute("width", "10%");
+          currency_name.setAttribute("width", "12.5%");
 
 
           var currency_symbol = row.insertCell(3);
@@ -51,7 +51,7 @@ myRequest.onload = function() {
 
           var currency_price = row.insertCell(4);
           currency_price.innerHTML = currency[i].current_price;
-          currency_price.setAttribute("width", "15%");
+          currency_price.setAttribute("width", "12.5%");
 
 
           var currency_24h_change = row.insertCell(5);
@@ -65,7 +65,7 @@ myRequest.onload = function() {
 
           var currency_marketcap = row.insertCell(7);
           currency_marketcap.innerHTML = currency[i].market_cap;
-          currency_marketcap.setAttribute("width", "15%");
+          currency_marketcap.setAttribute("width", "20%");
 
       }
 }

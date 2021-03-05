@@ -16,7 +16,6 @@
         <table id="currencyList" width="100%" cellspacing="0" cellpadding="0">
         <tr>
             <th>Rank: </th>
-            <th>Image: </th>
             <th>Currency: </th>
             <th>Symbol: </th>
             <th>Price: </th>
