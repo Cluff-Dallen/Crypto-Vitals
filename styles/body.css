@@ -23,6 +23,10 @@ h3 {
       margin: 0;
       }
 
+      th {
+        margin-bottom: 5px;
+      }
+
     table {
       margin: auto;
       padding: 0;
