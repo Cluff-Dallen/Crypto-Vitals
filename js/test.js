@@ -10,7 +10,7 @@ myRequest.onload = function() {
 
     var table = document.getElementById("currencyList");
     for (let [key, value] of Object.entries(currency)) {
-        console.log(`${key}: ${id}`);
+        console.log(`${key}: ${value}`);
       }
 
       for (i = 0; i < currency.length; i++) {
