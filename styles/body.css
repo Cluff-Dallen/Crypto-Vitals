@@ -19,6 +19,10 @@ h3 {
       border: solid black 1px;
     }
 
+    td {
+      margin: auto;
+    }
+
     table {
       width: 80%;
       height: auto;
