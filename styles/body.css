@@ -28,4 +28,5 @@ h3 {
       padding: 0;
       table-layout:auto;
       width: 80%;
+      border: solid black 1px;
     }
