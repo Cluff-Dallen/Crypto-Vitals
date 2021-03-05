@@ -33,7 +33,7 @@
 
         </table>
 
-        <table id="currencyList" width="100%" cellspacing="0" cellpadding="0">
+        <table id="myTable" width="100%" cellspacing="0" cellpadding="0">
         <tr>
             <th>test price</th>
         </tr>
