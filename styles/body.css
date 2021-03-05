@@ -10,7 +10,7 @@ h3 {
       margin-top: 1em;
     }
 
-.currencyImage {
+.currencyImage, .exchangeImage{
       width: 25px;
       height: 25px;
       margin: 0;
