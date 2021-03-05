@@ -28,7 +28,8 @@ h3 {
       }
 
     table {
-      margin: auto;
+      margin-left: 13%;
+      margin-right: 7%;
       padding: 0;
       table-layout:auto;
       width: 80%;
