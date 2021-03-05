@@ -11,8 +11,8 @@
   <body>
     <?php $pageTitle = "Home"; ?>
     <h3><?php echo $pageTitle?></h3>
-    
-        <table id="myTable" width="100%" cellspacing="0" cellpadding="0">
+
+        <table id="currencyList" width="100%" cellspacing="0" cellpadding="0">
         <tr>
             <th>Rank: </th>
             <th>Currency: </th>

@@ -17,7 +17,7 @@ myRequest.onload = function() {
     var currency = JSON.parse(myRequest.responseText);
 
     //Create table object, link to HTML by id. 
-    var table = document.getElementById("myTable");
+    var table = document.getElementById("currencyList");
 
     //For each item in the currency array, create a row, add data for each cell.
       for (i in currency) {
