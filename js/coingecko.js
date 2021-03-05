@@ -33,6 +33,9 @@ myRequest.onload = function() {
 
           var currency_image = row.insertCell(1);
           var img = document.createElement("img");
+
+          img.setAttribute("class", "currencyImage");
+
           img.src = currency[i].image;
           currency_image.appendChild(img);
 
