@@ -45,7 +45,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor consequuntur corr
 
   <footer>
    <?php 
-    include ('../inc/footer.php'); 
+   // include ('../inc/footer.php'); 
    ?>
   </footer>
 </html>
