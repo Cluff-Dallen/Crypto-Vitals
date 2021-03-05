@@ -31,4 +31,5 @@ h3 {
       padding: auto;
       table-layout: auto;
       width: 80%;
+      border-collapse: separate;
     }
