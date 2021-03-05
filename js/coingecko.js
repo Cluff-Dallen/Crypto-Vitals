@@ -44,8 +44,6 @@ myRequest.onload = function() {
           currency_name.setAttribute("width", "15%");
 
 
-          currency_name.setAttribute("width", "10%");
-
           var currency_symbol = row.insertCell(3);
           currency_symbol.innerHTML = currency[i].symbol;
           currency_symbol.setAttribute("width", "10%");
