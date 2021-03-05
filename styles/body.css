@@ -15,13 +15,13 @@ h3 {
       height: 25px;
     }
 
-    tr, td {
+    tr, td, th {
       border: solid black 1px;
+      text-align: center;
     }
 
-    td {
+    th {
       margin: auto;
-      text-align: center;
     }
 
     table {
