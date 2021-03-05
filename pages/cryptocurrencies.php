@@ -14,7 +14,7 @@
 
     <table id="priceTable" width="100%" cellspacing="0" cellpadding="0">
         <tr>
-            <th>Logo Will go here</th>
+            <th>Logo</th>
             <th>Name</th>
             <th>Ticker</th>
             <th>Price</th>
@@ -22,9 +22,9 @@
         </tr>
 
         <tr>
-            <td><img class="logo" src="bitcoin.png" alt="bitcoin lgo"></td>
+            <td><img class="logo" src="bitcoin.png" alt="bitcoin logo"></td>
             <td onclick="f1()" id="Bitcoin">Bitcoin</td>
-            <td id="bitcoinChange">Change</td>
+            <td id="bitcoinTicker">Ticker</td>
             <td id="bitcoinPrice">Price</td>
             <td id="bitcoinVolume">Volume</td>
         </tr>
