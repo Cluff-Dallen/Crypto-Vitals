@@ -36,7 +36,7 @@ myRequest.onload = function() {
           img.setAttribute("class", "currencyImage");
           img.src = currency[i].image;
           currency_image.appendChild(img);
-          currency_imgage.setAttribute("width", "5%");
+          currency_image.setAttribute("width", "5%");
 
 
           var currency_name = row.insertCell(2);
