@@ -30,13 +30,15 @@ myRequest.onload = function() {
           var currency_rank = row.insertCell(0);
           currency_rank.innerHTML = currency[i].market_cap_rank;
 
-          var currency_id = row.insertCell(1);
-          currency_id.innerHTML = currency[i].id;
 
-          var currency_image = row.insertCell(2);
+          var currency_image = row.insertCell(1);
           var img = document.createElement("img");
           img.src = currency[i].image;
-          currency_image.appendChild(img);  
+          currency_image.appendChild(img);
+
+
+          var currency_id = row.insertCell(2);
+          currency_id.innerHTML = currency[i].id;  
 
           var currency_symbol = row.insertCell(3);
           currency_symbol.innerHTML = currency[i].symbol;
