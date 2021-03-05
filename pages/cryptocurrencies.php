@@ -1,7 +1,7 @@
 <html>
   <head>
   <?php include '../inc/head.php'; ?>
-  <script type="text/javascript" src='../js/coingecko.js'></script>
+  <script type="text/javascript" src='../js/coingecko_currencies.js'></script>
   </head>
 
   <header>

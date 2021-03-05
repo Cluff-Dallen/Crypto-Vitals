@@ -1,6 +1,7 @@
 <html>
   <head>
   <?php include '../inc/head.php'; ?>
+  <script type="text/javascript" src='../js/coingecko_exchanges.js'></script>
   </head>
 
   <header>
@@ -10,12 +11,14 @@
   <body>
     <?php $pageTitle = "Exchanges"; ?>
     <h3><?php echo $pageTitle?></h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor consequuntur corrupti laudantium doloribus laborum vero accusantium rerum deserunt voluptatem dolorem, tempore temporibus magnam commodi dolore explicabo tempora eius, facilis sit.</p>
+        <br>
+        <table id="exchangeList" width="100%" cellspacing="0" cellpadding="0">
+        </table>
   </body>
 
   <footer>
    <?php 
-    include ('../inc/footer.php'); 
+   include ('../inc/footer.php'); 
    ?>
   </footer>
 </html>
