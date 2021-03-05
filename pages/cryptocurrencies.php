@@ -14,16 +14,13 @@
 
     <table id="priceTable" width="100%" cellspacing="0" cellpadding="0">
         <tr>
-            <th>Logo</th>
-            <th>Name</th>
-            <th>Ticker</th>
-            <th>Price</th>
-            <th>Volume</th>
+            <th>price</th>
+            <th>vol</th>
         </tr>
 
         <tr>
-            <td id="currencyPrice">Price</td>
-            <td id="currencyVolume">Volume</td>
+            <td id="price">price</td>
+            <td id="vol">vol</td>
         </tr>
         </table>
 
