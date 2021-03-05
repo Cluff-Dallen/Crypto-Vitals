@@ -14,6 +14,6 @@ myRequest.onload = function() {
       }
 
       for (i in currency) {
-          console.log(currency[i].id);
+          console.log(currency[i].id, currency[i].symbol);
       }
 }
