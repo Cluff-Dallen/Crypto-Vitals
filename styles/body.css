@@ -11,9 +11,8 @@ h3 {
     }
 
 .currencyImage {
-      width: 10%;
-      height: auto;
-      display: block;
+      width: 5px;
+      height: 5px;
     }
 
     tr, td, th{
