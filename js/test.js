@@ -13,7 +13,7 @@ myRequest.onload = function() {
         console.log(`${key}: ${value}`);
       }
 
-      for (i = 0; i < currency.length; i++) {
-          console.log(currency.id[i]);
+      for (i in currency) {
+          console.log(currency[i].id);
       }
 }
