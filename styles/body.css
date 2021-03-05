@@ -21,6 +21,7 @@ h3 {
       padding: 0px;
       margin: 0px;
       width: auto;
+      white-space: nowrap;
     }
 
     table {
