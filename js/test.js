@@ -9,13 +9,7 @@ myRequest.onload = function() {
     var currency = JSON.parse(myRequest.responseText);
 
     var table = document.getElementById("currencyList");
-    var rows = 50;
-
-    for (var key in currency){
-        var row = table.insertRow(rows);
-        rows = rows - 1;
-
-        var cell1 = row.insertCell(0);
-        cell1.innerHTML = currency.ethereum.usd_;
-    }
+    for (let [key, value] of Object.entries(currency)) {
+        console.log(`${key}: ${value}`);
+      }
 }
