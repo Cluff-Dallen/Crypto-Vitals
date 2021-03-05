@@ -14,7 +14,7 @@ myRequest.onload = function() {
 
       for (i in currency) {
           console.log(currency[i].id, currency[i].symbol);
-          var row = table.insertRow(0);
+          var row = table.insertRow(1);
           var cell = row.insertCell(0);
           x += 1;
           cell.innerHTML = currency[i].id;
