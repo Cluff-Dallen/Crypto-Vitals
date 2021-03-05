@@ -37,7 +37,7 @@ myRequest.onload = function() {
           var img = document.createElement("img");
           img.src = currency[i].image;
 
-          currency_id.innerHTML.appendChild(img);  
+          currency_id.appendChild(img);  
 
           var currency_image = row.insertCell(2);
           currency_image.innerHTML = currency[i].image;
