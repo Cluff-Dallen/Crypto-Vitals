@@ -21,6 +21,7 @@ h3 {
 
     td {
       margin: auto;
+      text-align: center;
     }
 
     table {
@@ -29,6 +30,4 @@ h3 {
       padding: auto;
       table-layout: auto;
       width: 80%;
-
-
     }
