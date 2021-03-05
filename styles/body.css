@@ -24,10 +24,11 @@ h3 {
     }
 
     table {
-      width: 80%;
       height: auto;
       margin: auto;
       padding: auto;
       table-layout: auto;
+      width: 80%;
+
 
     }
