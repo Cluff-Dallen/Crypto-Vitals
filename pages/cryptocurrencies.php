@@ -1,7 +1,8 @@
 <html>
   <head>
   <?php include '../inc/head.php'; ?>
-  <script type="text/javascript" src='../js/bitcoin.js'></script>
+  <script type="text/javascript" src='../js/cryptonator.js'></script>
+  <script type="text/javascript" src='../js/coingecko.js'></script>
   </head>
 
   <header>
@@ -19,9 +20,15 @@
         </tr>
 
         <tr>
-            <td id="price">price</td>
-            <td id="vol">vol</td>
+            <td id="price1">price1</td>
+            <td id="vol1">vol1</td>
         </tr>
+
+        <tr>
+            <td id="price2">price2</td>
+            <td id="vol2">vol2</td>
+        </tr>
+
         </table>
 
 
