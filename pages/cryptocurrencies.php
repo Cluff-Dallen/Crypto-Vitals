@@ -14,7 +14,7 @@
 
     <table id="priceTable" width="100%" cellspacing="0" cellpadding="0">
         <tr>
-            <th>Logo</th>
+            <th>Logo Will go here</th>
             <th>Name</th>
             <th>Ticker</th>
             <th>Price</th>
