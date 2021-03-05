@@ -12,11 +12,9 @@ myRequest.onload = function() {
 
     var x = 0;
 
-    currency.reverse();
-
       for (i in currency) {
           console.log(currency[i].id, currency[i].symbol);
-          var row = table.insertRow(x);
+          var row = table.insertRow(table.rows.length);
          
           var currency_rank = row.insertCell(0);
           currency_rank.innerHTML = currency[i].market_cap_rank;
