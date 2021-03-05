@@ -12,4 +12,9 @@ myRequest.onload = function() {
     for (let [key, value] of Object.entries(currency)) {
         console.log(`${key}: ${value}`);
       }
+
+      
+for (var key of Object.keys(currency)) {
+    console.log(key + " -> " + currency[key])
+}
 }
