@@ -54,5 +54,7 @@ myRequest.onload = function() {
 
           var currency_marketcap = row.insertCell(7);
           currency_marketcap.innerHTML = currency[i].market_cap;
+          currency_marketcap.setAttribute("width", "14%");
+
       }
 }
