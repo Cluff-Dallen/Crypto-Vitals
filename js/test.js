@@ -15,8 +15,28 @@ myRequest.onload = function() {
       for (i in currency) {
           console.log(currency[i].id, currency[i].symbol);
           var row = table.insertRow(1);
-          var cell = row.insertCell(0);
+         
+          var currency_rank = row.insertCell(0);
+          currency_rank.innerHTML = currency[i].market_cap_rank;
+
+          var currency_id = row.insertCell(1);
+          currency_id.innerHTML = currency[i].id;
+
+          var currency_symbol = row.insertCell(2);
+          currency_symbol.innerHTML = currency[i].symbol;
+
+          var currency_price = row.insertCell(3);
+          currency_price.innerHTML = currency[i].current_price;
+
+          var currency_24h_change = row.insertCell(4);
+          currency_24h_change.innerHTML = currency[i].price_change_24h;
+
+          var currency_24h_volume = row.insertCell(5);
+          currency_24h_volume.innerHTML = currency[i].total_volume;
+
+          var currency_marketcap = row.insertCell(6);
+          currency_marketcap.innerHTML = currency[i].market_cap;
+
           x += 1;
-          cell.innerHTML = currency[i].id;
       }
 }

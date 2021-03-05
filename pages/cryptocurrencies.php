@@ -35,7 +35,13 @@
 
         <table id="myTable" width="100%" cellspacing="0" cellpadding="0">
         <tr>
-            <th>test price</th>
+            <th>Rank: </th>
+            <th>Currency: </th>
+            <th>Ticker: </th>
+            <th>Price: </th>
+            <th>24h Change: </th>
+            <th>24h Volume: </th>
+            <th>Market Cap: </th>
         </tr>
         </table>
 
