@@ -24,12 +24,7 @@
             <th>24h Volume: </th>
             <th>Market Cap: </th>
         </tr>
-
-  
         </table>
-
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor consequuntur corrupti laudantium doloribus laborum vero accusantium rerum deserunt voluptatem dolorem, tempore temporibus magnam commodi dolore explicabo tempora eius, facilis sit.</p>
   </body>
 
   <footer>
