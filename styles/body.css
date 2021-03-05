@@ -19,7 +19,7 @@ h3 {
 
     tr, td, th {
       text-align: left;
-      padding: 0;
+      padding-left: 3px;
       margin: 0;
       }
 
