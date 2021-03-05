@@ -50,7 +50,7 @@ myRequest.onload = function() {
 
 
           var exchange_volume = row.insertCell(4);
-          exchange_volume.innerHTML = "$" + exchange[i].trade_volume_24h_btc;
+          exchange_volume.innerHTML = exchange[i].trade_volume_24h_btc + "BTC";
           exchange_volume.setAttribute("width", "12.5%");
 
 
