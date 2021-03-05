@@ -17,5 +17,5 @@ requestEthereum.onload = function() {
     var ethereum = JSON.parse(requestEthereum.responseText);
     document.getElementById('ethereumPrice').innerHTML = ethereum.usd;
     document.getElementById('ethereumVolume').innerHTML = ethereum.usd_24h_vol;
-    document.getElementById('ethereumChange').innerHTML = ethereum..usd_24h_change;
+    document.getElementById('ethereumChange').innerHTML = ethereum.usd_24h_change;
 }
