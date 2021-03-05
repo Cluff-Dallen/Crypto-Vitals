@@ -9,11 +9,12 @@ myRequest.onload = function() {
     var currency = JSON.parse(myRequest.responseText);
 
     var table = document.getElementById("myTable");
-
+    var x = 0;
       for (i in currency) {
           console.log(currency[i].id, currency[i].symbol);
-          var row = table.insertRow(i);
-          var cell = row.insertCell(i);
+          var row = table.insertRow(x);
+          var cell = row.insertCell(x);
+          x += 1;
           cell.innerHTML = currency[i].id;
       }
 }
