@@ -1,4 +1,4 @@
-//var bitcoinRequestURL = 'https://www.cryptonator.com/api/full/btc-usd';
+var bitcoinRequestURL = 'https://www.cryptonator.com/api/full/btc-usd';
 
 var ethereumRequestURL = 'https://api.coingecko.com/api/v3/simple/price?ids=Ethereum&vs_currencies=USD&include_market_cap=true&include_24hr_vol=true&include_24hr_change=true';
 var requestEthereum = new XMLHttpRequest();
