@@ -14,7 +14,7 @@ myRequest.onload = function() {
 
       for (i in currency) {
           console.log(currency[i].id, currency[i].symbol);
-          var row = table.insertRow(1);
+          var row = table.insertRow(i);
          
           var currency_rank = row.insertCell(0);
           currency_rank.innerHTML = currency[i].market_cap_rank;
