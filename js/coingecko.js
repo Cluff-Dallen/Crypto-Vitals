@@ -48,9 +48,12 @@ myRequest.onload = function() {
 
           var currency_24h_change = row.insertCell(5);
           currency_24h_change.innerHTML = currency[i].price_change_24h;
+          currency_24h_change.setAttribute("width", "10%");
 
           var currency_24h_volume = row.insertCell(6);
           currency_24h_volume.innerHTML = currency[i].total_volume;
+          currency_24h_volume.setAttribute("width", "10%");
+
 
           var currency_marketcap = row.insertCell(7);
           currency_marketcap.innerHTML = currency[i].market_cap;
