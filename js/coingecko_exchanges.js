@@ -56,7 +56,7 @@ myRequest.onload = function() {
 
           var exchange_year = row.insertCell(5);
           exchange_year.innerHTML =  exchange[i].year_established;
-          exchange_year.setAttribute("width", "15%");
+          exchange_year.setAttribute("width", "7.5%");
 
           var exchange_url = row.insertCell(6);
           exchange_url.innerHTML = exchange[i].url;
