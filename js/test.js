@@ -10,11 +10,11 @@ myRequest.onload = function() {
 
     var table = document.getElementById("myTable");
 
-    var x = 1;
+    var x = 0;
 
       for (i in currency) {
           console.log(currency[i].id, currency[i].symbol);
-          var row = table.insertRow(currency[i] + 1);
+          var row = table.insertRow(x);
          
           var currency_rank = row.insertCell(0);
           currency_rank.innerHTML = currency[i].market_cap_rank;
