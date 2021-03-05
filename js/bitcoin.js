@@ -8,5 +8,5 @@ requestBitcoin.onload = function() {
 
     var bitcoin = JSON.parse(requestBitcoin.responseText);
     document.getElementById('currencyPrice').innerHTML = bitcoin.ticker.price;
-    document.getElementById('bitcoinVolume').innerHTML = bitcoin.ticker.volume;
+    document.getElementById('currencyVolume').innerHTML = bitcoin.ticker.volume;
 }
