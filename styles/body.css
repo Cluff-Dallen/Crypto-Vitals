@@ -15,6 +15,6 @@ img {
       height: 25%;
     }
 
-    tr, td {
+    tr, td, th{
       border: solid red 2px;
     }
