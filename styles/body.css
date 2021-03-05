@@ -19,7 +19,7 @@ h3 {
 
     tr, td, th {
       border-bottom: solid black 1px;
-      text-align: center;
+      text-align: left;
       padding: 0px;
       margin: 0px;
       width: auto;
