@@ -14,3 +14,7 @@ img {
       width: 25%;
       height: 25%;
     }
+
+    tr, td {
+      border: solid red 2px;
+    }
