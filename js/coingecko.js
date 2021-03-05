@@ -33,19 +33,23 @@ myRequest.onload = function() {
           var currency_id = row.insertCell(1);
           currency_id.innerHTML = currency[i].id;
 
-          var currency_symbol = row.insertCell(2);
+          var currency_image = row.insertCell(2);
+          currency_image.innerHTML = currency[i].image;
+
+
+          var currency_symbol = row.insertCell(3);
           currency_symbol.innerHTML = currency[i].symbol;
 
-          var currency_price = row.insertCell(3);
+          var currency_price = row.insertCell(4);
           currency_price.innerHTML = currency[i].current_price;
 
-          var currency_24h_change = row.insertCell(4);
+          var currency_24h_change = row.insertCell(5);
           currency_24h_change.innerHTML = currency[i].price_change_24h;
 
-          var currency_24h_volume = row.insertCell(5);
+          var currency_24h_volume = row.insertCell(6);
           currency_24h_volume.innerHTML = currency[i].total_volume;
 
-          var currency_marketcap = row.insertCell(6);
+          var currency_marketcap = row.insertCell(7);
           currency_marketcap.innerHTML = currency[i].market_cap;
       }
 }
