@@ -41,7 +41,7 @@ myRequest.onload = function() {
 
           var exchange_name = row.insertCell(2);
           exchange_name.innerHTML = exchange[i].name;  
-          exchange_name.setAttribute("width", "12.5%");
+          exchange_name.setAttribute("width", "10%");
 
 
           var exchange_country = row.insertCell(3);
