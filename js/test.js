@@ -9,8 +9,8 @@ myRequest.onload = function() {
     var currency = JSON.parse(myRequest.responseText);
 
     var table = document.getElementById("myTable");
-    
-    var x = 0;
+
+    var x = 1;
       for (i in currency) {
           console.log(currency[i].id, currency[i].symbol);
           var row = table.insertRow(x);
