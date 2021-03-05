@@ -18,22 +18,14 @@ h3 {
     }
 
     tr, td, th {
-      border-bottom: solid black 1px;
       text-align: left;
-      padding: 0px;
-      margin: 0px;
-      border-collapse: separate;
-      border:0px;
-      border-collapse:collapse;
-      border-spacing:0px    }
+      padding: 0;
+      margin: 0;
+      }
 
     table {
       margin: auto;
       padding: 0;
       table-layout:auto;
       width: 80%;
-      border-collapse: separate;
-      border:0px;
-      border-collapse:collapse;
-      border-spacing:0px
     }
