@@ -8,5 +8,5 @@ myRequest.onload = function() {
 
     var currency = JSON.parse(myRequest.responseText);
     document.getElementById('price2').innerHTML = currency.ethereum.usd;
-    document.getElementById('vol2').innerHTML = currency.Ethereum.usd_24h_vol;
+    document.getElementById('vol2').innerHTML = currency.ethereum.usd_24h_vol;
 }
