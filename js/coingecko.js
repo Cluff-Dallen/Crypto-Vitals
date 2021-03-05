@@ -33,6 +33,12 @@ myRequest.onload = function() {
           var currency_id = row.insertCell(1);
           currency_id.innerHTML = currency[i].id;
 
+
+          var img = document.createElement("img");
+          img.src = currency[i].image;
+
+          currency_id.innerHTML.appendChild(img);  
+
           var currency_image = row.insertCell(2);
           currency_image.innerHTML = currency[i].image;
 

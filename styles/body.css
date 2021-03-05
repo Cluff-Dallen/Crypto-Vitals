@@ -9,3 +9,8 @@ h3 {
       margin: auto;
       margin-top: 1em;
     }
+
+    img {
+      width: 25px;
+      height: 25px;
+    }
