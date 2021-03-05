@@ -23,7 +23,6 @@ myRequest.onload = function() {
       for (i in currency) {
 
         //Create new row
-          console.log(currency[i].id, currency[i].symbol);
           var row = table.insertRow(table.rows.length);
          
           //Create cells and add data inside
@@ -40,8 +39,8 @@ myRequest.onload = function() {
           currency_image.appendChild(img);
 
 
-          var currency_id = row.insertCell(2);
-          currency_id.innerHTML = currency[i].id;  
+          var currency_name = row.insertCell(2);
+          currency_name.innerHTML = currency[i].name;  
 
           var currency_symbol = row.insertCell(3);
           currency_symbol.innerHTML = currency[i].symbol;
