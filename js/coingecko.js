@@ -29,15 +29,11 @@ myRequest.onload = function() {
           var currency_rank = row.insertCell(0);
           currency_rank.innerHTML = currency[i].market_cap_rank;
 
-
           var currency_image = row.insertCell(1);
           var img = document.createElement("img");
-
           img.setAttribute("class", "currencyImage");
-
           img.src = currency[i].image;
           currency_image.appendChild(img);
-
 
           var currency_name = row.insertCell(2);
           currency_name.innerHTML = currency[i].name;  

@@ -13,7 +13,7 @@
     <h3><?php echo $pageTitle?></h3>
     
         <br>
-        <table id="currencyList" width="100%" cellspacing="0" cellpadding="0">
+        <table id="currencyList">
         </table>
   </body>
 
