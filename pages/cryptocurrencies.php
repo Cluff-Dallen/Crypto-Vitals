@@ -22,11 +22,11 @@
         </tr>
 
         <tr>
-            <td><img class="logo" src="Ethereum.png" alt="Ethereum logoz"></td>
-            <td onclick="f1()" id="Ethereum">Ethereum</td>
-            <td id="ethereumChange">Ticker</td>
-            <td id="ethereumPrice">Price</td>
-            <td id="ethereumVolume">Volume</td>
+            <td><img class="logo" src="bitcoin.png" alt="bitcoin lgo"></td>
+            <td onclick="f1()" id="Bitcoin">Bitcoin</td>
+            <td id="bitcoinChange">Change</td>
+            <td id="bitcoinPrice">Price</td>
+            <td id="bitcoinVolume">Volume</td>
         </tr>
         </table>
 
