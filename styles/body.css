@@ -16,7 +16,7 @@ h3 {
     }
 
     tr, td, th {
-      border: solid black 1px;
+      border-bottom: solid black 1px;
       text-align: center;
     }
 
