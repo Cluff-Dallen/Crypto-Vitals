@@ -38,7 +38,7 @@ myRequest.onload = function() {
           var currency_name = row.insertCell(2);
           currency_name.innerHTML = currency[i].name;  
 
-          currency_name.setAttribute("width", "8%");
+          currency_name.setAttribute("width", "14%");
 
           var currency_symbol = row.insertCell(3);
           currency_symbol.innerHTML = currency[i].symbol;
