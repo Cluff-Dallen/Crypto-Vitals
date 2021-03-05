@@ -7,8 +7,6 @@ requestBitcoin.send();
 requestBitcoin.onload = function() {
 
     var bitcoin = JSON.parse(requestBitcoin.responseText);
-    document.getElementById('bitcoinTicker').innerHTML = bitcoin.ticker.base;
-    document.getElementById('bitcoinPrice').innerHTML = bitcoin.ticker.price;
+    document.getElementById('currencyPrice').innerHTML = bitcoin.ticker.price;
     document.getElementById('bitcoinVolume').innerHTML = bitcoin.ticker.volume;
-    document.getElementById('bitcoinChange').innerHTML = bitcoin.ticker.change;
 }

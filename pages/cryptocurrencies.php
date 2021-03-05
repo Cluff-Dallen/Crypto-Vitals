@@ -22,11 +22,10 @@
         </tr>
 
         <tr>
-            <td><img class="logo" src="bitcoin.png" alt="bitcoin logo"></td>
-            <td onclick="f1()" id="Bitcoin">Bitcoin</td>
-            <td id="bitcoinTicker">Ticker</td>
-            <td id="bitcoinPrice">Price</td>
-            <td id="bitcoinVolume">Volume</td>
+            <td><img class="logo" src="currencyImage.png" alt="currency logo"></td>
+            <td onclick="f1()" id="Currency">Currency</td>
+            <td id="currencyPrice">Price</td>
+            <td id="currencyVolume">Volume</td>
         </tr>
         </table>
 
