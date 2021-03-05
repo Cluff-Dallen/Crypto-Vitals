@@ -55,7 +55,7 @@ myRequest.onload = function() {
 
 
           var currency_24h_change = row.insertCell(5);
-          currency_24h_change.innerHTML = currency[i].price_change_24h;
+          currency_24h_change.innerHTML =  "$" + currency[i].price_change_24h;
           currency_24h_change.setAttribute("width", "15%");
 
           var currency_24h_volume = row.insertCell(6);
