@@ -18,3 +18,10 @@ h3 {
     tr, td {
       border: solid black 1px;
     }
+
+    table {
+      width: 80%;
+      height: auto;
+      margin: auto;
+      padding: auto;
+    }
