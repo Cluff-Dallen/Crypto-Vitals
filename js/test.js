@@ -12,6 +12,8 @@ myRequest.onload = function() {
 
     var x = 0;
 
+    currency.reverse();
+
       for (i in currency) {
           console.log(currency[i].id, currency[i].symbol);
           var row = table.insertRow(x);
