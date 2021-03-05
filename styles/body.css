@@ -28,4 +28,6 @@ h3 {
       height: auto;
       margin: auto;
       padding: auto;
+      table-layout: auto;
+
     }
