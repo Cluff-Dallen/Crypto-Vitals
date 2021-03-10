@@ -34,3 +34,7 @@ h3 {
       table-layout:auto;
       width: 80%;
     }
+
+    #sign-in-form {
+      background-color: lightgoldenrodyellow;
+    }
