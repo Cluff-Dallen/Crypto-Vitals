@@ -44,7 +44,7 @@ h3 {
       margin-left: auto;
       margin-right: auto;
       padding: 15px;
-      border: solid black 2.5px;
+      border: solid black 1.25px;
       border-radius: 15px;
     }
 
@@ -52,4 +52,8 @@ h3 {
       margin: auto;
       margin-bottom: 10px;
       text-align:center;
+    }
+
+    input {
+      display: block;
     }
