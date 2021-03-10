@@ -48,13 +48,13 @@ h3 {
       border-radius: 15px;
     }
 
-    h1 {
+    #sign-in-form h1, #sign-in-form a {
       margin: auto;
       margin-bottom: 10px;
       text-align:center;
     }
 
-    input {
+    #sign-in-form input {
       display: block;
       margin-top: 5px;
       margin-bottom: 5px;
