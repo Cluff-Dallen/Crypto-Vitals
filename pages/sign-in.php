@@ -8,8 +8,6 @@
   </header>
 
   <body>
-    <?php $pageTitle = "Sign In"; ?>
-    <h3><?php echo $pageTitle?></h3>
     <div id="sign-in-form">
     <h1>Sign-in</h1>
     <form action="">
