@@ -9,7 +9,7 @@
       <li><a href="/pages/news.php">News</a></li>
       <li><a href="/pages/converter.php">Converter</a></li>
       <li><a href="/pages/about.php">About</a></li>
-      <li><button class="btn btn-warning shadow-none">Sign in</button></li>
+      <li><button class="btn btn-warning shadow-none" onclick="window.location.href='http://www.crypto-vitals.com/pages/sign-in.php';">Sign in</button></li>
     </ul>
 </div>
 <hr>
