@@ -37,4 +37,12 @@ h3 {
 
     #sign-in-form {
       background-color: lightgoldenrodyellow;
+      width: 50%;
+      margin: auto;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: auto;
+      padding-right: auto;
+      border: solid black 2px;
+      justify-content: center;
     }
