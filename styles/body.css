@@ -39,10 +39,10 @@ h3 {
       background-color: lightgoldenrodyellow;
       width: 50%;
       margin: auto;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      padding-left: auto;
-      padding-right: auto;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 15px;
       border: solid black 2px;
-      justify-content: center;
     }
