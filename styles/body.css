@@ -45,7 +45,7 @@ h3 {
       margin-right: auto;
       padding: 15px;
       border: black 5px transparent;
-      border-radius: 15px;
+      border-radius: 5px;
     }
 
     #sign-in-form h1, #sign-in-form p {
@@ -60,5 +60,5 @@ h3 {
       margin-bottom: 5px;
       margin-left: auto;
       margin-right: auto;
-      width: 25%;
+      width: 30%;
     }
