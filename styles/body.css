@@ -44,7 +44,8 @@ h3 {
       margin-left: auto;
       margin-right: auto;
       padding: 15px;
-      border: solid white 1px;
+      border: solid white 5px;
+      border-radius: 15px;
     }
 
     h1 {
