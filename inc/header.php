@@ -12,5 +12,4 @@
       <li><button class="btn btn-warning shadow-none" onclick="window.location.href='http://www.crypto-vitals.com/pages/sign-in.php';">Sign in</button></li>
     </ul>
 </div>
-<hr>
     </html>
