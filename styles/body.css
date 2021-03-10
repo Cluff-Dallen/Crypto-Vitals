@@ -44,7 +44,7 @@ h3 {
       margin-left: auto;
       margin-right: auto;
       padding: 15px;
-      border: solid black 1.25px;
+      border: black 1px transparent;
       border-radius: 15px;
     }
 
