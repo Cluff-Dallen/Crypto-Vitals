@@ -12,8 +12,8 @@
     <div id="sign-in-form">
     <h1>Sign-in</h1>
     <form action="">
-    <div class="signupInput"><span class="material-icons">mail_outline</span><input type="email" name="email" placeholder="Enter email address"></div>
-    <div class="signupInput"><span class="material-icons">lock_outline</span><input type="password" name="password" placeholder="Enter password"></div>
+    <div class="signinInput"><span class="material-icons">mail_outline</span><input type="email" name="email" placeholder="Enter email address"></div>
+    <div class="signinInput"><span class="material-icons">lock_outline</span><input type="password" name="password" placeholder="Enter password"></div>
     <input type="submit" id="signinSubmit" name="loginSubmit">
     </form>
     <p><a href="sign-up.php">Register</a> | <a href="forgot-pass.php">Forgot Password</a></p>

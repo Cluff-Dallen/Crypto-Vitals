@@ -35,38 +35,7 @@ h3 {
       width: 80%;
     }
 
-    #sign-in-form {
-      background-color: white;
-      width: 30%;
-      margin: auto;
-      margin-top: 90px;
-      margin-bottom: 120px;
-      margin-left: auto;
-      margin-right: auto;
-      padding: 15px;
-      border: black 5px transparent;
-      border-radius: 5px;
-      height: auto;
-    }
-
-    #sign-in-form h1, #sign-in-form p {
-      margin: auto;
-      margin-bottom: 10px;
-      text-align:center;
-    }
-
-    #sign-in-form input {
-      display: block;
-      margin-top: 5px;
-      margin-bottom: 5px;
-      margin-left: auto;
-      margin-right: auto;
-      width: 50%;
-      border: none;
-      border-bottom: solid #999 0.2px;
-    }
-
-    #sign-up-form {
+    #sign-up-form, #sign-in-form {
       background-color: white;
       width: 60%;
       margin-top: 90px;
@@ -80,19 +49,19 @@ h3 {
 
     }
 
-    #sign-up-form h1, #sign-up-form p {
+    #sign-up-form h1, #sign-up-form p, #sign-in-form h1, #sign-in-form p {
       margin: auto;
       margin-bottom: 10px;
       text-align:center;
     }
 
-    #sign-up-form input {
-      width: 50%;
+    #sign-up-form input, #sign-in-form input{
+      width: 50%; 
       border: none;
       border-bottom: solid #999 0.2px;
     }
 
-    .signupInput {
+    .signupInput, .signinInput {
       display: block;
       justify-content: center;
       text-align: center;
