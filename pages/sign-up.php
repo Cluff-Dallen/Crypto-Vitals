@@ -18,7 +18,7 @@
     <input type="passwordTwo" name="passwordtwo" placeholder="Reenter password">
     <input type="submit" name="signupSubmit">
     </form>
-    <p><a href="sign-up.php">Register</a> | <a href="forgot-pass.php">Forgot Password</a></p>
+    <p><a href="sign-in.php">Already have an account</a> | <a href="forgot-pass.php">Forgot Password</a></p>
     </div>
   </body>
 
