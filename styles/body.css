@@ -96,6 +96,8 @@ h3 {
 
     .inputz {
       display: block;
+      justify-content: center;
+      text-align: center;
       margin: auto;
       border: solid red 1px;
     }
