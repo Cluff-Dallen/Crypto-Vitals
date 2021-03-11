@@ -63,3 +63,43 @@ h3 {
       margin-right: auto;
       width: 50%;
     }
+
+    
+
+
+
+
+
+
+
+
+
+
+    #sign-up-form {
+      background-color: white;
+      width: 30%;
+      margin: auto;
+      margin-top: 90px;
+      margin-bottom: 120px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 15px;
+      border: black 5px transparent;
+      border-radius: 5px;
+      height: auto;
+    }
+
+    #sign-up-form h1, #sign-up-form p {
+      margin: auto;
+      margin-bottom: 10px;
+      text-align:center;
+    }
+
+    #sign-up-form input {
+      display: block;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
