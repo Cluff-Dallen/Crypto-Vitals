@@ -99,3 +99,7 @@ h3 {
       text-align: center;
       margin: auto;
     }
+
+    span {
+      padding-top: 3px;
+    }
