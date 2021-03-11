@@ -112,4 +112,5 @@ h3 {
 
     #signupSubmit, #signinSubmit {
       background-color: #ffe607;
+      border: none;
     }
