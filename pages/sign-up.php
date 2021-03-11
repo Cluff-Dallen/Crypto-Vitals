@@ -10,13 +10,13 @@
 
   <body>
     <div id="sign-up-form">
-    <span class="material-icons">face</span>
     <h1>Sign-up</h1>
     <form action="">
-    <div class="inputz"><input type="email" name="email" placeholder="Email Address"></div>
-    <div class="inputz"><i class="material-icons">trending_up</i><input type="password" name="password" placeholder="Password"></div>
-    <div class="inputz"><input type="passwordConfirm" name="passwordConfirm" placeholder="Confirm password"></div>
-    <div class="inputz"> <input type="submit" name="signupSubmit"></div>
+    <div class="inputz"><span class="material-icons-outlined">perm_identity</span><input type="text" name="username" placeholder="Username"></div>
+    <div class="inputz"><span class="material-icons-outlined">email</span><input type="email" name="email" placeholder="Email Address"></div>
+    <div class="inputz"><span class="material-icons-outlined">lock</span><input type="password" name="password" placeholder="Password"></div>
+    <div class="inputz"><span class="material-icons-outlined">lock</span><input type="passwordConfirm" name="passwordConfirm" placeholder="Confirm password"></div>
+    <div class="inputz"><input type="submit" name="signupSubmit"></div>
     </form>
     <p><a href="sign-in.php">Already have an account</a> | <a href="forgot-pass.php">Forgot Password</a></p>
     </div>
