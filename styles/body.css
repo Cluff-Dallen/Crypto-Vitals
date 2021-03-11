@@ -98,9 +98,9 @@ h3 {
       justify-content: center;
       text-align: center;
       margin: auto;
+      vertical-align: middle;
     }
 
     span {
-      padding-top: 3px;
       border: solid red 1px;
     }
