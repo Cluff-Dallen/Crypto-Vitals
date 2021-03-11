@@ -14,7 +14,7 @@
     <h1>Sign-up</h1>
     <form action="">
     <div class="inputz"><input type="email" name="email" placeholder="Email Address"></div>
-    <div class="inputz"> <input type="password" name="password" placeholder="Password"></div>
+    <div class="inputz"><i class="material-icons">trending_up</i><input type="password" name="password" placeholder="Password"></div>
     <div class="inputz"><input type="passwordConfirm" name="passwordConfirm" placeholder="Confirm password"></div>
     <div class="inputz"> <input type="submit" name="signupSubmit"></div>
     </form>
