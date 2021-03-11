@@ -67,15 +67,15 @@ h3 {
     #sign-up-form {
       background-color: white;
       width: 30%;
-      margin: auto;
       margin-top: 90px;
       margin-bottom: 120px;
       margin-left: auto;
       margin-right: auto;
       padding: 15px;
-      border: black 5px transparent;
+      border: solid blue 1px;
       border-radius: 5px;
       height: auto;
+
     }
 
     #sign-up-form h1, #sign-up-form p {
@@ -90,9 +90,12 @@ h3 {
       margin-left: auto;
       margin-right: auto;
       width: 50%;
+      border: solid pink 1px;
+
     }
 
     .inputz {
       display: block;
       margin: auto;
+      border: solid red 1px;
     }

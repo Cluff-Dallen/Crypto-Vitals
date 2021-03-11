@@ -10,7 +10,6 @@
 
   <body>
     <div id="sign-up-form">
-    <span class="material-icons">face</span>
     <h1>Sign-up</h1>
     <form action="">
     <div class="inputz"><span class="material-icons">perm_identity</span><input type="text" name="username" placeholder="Username"></div>
