@@ -85,30 +85,31 @@ h3 {
     }
 
     #sign-up-form input {
-      margin-top: 5px;
-      margin-bottom: 5px;
-      margin-left: auto;
-      margin-right: auto;
       width: 50%;
-
+      border: none;
+      border-bottom: solid #999 0.2px;
     }
 
-    .inputz {
+    .signupInput {
       display: block;
       justify-content: center;
       text-align: center;
       margin: auto;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     span {
       vertical-align: middle;
-      margin-bottom: 5px;
-      border-left: solid black 0.5px;
-      border-bottom: solid black 0.5px;
-      border-top: solid black 0.5px;
-      background-color: whitesmoke;
+      margin-bottom: 5px;      
       padding: 2.5px;
-      color: #999;
+      color: ffe607;
 		  border-radius: 3px;
       background: #fff;
+    }
+
+    #signupSubmit, #signinSubmit {
+      background-color: #ffe607;
     }

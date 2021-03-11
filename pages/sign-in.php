@@ -13,7 +13,7 @@
     <form action="">
     <input type="email" name="email" placeholder="Enter email address">
     <input type="password" name="password" placeholder="Enter password">
-    <input type="submit" name="loginSubmit">
+    <input type="submit" id="signinSubmit" name="loginSubmit">
     </form>
     <p><a href="sign-up.php">Register</a> | <a href="forgot-pass.php">Forgot Password</a></p>
     </div>
