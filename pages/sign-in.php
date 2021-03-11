@@ -15,7 +15,7 @@
     <input type="password" name="password" placeholder="Enter password">
     <input type="submit" name="loginSubmit">
     </form>
-    <p><a href="#">Register</a> | <a href="#">Forgot Password</a></p>
+    <p><a href="sign-up.php">Register</a> | <a href="forgot-pass.php">Forgot Password</a></p>
     </div>
   </body>
 
