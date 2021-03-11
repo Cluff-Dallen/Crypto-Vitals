@@ -102,4 +102,5 @@ h3 {
 
     span {
       padding-top: 3px;
+      border: solid red 1px;
     }
