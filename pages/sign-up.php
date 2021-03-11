@@ -13,13 +13,10 @@
     <span class="material-icons">face</span>
     <h1>Sign-up</h1>
     <form action="">
-    <i class="material-icons">trending_up</i><input type="text" name="username" placeholder="Username">
-    <i class="material-icons">trending_up</i>
-<input type="email" name="email" placeholder="Email Address">
-    <span class="material-icons">face</span>
-    <input type="password" name="password" placeholder="Password">
-    <input type="passwordConfirm" name="passwordConfirm" placeholder="Confirm password">
-    <input type="submit" name="signupSubmit">
+    <div class="inputz"><input type="email" name="email" placeholder="Email Address"></div>
+    <div class="inputz"> <input type="password" name="password" placeholder="Password"></div>
+    <div class="inputz"><input type="passwordConfirm" name="passwordConfirm" placeholder="Confirm password"></div>
+    <div class="inputz"> <input type="submit" name="signupSubmit"></div>
     </form>
     <p><a href="sign-in.php">Already have an account</a> | <a href="forgot-pass.php">Forgot Password</a></p>
     </div>

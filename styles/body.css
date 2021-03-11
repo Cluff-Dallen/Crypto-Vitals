@@ -85,10 +85,15 @@ h3 {
     }
 
     #sign-up-form input {
-      display: block;
       margin-top: 5px;
       margin-bottom: 5px;
       margin-left: auto;
       margin-right: auto;
       width: 50%;
+    }
+
+    .inputz {
+      display: block;
+      color: red;
+      background-color: red;
     }
