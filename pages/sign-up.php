@@ -11,12 +11,13 @@
   <body>
     <div id="sign-up-form">
     <span class="material-icons">face</span>
-<h1>Sign-up</h1>
+    <h1>Sign-up</h1>
     <form action="">
-    <input type="text" name="username" placeholder="Username">
-    <input type="email" name="email" placeholder="Email Address">
+    <i class="material-icons">trending_up</i><input type="text" name="username" placeholder="Username">
+    <i class="material-icons">trending_up</i>
+<input type="email" name="email" placeholder="Email Address">
     <span class="material-icons">face</span>
-<input type="password" name="password" placeholder="Password">
+    <input type="password" name="password" placeholder="Password">
     <input type="passwordConfirm" name="passwordConfirm" placeholder="Confirm password">
     <input type="submit" name="signupSubmit">
     </form>
