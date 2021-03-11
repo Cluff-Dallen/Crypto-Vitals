@@ -98,10 +98,9 @@ h3 {
       justify-content: center;
       text-align: center;
       margin: auto;
-      vertical-align: bottom;
     }
 
     span {
       border: solid red 1px;
-      vertical-align: bottom;
+      vertical-align: middle;
     }
