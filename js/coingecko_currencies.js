@@ -40,6 +40,7 @@ myRequest.onload = function() {
 
 
           var currency_name = row.insertCell(2);
+          currency_name[i].name = str.link("https://www.yahoo.com"); 
           currency_name.innerHTML = currency[i].name;  
           currency_name.setAttribute("width", "12.5%");
 
