@@ -15,8 +15,8 @@
     <input type="text" name="username" placeholder="Username">
     <input type="email" name="email" placeholder="Email Address">
     <input type="password" name="password" placeholder="Password">
-    <use xlink:href="bootstrap-icons.svg#heart-fill"/>
-
+    <svg class="bi" width="32" height="32" fill="currentColor">
+     <use xlink:href="bootstrap-icons.svg#heart-fill"/> </svg>
     <input type="passwordConfirm" name="passwordConfirm" placeholder="Confirm password">
     <input type="submit" name="signupSubmit">
     </form>
