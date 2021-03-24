@@ -46,6 +46,8 @@ myRequest.onload = function () {
 
     var url = "http://www.crypto-vitals.com/pages/token-details.php?id=" + id;
     result = result.link(url);
+   
+
 
 
     currency_name.innerHTML = result;
