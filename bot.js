@@ -5,6 +5,7 @@ var config = require('./config');
 const app = express();
 const port = process.env.PORT || 3000;
 
+//hi
 app.use(express.static(__dirname + '/public'));
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
