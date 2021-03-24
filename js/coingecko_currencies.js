@@ -48,30 +48,30 @@ myRequest.onload = function() {
           result = result.link(url); 
 
           currency_name.innerHTML = result;  
-          currency_name.setAttribute("width", "12.5%");
+          currency_name.setAttribute("width", "12%");
 
 
           var currency_symbol = row.insertCell(3);
           currency_symbol.innerHTML = currency[i].symbol;
-          currency_symbol.setAttribute("width", "10%");
+          currency_symbol.setAttribute("width", "8%");
 
 
           var currency_price = row.insertCell(4);
           currency_price.innerHTML = "$" + currency[i].current_price;
-          currency_price.setAttribute("width", "12.5%");
+          currency_price.setAttribute("width", "10%");
 
 
           var currency_24h_change = row.insertCell(5);
           currency_24h_change.innerHTML =  "$" + currency[i].price_change_24h;
-          currency_24h_change.setAttribute("width", "15%");
+          currency_24h_change.setAttribute("width", "12%");
 
           var currency_24h_volume = row.insertCell(6);
           currency_24h_volume.innerHTML =  "$" + currency[i].total_volume;
-          currency_24h_volume.setAttribute("width", "15%");
+          currency_24h_volume.setAttribute("width", "12%");
 
 
           var currency_marketcap = row.insertCell(7);
           currency_marketcap.innerHTML =  "$" + currency[i].market_cap;
-          currency_marketcap.setAttribute("width", "20%");
+          currency_marketcap.setAttribute("width", "10%");
       }
 }

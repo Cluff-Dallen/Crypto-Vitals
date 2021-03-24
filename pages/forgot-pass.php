@@ -1,6 +1,7 @@
 <html>
   <head>
   <?php include '../inc/head.php'; ?>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
 
   <header>
@@ -8,9 +9,25 @@
   </header>
 
   <body>
-    <?php $pageTitle = "Forgot Password"; ?>
-    <h3><?php echo $pageTitle?></h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor consequuntur corrupti laudantium doloribus laborum vero accusantium rerum deserunt voluptatem dolorem, tempore temporibus magnam commodi dolore explicabo tempora eius, facilis sit.</p>
+  <div id="forgot-pass-form">
+    <h1>Reset password</h1>
+    <br>
+    <form action="">
+
+    <div class="forgotPassInput"><span class="material-icons">mail_outline</span><input type="email" name="email" placeholder="Email address"></div>
+    <div class="forgotPassInput"><span class="material-icons">lock_outline</span><input type="new-password" name="new-password" placeholder="New password"></div>
+    
+    <br>
+
+    <h5>Security Questions</h5>
+    <div class="forgotPassInput"><span class="material-icons">lock_outline</span><input type="securityQuestion" name="securityQuestion" placeholder="Mothers maiden name?"></div>
+    <div class="forgotPassInput"><span class="material-icons">lock_outline</span><input type="securityQuestion" name="securityQuestion" placeholder="Year of birth?"></div>
+
+    <div class="forgotPassInput"><input type="submit" id="forgotpassSubmit" name="forgotpassSubmit"></div>
+    </form>
+    
+    <p><a href="forgot-pass.php">Register</a> | <a href="sign-in.php">Sign In</a></p>
+    </div>
   </body>
 
   <footer>

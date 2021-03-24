@@ -9,11 +9,14 @@
   </header>
 
   <body>
-    <?php $pageTitle = "Exchanges"; ?>
-    <h3><?php echo $pageTitle?></h3>
-        <br>
-        <table id="exchangeList" width="100%" cellspacing="0" cellpadding="0">
-        </table>
+    <div class="content">
+      <?php $pageTitle = "Exchanges"; ?>
+      <h3><?php echo $pageTitle?></h3>
+      <br>
+      <hr>
+      <table id="exchangeList" width="100%" cellspacing="0" cellpadding="0">
+      </table>
+      </div>
   </body>
 
   <footer>

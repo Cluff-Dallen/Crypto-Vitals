@@ -8,11 +8,14 @@
   </header>
 
   <body>
-    <?php $pageTitle = "Favorites"; ?>
-    <h3><?php echo $pageTitle?></h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor consequuntur corrupti laudantium doloribus laborum vero accusantium rerum deserunt voluptatem dolorem, tempore temporibus magnam commodi dolore explicabo tempora eius, facilis sit.</p>
-  </body>
-
+  <div class="content">
+      <?php $pageTitle = "Favorites"; ?>
+      <h3><?php echo $pageTitle?></h3>
+      <br>
+      <hr>
+      <table id="favoriteList" width="100%" cellspacing="0" cellpadding="0">
+      </table>
+      </div></body>
   <footer>
    <?php 
     include ('../inc/footer.php'); 
