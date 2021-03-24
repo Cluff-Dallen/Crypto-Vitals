@@ -23,9 +23,17 @@ myRequest.onload = function () {
 
     var currency = JSON.parse(myRequest.responseText);
 
+    console.log("asset:" + asset);
+
     var x = asset;
-    var cprice = currency[x].usd;
+    console.log("x:" + x);
+
+    var cPrice = currency[x].usd;
+    console.log("cPrice:" + cPrice);
+
     var cVolume = currency[x].usd_24h_vol;
+    console.log("cVolume:" + cVolume);
+
 
 
     document.getElementById('price').innerHTML = cPrice;
