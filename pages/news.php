@@ -10,6 +10,7 @@
   <body>
     <?php $pageTitle = "News"; ?>
     <h3><?php echo $pageTitle?></h3>
+    <p><span>Visit here to view the account where these tweets are made! <a href="https://twitter.com/DallenC?s=20">Autobot Twitter</a></span></p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor consequuntur corrupti laudantium doloribus laborum vero accusantium rerum deserunt voluptatem dolorem, tempore temporibus magnam commodi dolore explicabo tempora eius, facilis sit.</p>
   </body>
 
