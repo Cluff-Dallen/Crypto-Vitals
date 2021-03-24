@@ -9,9 +9,7 @@
 </header>
 
 <body>
-  <?php
-  $tokenName = Bitcoins;
-  $pageTitle = $tokenName; ?>
+<?php $pageTitle = $_POST["id"];?>
   <h3><?php echo $pageTitle ?></h3>
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor consequuntur corrupti laudantium doloribus laborum vero accusantium rerum deserunt voluptatem dolorem, tempore temporibus magnam commodi dolore explicabo tempora eius, facilis sit.</p>
 </body>

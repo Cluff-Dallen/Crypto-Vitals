@@ -11,6 +11,7 @@
 
 <body>
   <div class="content">
+  <form action="token-details.php" id="form-id" method="post">
     <?php $pageTitle = "Cryptocurrencies"; ?>
     <h3><?php echo $pageTitle ?></h3>
     <br>
@@ -18,6 +19,7 @@
     <table id="currencyList" width="100%" cellspacing="0" cellpadding="0">
     </table>
   </div>
+  </form>
 </body>
 
 <footer>

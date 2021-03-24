@@ -38,13 +38,15 @@ myRequest.onload = function () {
     currency_image.setAttribute("width", "5%");
 
 
+
     var currency_name = row.insertCell(2);
     var result = currency[i].name;
 
     var id = currency[i].id;
 
-    var url = "http://www.crypto-vitals.com/pages/token-details?id=" + id;
+    var url = "http://www.crypto-vitals.com/pages/token-details.php?id=" + id;
     result = result.link(url);
+
 
     currency_name.innerHTML = result;
     currency_name.setAttribute("width", "12%");
