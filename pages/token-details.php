@@ -11,7 +11,7 @@
 <body>
 <?php $token =$_GET['id'];?>
 <script type="text/javascript">
-    var asset = <?php echo($token;?>);
+    var asset = "<?php echo $token;?>";
 
 var coingeckoRequestURL = "https://api.coingecko.com/api/v3/simple/price?ids=" + asset + "&vs_currencies=USD&include_market_cap=true&include_24hr_vol=true&include_24hr_change=true";
 var myRequest = new XMLHttpRequest();
