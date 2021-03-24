@@ -1,111 +1,168 @@
 body {
-    background-color: whitesmoke;
-    margin: auto;
-    padding: auto;
+  background-color: whitesmoke;
+  margin: auto;
+  padding: auto;
 }
 
 h3 {
-      text-align: center;
-      margin: auto;
-      margin-top: 1em;
-      font-weight: bold;
-    }
+  text-align: center;
+  margin: auto;
+  margin-top: 1em;
+  font-weight: bold;
+}
 
-.currencyImage, .exchangeImage{
-      width: 25px;
-      height: 25px;
-      margin: 0;
-      padding: 2px;
-    }
+.currencyImage,
+.exchangeImage {
+  width: 25px;
+  height: 25px;
+  margin: 0;
+  padding: 2px;
+}
 
-    tr, td, th {
-      text-align: left;
-      padding-left: 6px;
-      margin: 0;
-      height: 35px;
-      }
+tr,
+td,
+th {
+  text-align: left;
+  padding-left: 6px;
+  margin: 0;
+  height: 35px;
+}
 
-      th {
-        margin-bottom: 15px;
-      }
+th {
+  margin-bottom: 15px;
+}
 
-      .content {
-        margin: auto;
-        width: 80%;
-        background-color: white;
-      }
+.content {
+  margin: auto;
+  width: 80%;
+  background-color: white;
+}
 
-    table {
-      table-layout:auto;
-    }
+table {
+  table-layout: auto;
+}
 
-    #sign-up-form, #sign-in-form, #forgot-pass-form {
-      background-color: white;
-      width: 60%;
-      margin-top: 90px;
-      margin-bottom: 120px;
-      margin-left: auto;
-      margin-right: auto;
-      padding: 15px;
-      border: transparent black 1px;
-      border-radius: 5px;
-      height: auto;
+#sign-up-form,
+#sign-in-form,
+#forgot-pass-form {
+  background-color: white;
+  width: 60%;
+  margin-top: 90px;
+  margin-bottom: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+  border: transparent black 1px;
+  border-radius: 5px;
+  height: auto;
 
-    }
+}
 
-    #sign-up-form h1, #sign-up-form p, #sign-in-form h1, #sign-in-form p, #forgot-pass-form h1, #forgot-pass-form p, #forgot-pass-form h5 {
-      margin: auto;
-      margin-bottom: 10px;
-      text-align:center;
-    }
+#sign-up-form h1,
+#sign-up-form p,
+#sign-in-form h1,
+#sign-in-form p,
+#forgot-pass-form h1,
+#forgot-pass-form p,
+#forgot-pass-form h5 {
+  margin: auto;
+  margin-bottom: 10px;
+  text-align: center;
+}
 
-    #sign-up-form input, #sign-in-form input, #forgot-pass-form input {
-      width: 50%; 
-      border: none;
-      border-bottom: solid #999 0.2px;
-    }
+#sign-up-form input,
+#sign-in-form input,
+#forgot-pass-form input {
+  width: 50%;
+  border: none;
+  border-bottom: solid #999 0.2px;
+}
 
-    .signupInput, .signinInput, .forgotPassInput{
-      display: block;
-      justify-content: center;
-      text-align: center;
-      margin: auto;
-      margin-top: 5px;
-      margin-bottom: 5px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+.signupInput,
+.signinInput,
+.forgotPassInput {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-    span {
-      vertical-align: middle;
-      margin-bottom: 5px;      
-      padding: 2.5px;
-      color: ffe607;
-		  border-radius: 3px;
-      background: #fff;
-    }
+span {
+  vertical-align: middle;
+  margin-bottom: 5px;
+  padding: 2.5px;
+  color: ffe607;
+  border-radius: 3px;
+  background: #fff;
+}
 
-    #signupSubmit, #signinSubmit, #forgotpassSubmit{
-      background-color: #ffe607;
-      border: none;
-      border-bottom: solid #999 0.2px;
-    }
+#signupSubmit,
+#signinSubmit,
+#forgotpassSubmit {
+  background-color: #ffe607;
+  border: none;
+  border-bottom: solid #999 0.2px;
+}
 
-    #labelz {
-      justify-content: left;
-      text-align: left;
-      margin-left: 23%;
-    }
+#labelz {
+  justify-content: left;
+  text-align: left;
+  margin-left: 23%;
+}
 
-    tr:nth-child(even) {background-color: #f2f2f2;}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
 
-    #portfolioTotalValue {
-      vertical-align: top;
-      margin: auto;
-      padding: auto;
-      color: green;
-    }
+#portfolioTotalValue {
+  vertical-align: top;
+  margin: auto;
+  padding: auto;
+  color: green;
+}
 
-    #portfolio {
-      text-align: center;
-    }
+#portfolio {
+  text-align: center;
+}
+
+#twitters {
+  margin: auto;
+  padding: auto;
+
+  margin-top: 25px;
+  width: 45%;
+  justify-content: center;
+  text-align: center;
+  background-color: whitesmoke;
+  font-size: 5px;
+}
+
+.newsTitle {
+  background-color: white;
+}
+
+#aboutUsImg {
+  width: 70%;
+  height: 125px;
+  margin: auto;
+  display: block;
+}
+
+.convertLine input {
+  margin-right: 5px;
+}
+.convertLine {
+display: block;
+text-align: left;
+justify-content: center;
+margin-left: 40%;
+width: 60%;
+}
+
+#converter {
+text-align: center;
+}

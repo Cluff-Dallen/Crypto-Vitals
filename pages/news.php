@@ -8,10 +8,15 @@
   </header>
 
   <body>
-    <?php $pageTitle = "News"; ?>
-    <h3><?php echo $pageTitle?></h3>
-    <a class="twitter-timeline" data-width="500" data-height="1000" data-theme="dark" href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw">Tweets by TwitterDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </body>
+  <?php $pageTitle = "Crypto News"; ?>
+  <div id="twitters">
+    <div class="newsTitle">
+      <h3><?php echo $pageTitle?></h3>
+      <br>
+    </div>
+    <a class="twitter-timeline" data-chrome="noheader noborders" href="https://twitter.com/Dallen_C?ref_src=twsrc%5Etfw"></a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div> 
+ </body>
 
   <footer>
    <?php 

@@ -1,12 +1,24 @@
 #footer {
-    background-color:white;
-    padding: auto;
+    background-color: white;
     margin: auto;
     width: 100%;
     position: absolute;
     bottom: 0;
-    height: 2.5rem;   
     text-align: center;
     color: black;
-    padding-top: 4px;
+    font-size: 13.5px;
+    justify-content: center;
+    align-content: center;
+}
+
+.socialIcon {
+    width: 20px;
+    height: 20px;
+}
+
+.socialItems {
+    display: inline-block;
+    font-weight: 500;
+    padding: 0;
+    margin-left: 25%;
 }

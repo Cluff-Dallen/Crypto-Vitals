@@ -1,30 +1,32 @@
 <html>
-  <head>
+
+<head>
   <?php include '../inc/head.php'; ?>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  </head>
+</head>
 
-  <header>
-    <?php include '../inc/header.php'; ?>
-  </header>
+<header>
+  <?php include '../inc/header.php'; ?>
+</header>
 
-  <body>
-    <div id="sign-up-form">
+<body>
+  <div id="sign-up-form">
     <h1>Sign-up</h1>
     <form action="">
-    <div class="signupInput"><span class="material-icons">perm_identity</span><input type="text" name="username" placeholder="Username"></div>
-    <div class="signupInput"><span class="material-icons">mail_outline</span><input type="email" name="email" placeholder="Email Address"></div>
-    <div class="signupInput"><span class="material-icons">lock_outline</span><input type="password" name="password" placeholder="Password"></div>
-    <div class="signupInput"><span class="material-icons">lock_outline</span><input type="passwordConfirm" name="passwordConfirm" placeholder="Confirm password"></div>
-    <div class="signupInput"><input id="signupSubmit" type="submit" name="signupSubmit"></div>
+      <div class="signupInput"><span class="material-icons">perm_identity</span><input type="text" name="username" placeholder="Username"></div>
+      <div class="signupInput"><span class="material-icons">mail_outline</span><input type="email" name="email" placeholder="Email Address"></div>
+      <div class="signupInput"><span class="material-icons">lock_outline</span><input type="password" name="password" placeholder="Password"></div>
+      <div class="signupInput"><span class="material-icons">lock_outline</span><input type="passwordConfirm" name="passwordConfirm" placeholder="Confirm password"></div>
+      <div class="signupInput"><input id="signupSubmit" type="submit" name="signupSubmit"></div>
     </form>
     <p><a href="sign-in.php">Already have an account</a> | <a href="forgot-pass.php">Forgot Password</a></p>
-    </div>
-  </body>
+  </div>
+</body>
 
-  <footer>
-   <?php 
-    include ('../inc/footer.php'); 
-   ?>
-  </footer>
+<footer>
+  <?php
+  include('../inc/footer.php');
+  ?>
+</footer>
+
 </html>

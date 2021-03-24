@@ -4,7 +4,7 @@
     flex-wrap: wrap;
     list-style: none;
     padding: auto;
-    margin:auto;
+    margin: auto;
     width: 100%;
 }
 
@@ -18,7 +18,7 @@ img {
 a {
     text-decoration: none;
     color: black;
-    font-weight:  640;
+    font-weight: 640;
 }
 
 li {
@@ -42,15 +42,17 @@ hr {
     font-size: 1em;
 }
 
-.btn-warning:hover{
+.btn-warning:hover {
     color: black;
     background-color: yellow;
     border: solid #ffe607 0.02em;
 }
 
-  .btn-warning:active:focus, .btn-warning:focus, .btn-warning:active {
-    color: black; 
+.btn-warning:active:focus,
+.btn-warning:focus,
+.btn-warning:active {
+    color: black;
     border-color: #ffe607;
-    background: yellow !important; 
+    background: yellow !important;
     box-shadow: none;
-  }
+}
