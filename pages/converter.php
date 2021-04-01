@@ -99,9 +99,20 @@
 
     <div id="converter">
 
-      <label for="tokenID">What token would you like to convert?(Token ID)</label>
+      <label for="tokenID">What token would you like to convert?</label>
       <br>
-      <div class="convertLine"> <input id="tokenID" name="tokenID" type="text" onchange="refresh()"></div>
+      <div class="convertLine">
+      <select name="tokenID" id="tokenID"  onchange="refresh()">
+        <option value="bitcoin">Bitcoin</option>
+        <option value="ethereum">Ethereum</option>
+        <option value="ripple">XRP</option>
+        <option value="beaxy-exchange">BXY</option>
+        <option value="litecoin">LTC</option>
+        <option value="polkadot">DOT</option>
+        <option value="bitcoin-cash">BCH</option>
+        <option value="bitcoin-sv">BSV</option>
+      </select>
+      </div>
       <br>
       <br>
       <div class="convertLine"><input id="tokenInput" name="tokenInput" type="number" onchange="convertToUSD()" placeholder=" # of token"><label id="token" for="tokenInput">BTC</label></div>

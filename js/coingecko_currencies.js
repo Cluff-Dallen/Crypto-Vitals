@@ -55,7 +55,7 @@ myRequest.onload = function () {
 
 
     var currency_symbol = row.insertCell(3);
-    currency_symbol.innerHTML = currency[i].symbol;
+    currency_symbol.innerHTML = currency[i].symbol.toUpperCase();
     currency_symbol.setAttribute("width", "8%");
 
 

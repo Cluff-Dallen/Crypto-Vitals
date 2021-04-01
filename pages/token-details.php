@@ -9,10 +9,11 @@
 </header>
 
 <body>
+<div class="content">
 <?php $token =$_GET['id'];?>
 <script type="text/javascript">
-    var asset = "<?php echo $token;?>";
 
+var asset = "<?php echo $token;?>";
 var coingeckoRequestURL = "https://api.coingecko.com/api/v3/simple/price?ids=" + asset + "&vs_currencies=USD&include_market_cap=true&include_24hr_vol=true&include_24hr_change=true";
 var myRequest = new XMLHttpRequest();
 
@@ -23,30 +24,66 @@ myRequest.onload = function () {
 
     var currency = JSON.parse(myRequest.responseText);
 
-    console.log("asset:" + asset);
-
     var x = asset;
-    console.log("x:" + x);
 
     var cPrice = currency[x].usd;
-    console.log("cPrice:" + cPrice);
-
+    var cMarketcap = currency[x].usd_market_cap;
     var cVolume = currency[x].usd_24h_vol;
-    console.log("cVolume:" + cVolume);
+    var cChange = currency[x].usd_24h_change;
 
+    console.log("Asset:" + asset);
+    console.log("Marketcap:" + cMarketcap);
+    console.log("Price:" + cPrice);
+    console.log("Volume:" + cVolume);
+    console.log("Change:" + cChange);
 
+    document.getElementById('price').innerHTML = "$" + cPrice + " USD";
+    document.getElementById('marketcap').innerHTML = "$" + cMarketcap + " USD";
+    document.getElementById('volume').innerHTML =  "$" + cVolume + " USD";
+    document.getElementById('change').innerHTML = cChange + "%";
 
-    document.getElementById('price').innerHTML = cPrice;
-    document.getElementById('volume').innerHTML = cVolume;
 }
 
 </script>
-  <h3><?php echo $token?></h3>
-  <span id="price">price</span>
-  <span id="volume">volume</span>
+  <h3>Bitcoin</h3>
+  <br>
+  <span class="token-details-img"><img class="token-details-img" src="/images/twitterLogo.png" alt="Token Logo"></span>
+  <br>
+  
+  <span class="token-details-line">Current price (USD): <span class="token-details" id="price">price</span></span>
+  <span class="token-details-line">Current price (BTC): <span class="token-details" id="price">0.00000045 BTC</span></span>
+  <span class="token-details-line">Current price (ETH): <span class="token-details" id="price">0.00000684 ETH</span></span>
 
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor consequuntur corrupti laudantium doloribus laborum vero accusantium rerum deserunt voluptatem dolorem, tempore temporibus magnam commodi dolore explicabo tempora eius, facilis sit.</p>
-</body>
+  <br>
+
+  <span class="token-details-line">Rank: <span class="token-details" id="change">#26</span></span>
+  <span class="token-details-line">Total Marketcap: <span class="token-details" id="marketcap">marketcap</span></span>
+  <span class="token-details-line">Total Supply: <span class="token-details" id="change">500,000,000</span></span>
+  <span class="token-details-line">Circulating Supply: <span class="token-details" id="change">295,000,000</span></span>
+
+
+
+  <br>
+
+  <span class="token-details-line">24h Volume: <span class="token-details" id="volume">volume</span></span>
+  <span class="token-details-line">24h Change: <span class="token-details" id="change">change</span></span>
+  <span class="token-details-line">24h Low / 24h high: <span class="token-details" id="change">$0.14 / $0.21</span></span>
+  <span class="token-details-line">7d Low / 7d high: <span class="token-details" id="change">$0.11 / $0.29</span></span>
+  <span class="token-details-line">All-Time High: <span class="token-details" id="change">$15.41</span></span>
+
+
+
+  <br>
+
+  <span class="token-details-line">About: <span class="token-details" id="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor consequuntur corrupti laudantium doloribus laborum vero accusantium rerum deserunt voluptatem dolorem, tempore temporibus magnam commodi dolore explicabo tempora eius, facilis sit.</span></span>
+
+
+  <br>
+
+
+
+  </div>
+  </body>
 
 <footer>
   <?php
