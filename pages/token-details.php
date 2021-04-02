@@ -14,7 +14,10 @@
 <script type="text/javascript">
 
 var asset = "<?php echo $token;?>";
-var coingeckoRequestURL = "https://api.coingecko.com/api/v3/simple/price?ids=" + asset + "&vs_currencies=USD&include_market_cap=true&include_24hr_vol=true&include_24hr_change=true";
+//var coingeckoRequestURL = "https://api.coingecko.com/api/v3/simple/price?ids=" + asset + "&vs_currencies=USD&include_market_cap=true&include_24hr_vol=true&include_24hr_change=true";
+asset = "ethereum";
+var coingeckoRequestURL = "https://api.coingecko.com/api/v3/coins/" + asset + "?localization=false&tickers=true&market_data=true&community_data=true&developer_data=true&sparkline=true";
+
 var myRequest = new XMLHttpRequest();
 
 myRequest.open('GET', coingeckoRequestURL);
@@ -24,12 +27,17 @@ myRequest.onload = function () {
 
     var currency = JSON.parse(myRequest.responseText);
 
-    var x = asset;
-
-    var cPrice = currency[x].usd;
+    /*
+    var cPrice = currency[x].market_data.current_price.usd;
     var cMarketcap = currency[x].usd_market_cap;
     var cVolume = currency[x].usd_24h_vol;
-    var cChange = currency[x].usd_24h_change;
+    var cChange = currency[x].usd_24h_change; */
+
+    
+    var cPrice = currency.market_data.current_price.usd;
+    var cMarketcap = currency.market_cap.usd;
+    var cVolume = currency.total_volume.usd;
+    var cChange = currency.price_change_percentage_24h;
 
     console.log("Asset:" + asset);
     console.log("Marketcap:" + cMarketcap);
