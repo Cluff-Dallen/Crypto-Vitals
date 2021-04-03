@@ -9,7 +9,7 @@
 </header>
 
 <body onload="atStart()">
-  <div class="content">
+  <div id="content">
     <?php $pageTitle = "Converter"; ?>
     <h3><?php echo $pageTitle ?></h3>
     <br>
@@ -100,7 +100,7 @@
     <div id="converter">
 
       <label for="tokenID">What token would you like to convert?</label>
-      <br>
+      <br><br>
       <div class="convertLine">
       <select name="tokenID" id="tokenID"  onchange="refresh()">
         <option value="bitcoin">Bitcoin</option>

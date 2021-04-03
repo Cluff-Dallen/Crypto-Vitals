@@ -147,7 +147,7 @@ tr:nth-child(even) {
 
 #aboutUsImg {
   width: 70%;
-  height: 125px;
+  height: 250px;
   margin: auto;
   display: block;
 }
@@ -159,7 +159,7 @@ tr:nth-child(even) {
 display: block;
 text-align: left;
 justify-content: center;
-margin-left: 40%;
+margin-left: 27%;
 width: 60%;
 }
 
@@ -216,4 +216,32 @@ text-align: center;
   width: 25px;
 }
 
+#content {
+  margin: auto;
+  width: 30%;
+  background-color: white;
+}
 
+#about-content {
+  width: 60%;
+}
+
+#about-content p {
+  margin: auto;
+  width: 70%;
+  text-align: justify;
+}
+
+.qrCode {
+  margin: auto;
+  width: 300px;
+  height: 300px;
+  justify-content: center;
+  text-align: center;
+  display: block;
+}
+
+#address {
+  justify-content: center;
+  text-align: center;
+}
