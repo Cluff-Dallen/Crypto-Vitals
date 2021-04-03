@@ -1,5 +1,4 @@
 <html>
-
 <head>
   <?php include '../inc/head.php'; ?>
 </head>
@@ -13,7 +12,7 @@
     <?php $pageTitle = "Meet the Team"; ?>
     <h3><?php echo $pageTitle?></h3>
     <br>
-    <img id="aboutUsImg" src="/images/aboutBig.jpg" alt="About us image"></a>
+    <img id="aboutUsImg" src="/images/aboutBig.jpg" alt="About us image">
     <br>
     <p>
       Crypto Vitals was created by a student for the purpose of both completing the requirements of a senior project to
@@ -29,19 +28,21 @@
 
       I am accepting ETH (or any other ERC20) at my ethereum address:
       <br>
+      
+      </p>
+
       <br>
-      <div id="address">0x3f4321aF60EeE186E7Fd5877e8F9799eF1635738<d/iv>
+
+      <div id="address">0x3f4321aF60EeE186E7Fd5877e8F9799eF1635738</div>
       <br>
-      <br>
-      Alternatively you can scan and
-      deposit funds using the QR code below.
-    </p>
+     <div id="closing">
+      Alternatively you can scan and deposit funds using the QR code below.
+    </div>
     <span class="qrCode"><img class="qrCode" src="/images/Eth_QR.PNG" alt="Qr code">
     <br>
     <br>
     <br>
     <br>
-
   </div>
 </body>
 

@@ -1,6 +1,5 @@
 body {
   background-color: whitesmoke;
-  margin: auto;
   padding: auto;
 }
 
@@ -244,4 +243,12 @@ text-align: center;
 #address {
   justify-content: center;
   text-align: center;
+  margin: auto;
+}
+
+#closing {
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  width: 100%;
 }

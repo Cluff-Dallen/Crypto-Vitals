@@ -129,6 +129,16 @@
         document.getElementById("tokenInput").value = document.getElementById("usdInput").value / tokenPrice;
       }
     </script>
+  </div>
+  <br><br>
+      <br><br>
+      <br><br>
+      <br><br>
+      <br><br>
+      <br><br>
+      <br><br>
+      <br><br>
+      <br>
 </body>
 
 <footer>
