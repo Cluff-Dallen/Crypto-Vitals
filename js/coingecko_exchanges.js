@@ -49,12 +49,21 @@ myRequest.onload = function () {
 
 
     var exchange_volume = row.insertCell(4);
-    exchange_volume.innerHTML = exchange[i].trade_volume_24h_btc + " BTC";
+    exchange_volume.innerHTML = exchange[i].trade_volume_24h_btc.toLocaleString() + " BTC";
     exchange_volume.setAttribute("width", "12.5%");
 
 
     var exchange_year = row.insertCell(5);
-    exchange_year.innerHTML = exchange[i].year_established;
+    var temp = exchange[i].year_established;
+
+    if (temp != null){
+      temp = temp;
+      }
+      else {
+        temp = "N/A";
+      }
+
+    exchange_year.innerHTML = temp;
     exchange_year.setAttribute("width", "7.5%");
 
     var exchange_url = row.insertCell(6);

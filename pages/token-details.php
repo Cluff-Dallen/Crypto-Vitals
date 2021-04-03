@@ -46,9 +46,11 @@ myRequest.onload = function () {
 
 
     var cMarketcap = currency.market_data.market_cap.usd;
+    cMarketcap = cMarketcap.toLocaleString();
     console.log("Marketcap:" + cMarketcap);
 
     var cVolume = currency.market_data.total_volume.usd;
+    cVolume = cVolume.toLocaleString();
     console.log("Volume:" + cVolume);
 
     var cChange = currency.market_data.price_change_percentage_24h;
@@ -61,13 +63,27 @@ myRequest.onload = function () {
     console.log("Rank:" + cRank);
 
     var c_tSupply = currency.market_data.max_supply;
+
+    
+    var cTicker = currency.symbol;
+    console.log("Ticker:" + cTicker);
+    
+    if (c_tSupply != null){
+    c_tSupply = c_tSupply.toLocaleString() + " " + cTicker.toUpperCase();
+    }
+    else {
+      c_tSupply = "N/A";
+    }
     console.log("tSupply:" + c_tSupply);
 
     var c_cSupply = currency.market_data.circulating_supply;
+    if (c_cSupply != null){
+    c_cSupply = c_cSupply.toLocaleString() + " " + cTicker.toUpperCase();
+    }
+    else {
+      c_cSupply = "N/A";
+    }
     console.log("cSupply:" + c_cSupply);
-
-    var cTicker = currency.symbol;
-    console.log("Ticker:" + cTicker);
 
     var cPrice_24h_low = currency.market_data.low_24h.usd;
     console.log("Price_24_low:" + cPrice_24h_low);
@@ -95,8 +111,8 @@ myRequest.onload = function () {
 
     document.getElementById('rank').innerHTML = "#" + cRank;
     document.getElementById('marketcap').innerHTML = "$" + cMarketcap + " USD";
-    document.getElementById('tSupply').innerHTML = c_tSupply + " " + cTicker.toUpperCase();
-    document.getElementById('cSupply').innerHTML =  c_cSupply + " " + cTicker.toUpperCase();
+    document.getElementById('tSupply').innerHTML = c_tSupply;
+    document.getElementById('cSupply').innerHTML =  c_cSupply;
 
     document.getElementById('volume').innerHTML =  "$" + cVolume + " USD";
     document.getElementById('change').innerHTML = cChange + "%";

@@ -16,6 +16,15 @@
     <br>
     <hr>
     <table id="exchangeList" width="100%" cellspacing="0" cellpadding="0">
+    <tr>
+    <th>Rank</th>
+    <th>Image</th>
+    <th>Name</th>
+    <th>Ticker</th>
+    <th>Volume</th>
+    <th>Start Date</th>
+    <th>Site</th>
+  </tr>
     </table>
   </div>
 </body>
