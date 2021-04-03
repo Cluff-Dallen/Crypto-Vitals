@@ -2,7 +2,7 @@
   //var favoritesList = ["bitcoin", "ethereum", "chainlink" ];
 
   var favoritesList = sessionStorage.getItem("transferList");
-  favoritesList = favoritesList.split(",");
+  favoritesList = "" + favoritesList.split(",");
 
   console.log(typeof work);
 
