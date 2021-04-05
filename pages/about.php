@@ -89,7 +89,7 @@ $userP = "Sofia<3";
 $statement = $db->prepare("INSERT INTO users(user_name, user_email, user_password) VALUES ($userN, $userE, $userP);");
 $statement->execute();
       
-      $statement = $db->prepare("SELECT user_name, user_email, user_password FROM users");
+      /*$statement = $db->prepare("SELECT user_name, user_email, user_password FROM users");
       $statement->execute();
 
       while ($row = $statement->fetch(PDO::FETCH_ASSOC))
@@ -99,7 +99,7 @@ $statement->execute();
           $user_password = $row['user_password'];
 
           echo "<tr><td>$user_name</td> <td>$user_email</td> <td>$user_password</td><tr>";
-      }
+      } */
   ?>
 
 </table>
