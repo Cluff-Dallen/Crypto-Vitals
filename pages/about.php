@@ -94,6 +94,9 @@ $statement->execute();
 
           echo "<tr><td>$user_name</td> <td>$user_email</td> <td>$user_password</td><tr>";
       } */
+
+      header("Location: $new_page");
+      die();
   ?>
 
 </table>
