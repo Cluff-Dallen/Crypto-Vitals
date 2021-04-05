@@ -81,6 +81,13 @@ $db = get_db();
                 </thead>
 
 <?php
+
+$userN = "Kree";
+$userE = "KreeKree96@gmail.com";
+$userP = "Sofia<3";
+
+$statement = $db->prepare("INSERT INTO users(user_name, user_email, user_password) VALUES ($userN, $userE, $userP);");
+$statement->execute();
       
       $statement = $db->prepare("SELECT user_name, user_email, user_password FROM users");
       $statement->execute();
