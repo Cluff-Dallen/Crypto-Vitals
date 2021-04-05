@@ -1,6 +1,7 @@
 <html>
 <head>
   <?php include '../inc/head.php'; ?>
+  <?php include ('../db/db.php')?>
 </head>
 
 <header>
