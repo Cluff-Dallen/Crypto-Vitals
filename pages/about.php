@@ -1,7 +1,16 @@
 <html>
 <head>
   <?php include '../inc/head.php'; ?>
-  <?php include ('../db/db.php')?>
+  <?php /*include ('../db/db.php') */?>
+
+    
+<?php
+
+require "../db/dbConnect.php";
+$db = get_db();
+
+?>
+  
 </head>
 
 <header>
@@ -46,7 +55,7 @@
 
 
   <?php
-  
+  /*
   $sql = 'SELECT * FROM family';
   $stmt = $pdo->prepare($sql);
   $stmt->execute();
@@ -54,9 +63,43 @@
   $details = $stmt->fetch();
 
   print_r ($details);
-
+*/
   
   ?>
+
+
+
+
+
+<table class="table">
+                <tr>
+                    <thead class="thead-dark">
+                    <th>USERNAME</th>
+                    <th>USEREMAIL</th>
+                    <th>USERPASSWORD</th>
+                </tr>
+                </thead>
+
+<?php
+      
+      $statement = $db->prepare("SELECT user_name, user_email, user_password FROM users");
+      $statement->execute();
+
+      while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+      {
+          $user_name = $row['user_name'];
+          $user_email = $row['user_email'];
+          $user_password = $row['user_password'];
+
+          echo "<tr><td>$user_name</td> <td>$user_email</td> <td>$user_password</td><tr>";
+      }
+  ?>
+
+</table>
+
+
+
+
 
 
 <br>
