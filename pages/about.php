@@ -46,7 +46,7 @@
 
   <?php
   
-  $sql = 'SELECT * FROM users';
+  $sql = 'SELECT * FROM family';
   $stmt = $pdo->prepare($sql);
   $stmt->execute();
   $rowCount = $stmt->rowCount();
