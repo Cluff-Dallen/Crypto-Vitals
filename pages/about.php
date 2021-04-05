@@ -2,15 +2,6 @@
 <head>
   <?php include '../inc/head.php'; ?>
   <?php /*include ('../db/db.php') */?>
-
-    
-<?php
-
-require "../db/dbConnect.php";
-$db = get_db();
-
-?>
-  
 </head>
 
 <header>
@@ -82,9 +73,12 @@ $db = get_db();
 
 <?php
 
-$userN = "Kree";
-$userE = "KreeKree96@gmail.com";
-$userP = "Sofia<3";
+$userN = 'Kree';
+$userE = 'KreeKree96@gmail.com';
+$userP = 'Sofia';
+
+require "../db/dbConnect.php";
+$db = get_db();
 
 $statement = $db->prepare("INSERT INTO users(user_name, user_email, user_password) VALUES ($userN, $userE, $userP);");
 $statement->execute();
