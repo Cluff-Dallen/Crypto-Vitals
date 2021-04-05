@@ -41,6 +41,25 @@
     <span class="qrCode"><img class="qrCode" src="/images/Eth_QR.PNG" alt="Qr code">
     <br>
     <br>
+
+
+
+  <?php
+  
+  $sql = 'SELECT * FROM users';
+  $stmt = $pdo->prepare($sql);
+  $stmt->execute();
+  $rowCount = $stmt->rowCount();
+  $details = $stmt->fetch();
+
+  print_r ($details);
+
+  
+  ?>
+
+
+
+
     <br>
     <br>
   </div>
