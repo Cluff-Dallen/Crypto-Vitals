@@ -4,9 +4,13 @@
   <?php include '../inc/head.php'; ?>
   <?php /*include ('../db/db.php') */
   
-  $userN = $_POST['username'];
+$userN = $_POST['username'];
+
 $userE = $_POST['email'];
+
+
 $userP = $_POST['password'];
+
 ?>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
@@ -27,6 +31,11 @@ $userP = $_POST['password'];
                 </thead>
 
 <?php
+
+echo $userP;
+echo $userE;
+echo $userN;
+
 require "../db/dbConnect.php";
 $db = get_db();
 
