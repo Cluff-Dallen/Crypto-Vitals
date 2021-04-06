@@ -11,16 +11,6 @@
 </header>
 
 <body>
-
-<table class="table">
-                <tr>
-                    <thead class="thead-dark">
-                    <th>USERNAME</th>
-                    <th>USEREMAIL</th>
-                    <th>USERPASSWORD</th>
-                </tr>
-                </thead>
-
 <?php
 
 /*
@@ -47,11 +37,6 @@ $statement->execute(); */
           echo "<tr><td>$user_name</td> <td>$user_email</td> <td>$user_password</td><tr>";
       } */
   ?>
-
-
-
-</table>
-
   <div id="sign-up-form">
     <h1>Sign-up</h1>
     <form action="sign-up-success.php" method="POST">

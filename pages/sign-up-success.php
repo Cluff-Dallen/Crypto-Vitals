@@ -2,22 +2,12 @@
 
 <head>
   <?php include '../inc/head.php'; ?>
-  <?php /*include ('../db/db.php') */
-  
-
-
-?>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <?php
 
 $userN = $_POST['username'];
 $userE = $_POST['email'];
 $userP = $_POST['password'];
-
-echo $userP;
-echo $userE;
-echo $userN;
-
 
 require "../db/dbConnect.php";
 $db = get_db();
@@ -32,6 +22,11 @@ $statement->execute();
 </header>
 
 <body>
+
+<h3>Registration Complete</h3>
+<p>Thank you for signing up. You can now sign in <a href="sign-in.php">here</a> to begin.</p>
+
+</body>
 
 <footer>
   <?php
