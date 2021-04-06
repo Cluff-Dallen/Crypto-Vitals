@@ -2,7 +2,12 @@
 
 <head>
   <?php include '../inc/head.php'; ?>
-  <?php /*include ('../db/db.php') */?>
+  <?php /*include ('../db/db.php') */
+  
+  $userN = $_POST['username'];
+$userE = $_POST['email'];
+$userP = $_POST['password'];
+?>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
@@ -22,13 +27,6 @@
                 </thead>
 
 <?php
-
-
-$userN = $_POST['username'];
-$userE = $_POST['email'];
-$userP = $_POST['password'];
-
-
 require "../db/dbConnect.php";
 $db = get_db();
 
