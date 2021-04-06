@@ -4,24 +4,15 @@
   <?php include '../inc/head.php'; ?>
   <?php /*include ('../db/db.php') */
   
-$userN = $_POST['username'];
 
-$userE = $_POST['email'];
-
-
-$userP = $_POST['password'];
 
 ?>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-</head>
+  <?php
 
-<header>
-  <?php include '../inc/header.php'; ?>
-</header>
-
-<body>
-
-<?php
+$userN = $_POST['username'];
+$userE = $_POST['email'];
+$userP = $_POST['password'];
 
 echo $userP;
 echo $userE;
@@ -32,19 +23,19 @@ $db = get_db();
 
 $statement = $db->prepare("INSERT INTO users(user_name, user_email, user_password) VALUES ($userN, 'Sam@gam.com', 'Bruh777');");
 $statement->execute(); 
-      
-      /*$statement = $db->prepare("SELECT user_name, user_email, user_password FROM users");
-      $statement->execute();
 
-      while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-      {
-          $user_name = $row['user_name'];
-          $user_email = $row['user_email'];
-          $user_password = $row['user_password'];
+$new_page = "sign-in.php";
 
-          echo "<tr><td>$user_name</td> <td>$user_email</td> <td>$user_password</td><tr>";
-      } */
-  ?>
+header("Location: $new_page");
+die();
+  ?>q
+</head>
+
+<header>
+  <?php include '../inc/header.php'; ?>
+</header>
+
+<body>
 
 <footer>
   <?php
