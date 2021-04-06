@@ -58,54 +58,6 @@
   
   ?>
 
-
-
-
-
-<table class="table">
-                <tr>
-                    <thead class="thead-dark">
-                    <th>USERNAME</th>
-                    <th>USEREMAIL</th>
-                    <th>USERPASSWORD</th>
-                </tr>
-                </thead>
-
-<?php
-
-$userN = 'Kree';
-$userE = 'KreeKree96@gmail.com';
-$userP = 'Sofia';
-
-require "../db/dbConnect.php";
-$db = get_db();
-
-$statement = $db->prepare("INSERT INTO users(user_name, user_email, user_password) VALUES ($userN, $userE, $userP);");
-$statement->execute();
-      
-      /*$statement = $db->prepare("SELECT user_name, user_email, user_password FROM users");
-      $statement->execute();
-
-      while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-      {
-          $user_name = $row['user_name'];
-          $user_email = $row['user_email'];
-          $user_password = $row['user_password'];
-
-          echo "<tr><td>$user_name</td> <td>$user_email</td> <td>$user_password</td><tr>";
-      } */
-
-      header("Location: $new_page");
-      die();
-  ?>
-
-</table>
-
-
-
-
-
-
 <br>
 
     <br>
