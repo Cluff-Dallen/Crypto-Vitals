@@ -21,7 +21,7 @@ echo $userN;
 require "../db/dbConnect.php";
 $db = get_db();
 
-$statement = $db->prepare("INSERT INTO users(user_name, user_email, user_password) VALUES ($userN, 'Sam@gam.com', 'Bruh777');");
+$statement = $db->prepare("INSERT INTO users(user_name, user_email, user_password) VALUES ('JKL', 'ABC', 'DEF');");
 $statement->execute(); 
 
 $new_page = "sign-in.php";
