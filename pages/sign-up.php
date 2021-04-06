@@ -28,11 +28,12 @@ $userN = 'Kree';
 $userE = 'KreeKree96@gmail.com';
 $userP = 'Sofia'; */
 
+/*
 require "../db/dbConnect.php";
 $db = get_db();
 
 $statement = $db->prepare("INSERT INTO users(user_name, user_email, user_password) VALUES ('namey', 'emaily', 'passy');");
-$statement->execute(); 
+$statement->execute(); */
       
       /*$statement = $db->prepare("SELECT user_name, user_email, user_password FROM users");
       $statement->execute();
