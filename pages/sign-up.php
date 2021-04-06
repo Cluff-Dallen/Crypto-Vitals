@@ -51,20 +51,9 @@ $statement->execute();
 
 </table>
 
-
-
-
-
-
-
-
-
-
-
-
   <div id="sign-up-form">
     <h1>Sign-up</h1>
-    <form action="">
+    <form action="sign-up-success.php" method="POST">
       <div class="signupInput"><span class="material-icons">perm_identity</span><input type="text" name="username" placeholder="Username"></div>
       <div class="signupInput"><span class="material-icons">mail_outline</span><input type="email" name="email" placeholder="Email Address"></div>
       <div class="signupInput"><span class="material-icons">lock_outline</span><input type="password" name="password" placeholder="Password"></div>
