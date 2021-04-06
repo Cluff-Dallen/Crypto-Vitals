@@ -23,8 +23,10 @@ $statement->execute();
 
 <body>
 
+<div id="sign-in-form">
 <h3>Registration Complete</h3>
 <p>Thank you for signing up. You can now sign in <a href="sign-in.php">here</a> to begin.</p>
+</div>
 
 </body>
 
