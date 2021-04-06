@@ -21,15 +21,6 @@ $userP = $_POST['password'];
 
 <body>
 
-<table class="table">
-                <tr>
-                    <thead class="thead-dark">
-                    <th>USERNAME</th>
-                    <th>USEREMAIL</th>
-                    <th>USERPASSWORD</th>
-                </tr>
-                </thead>
-
 <?php
 
 echo $userP;
@@ -39,7 +30,7 @@ echo $userN;
 require "../db/dbConnect.php";
 $db = get_db();
 
-$statement = $db->prepare("INSERT INTO users(user_name, user_email, user_password) VALUES ($userN, $userE, $userP);");
+$statement = $db->prepare("INSERT INTO users(user_name, user_email, user_password) VALUES ('Sam', 'Sam@gam.com', 'Bruh123');");
 $statement->execute(); 
       
       /*$statement = $db->prepare("SELECT user_name, user_email, user_password FROM users");
@@ -54,10 +45,6 @@ $statement->execute();
           echo "<tr><td>$user_name</td> <td>$user_email</td> <td>$user_password</td><tr>";
       } */
   ?>
-
-
-
-</table>
 
 <footer>
   <?php
