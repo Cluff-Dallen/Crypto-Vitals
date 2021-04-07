@@ -16,6 +16,7 @@ $_SESSION["currentUser"] = "Please log in for full functionality.";
 </header>
 
 <body onload="js/coingecko_currencies.js">
+<div class="profile-bar"><?php echo "Welcome, " . $_SESSION["currentUser"]; ?></div>
   <div class="content">
   <form action="token-details.php" id="form-id" method="post">
     <?php $pageTitle = "Cryptocurrencies"; ?>
