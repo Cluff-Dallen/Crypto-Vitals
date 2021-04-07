@@ -70,8 +70,6 @@ while ($row = pg_fetch_row($result)) {
 }
 $_SESSION["favoriteList"] = implode( ", ", $favorites ); 
 
-echo $_SESSION["favoriteList"];
-
 ?>
 
 <body>

@@ -42,7 +42,6 @@ echo "Welcome, " . $_SESSION["currentUser"];
   </tr>
     </table>
   </div>
-  <input type="submit" id="signinSubmit" name="loginSubmit"></form>
 </body>
 
 <footer>
