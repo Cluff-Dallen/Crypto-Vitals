@@ -41,10 +41,8 @@
         //Set welcome message
         $response = "Welcome, " . $_SESSION["currentUser"] . "! Thank you for being a loyal user. Please enjoy.";
         
-      } else {
-      }
-    } else {
-    }
+      } else {}
+    } else {}
   ?>
 </head>
 
