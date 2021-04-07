@@ -1,5 +1,14 @@
 <?php 
 session_start();
+
+$add = $_POST['true'];
+ $remove = $_POST['false'];
+ $you = $_SESSION["currentUser"];
+
+  //Connect to DB
+  require "../db/dbConnect.php";
+  $db = get_db();
+
 ?>
 <html>
 
@@ -14,13 +23,10 @@ session_start();
 <body>
 <script type="text/javascript">
 
-console.log('<?php echo $_SESSION["currentUser"]; ?>');
-
 var activeUser = '<?php echo $_SESSION["currentUser"]; ?>';
 var list = '<?php echo $_SESSION["favoriteList"]; ?> '
 
 if (activeUser !== "PLEASE LOG IN!"){
-  console.log("USER IS LOGGED IN.");
 
 var urlBeginning = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=";
 

@@ -17,6 +17,7 @@ session_start();
  $remove = $_POST['false'];
  $you = $_SESSION["currentUser"];
 
+ 
  //Connect to DB
  require "../db/dbConnect.php";
  $db = get_db();
