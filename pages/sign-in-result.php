@@ -22,6 +22,7 @@
     $stmt->execute([$email]);
     $user = $stmt->fetch();
 
+    //Default sign in response
     $response = "Sorry but your credentials were invalid. Please try signing in again.";
 
     if ($user) {
@@ -37,13 +38,12 @@
         //Start session for current user
         $_SESSION["currentUser"] = $email;
 
+        //Set welcome message
         $response = "Welcome, " . $_SESSION["currentUser"] . "! Thank you for being a loyal user. Please enjoy.";
         
       } else {
-        echo "INVALID CREDENTIALS (Password)";
       }
     } else {
-      echo "INVALID CREDENTIALS (Email)";
     }
   ?>
 </head>
