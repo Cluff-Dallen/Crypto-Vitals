@@ -18,7 +18,7 @@ CREATE TABLE users
 CREATE TABLE favorites
 (
 	favorite_id SERIAL NOT NULL PRIMARY KEY,	
-	favorite_coingecko_id VARCHAR(55) NOT NULL,
+	favorite_coingecko_id VARCHAR(55) NOT NULL UNIQUE,
 	favorite_name VARCHAR(55) NOT NULL
 );
 

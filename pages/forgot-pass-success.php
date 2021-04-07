@@ -23,7 +23,7 @@ $statement->execute();
 <body>
 <div id="sign-in-form">
 <h3>Password Reset Complete</h3>
-<p>Your password has now been reset. You can now sign in <strong><a href="sign-in.php">here</a></strong>to begin.</p>
+<p>Your password has now been reset. You can now sign in <strong><a href="sign-in.php">here</a></strong> to begin.</p>
 <br>
 </div>
 

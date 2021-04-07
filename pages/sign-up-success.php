@@ -11,8 +11,8 @@ $userP = $_POST['password'];
 
 require "../db/dbConnect.php";
 $db = get_db();
-
-$statement = $db->prepare("INSERT INTO users(user_name, user_email, user_password) VALUES ('$userN', '$userE', '$userP');");
+$statement = $db->prepare("INSERT INTO users(user_name, user_email, user_password) SELECT '$userN', '$userE', '$userP' WHERE NOT EXISTS (SELECT user_name, user_email, user_password FROM users WHERE (user_email = '$userE'));");
+//$statement = $db->prepare("INSERT INTO users(user_name, user_email, user_password) VALUES ('$userN', '$userE', '$userP');");
 $statement->execute(); 
   ?>
 </head>
@@ -24,7 +24,7 @@ $statement->execute();
 <body>
 <div id="sign-in-form">
 <h3>Registration Complete</h3>
-<p>Thank you for signing up. You can now sign in <strong><a href="sign-in.php">here</a></strong>to begin.</p>
+<p>Thank you for signing up. You can now sign in <strong><a href="sign-in.php">here</a></strong> to begin.</p>
 <br>
 </div>
 
