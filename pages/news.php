@@ -11,11 +11,8 @@ session_start();
   </header>
 
   <body>
-  <?php 
+  <div class="profile-bar"><?php echo "Welcome, " . $_SESSION["currentUser"]; ?></div>
 
-echo "Welcome, " . $_SESSION["currentUser"];
-
-?>
   <?php $pageTitle = "Crypto News"; ?>
   <div id="twitters">
     <div class="newsTitle">

@@ -12,9 +12,8 @@
 </header>
 
 <body>
-  <?php
-    echo "Welcome, " . $_SESSION["currentUser"];
-  ?>
+<div class="profile-bar"><?php echo "Welcome, " . $_SESSION["currentUser"]; ?></div>
+
   <div class="content">
     <?php $token = $_GET['id']; ?>
 

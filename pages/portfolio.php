@@ -12,6 +12,8 @@ session_start();
 </header>
 
 <body>
+<div class="profile-bar"><?php echo "Welcome, " . $_SESSION["currentUser"]; ?></div>
+
 <?php 
 /* 
 
