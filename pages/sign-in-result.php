@@ -62,10 +62,14 @@ if (!$result) {
   echo "An error occurred.\n";
   exit;
 }
+
+$_SESSION["favoritesArray"] = array("");
+
 while ($row = pg_fetch_row($result)) {
-  echo "Currencies: $row[1]";
-  echo "<br />\n";
+  $_SESSION["favoritesArray"] = $_SESSION["favoritesArray"] + $row[1];
 }
+
+echo $_SESSION["favoritesArray"];
 
 ?>
 
