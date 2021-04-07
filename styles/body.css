@@ -252,3 +252,14 @@ text-align: center;
   margin: auto;
   width: 100%;
 }
+
+.favbtns {
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  color: black;
+  background-color: #ffe607;
+  display: block;
+  border: solid black 0.1px;
+  border-radius: 5px;
+}

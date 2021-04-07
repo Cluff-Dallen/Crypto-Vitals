@@ -125,8 +125,9 @@
     <br>
 
     <form action="favorite-result.php" method="POST">
-    <button name="true" value="<?php echo $token; ?>" type="submit"></button>
-    <button name="false" value="<?php echo $token; ?>" type="submit"></button>
+    <button class="favbtns" name="true" value="<?php echo $token; ?>" type="submit">Add as Favorites</button>
+    <br>
+    <button class="favbtns" name="false" value="<?php echo $token; ?>" type="submit">Remove from Favorites</button>
     </form>
   </div>
 </body>
