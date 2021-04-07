@@ -17,8 +17,8 @@ session_start();
  $remove = $_POST['false'];
  $you = $_SESSION["currentUser"];
 
-echo $add;
-echo $remove;
+echo "You added: " .$add;
+echo "You removed: " . $remove;
 
  //Connect to DB
  require "../db/dbConnect.php";
