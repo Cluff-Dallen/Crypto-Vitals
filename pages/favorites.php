@@ -38,7 +38,9 @@ list = list.split(",");
 console.log("list type after split:" + typeof list);
 console.log("Stored in work after list: " + list);
 
+//var work = sessionStorage.getItem("transferList");
 var work = sessionStorage.getItem("transferList");
+
 console.log("Work type:" + typeof work);
 console.log("Stored in work: " + work);
 
@@ -48,7 +50,7 @@ work = work.split(",");
 console.log("Work type after split:" + typeof work);
 console.log("Stored in work after split: " + work);
 
-var favoritesList = work;
+var favoritesList = list;
 
 var urlList = "bitcoin";
 
