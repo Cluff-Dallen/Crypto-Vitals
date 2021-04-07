@@ -55,7 +55,7 @@
 <body>
   <div id="sign-in-form">
     <h3>Sign in</h3>
-    <p><?php echo $result ?> Click <strong><a href="cryptocurrencies.php">here</a></strong> to begin.</p>
+    <p><?php echo $response ?> Click <strong><a href="cryptocurrencies.php">here</a></strong> to begin.</p>
     <br>
   </div>
 </body>
