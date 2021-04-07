@@ -31,6 +31,7 @@ $stmt2->execute([$pass]);
 $password = $stmt2->fetch();
 
 if($password){
+  echo "********" . $password;
   echo "*Valid Credentials!*";
   echo 'console.log("password Found")';
 

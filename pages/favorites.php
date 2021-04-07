@@ -25,10 +25,17 @@ var activeUser = '<?php echo $_SESSION["currentUser"]; ?>';
 
 if (activeUser != "PLEASE LOG IN!"){
   console.log("USER IS LOGGED IN.");
-} else {
-  console.log("User hasn't logged in.");
-}
 
+
+require "../db/dbConnect.php";
+$db = get_db();
+
+<?php 
+$stmt = $db->prepare("SELECT * FROM favorites WHERE user_email=?");
+$stmt->execute([$email]);
+$user = $stmt->fetch();
+
+?>
 
 
 var urlBeginning = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=";
@@ -135,6 +142,13 @@ currency_marketcap.innerHTML = "$" + currency[i].market_cap.toLocaleString();
 currency_marketcap.setAttribute("width", "10%"); 
 } 
 }
+
+
+
+} else {
+  console.log("User hasn't logged in.");
+}
+
 </script>
   <div class="content">
     <?php $pageTitle = "Favorites"; ?>
