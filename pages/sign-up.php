@@ -1,11 +1,10 @@
-<?php 
-session_start();
+<?php
+  session_start();
 ?>
 <html>
 
 <head>
   <?php include '../inc/head.php'; ?>
-  <?php /*include ('../db/db.php') */?>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
@@ -14,37 +13,6 @@ session_start();
 </header>
 
 <body>
-<?php 
-
-echo "Welcome, " . $_SESSION["currentUser"];
-
-?>
-<?php
-
-/*
-$userN = 'Kree';
-$userE = 'KreeKree96@gmail.com';
-$userP = 'Sofia'; */
-
-/*
-require "../db/dbConnect.php";
-$db = get_db();
-
-$statement = $db->prepare("INSERT INTO users(user_name, user_email, user_password) VALUES ('namey', 'emaily', 'passy');");
-$statement->execute(); */
-      
-      /*$statement = $db->prepare("SELECT user_name, user_email, user_password FROM users");
-      $statement->execute();
-
-      while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-      {
-          $user_name = $row['user_name'];
-          $user_email = $row['user_email'];
-          $user_password = $row['user_password'];
-
-          echo "<tr><td>$user_name</td> <td>$user_email</td> <td>$user_password</td><tr>";
-      } */
-  ?>
   <div id="sign-up-form">
     <h1>Sign-up</h1>
     <form action="sign-up-success.php" method="POST">
@@ -59,8 +27,7 @@ $statement->execute(); */
 
 <footer>
   <?php
-  include('../inc/footer.php');
+    include('../inc/footer.php');
   ?>
 </footer>
-
 </html>
