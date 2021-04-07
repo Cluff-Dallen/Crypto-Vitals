@@ -1,7 +1,8 @@
-<html>
+<?php include 'session.php';?>
 
+<html>
 <head>
-  <?php include '../inc/head.php'; ?>
+  <?php include '../inc/head.php';?>
   <script type="text/javascript" src='../js/coingecko_currencies.js'></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -16,6 +17,10 @@
   <form action="token-details.php" id="form-id" method="post">
     <?php $pageTitle = "Cryptocurrencies"; ?>
     <h3><?php echo $pageTitle ?></h3>
+    <h3>Welcome<?php echo $login_session; ?></h3>
+    <h3><a href="logout.php">Sign Out</a></h3>
+
+
     <br>
     <hr>
     <table id="currencyList" width="100%" cellspacing="0" cellpadding="0">
