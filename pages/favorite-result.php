@@ -25,7 +25,7 @@ echo "You removed: " . $remove;
  $db = get_db();
 
 
- if ($remove === ""){
+ if ($remove == ""){
    echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!";
  
  //Insert results into DB
@@ -33,7 +33,7 @@ echo "You removed: " . $remove;
  $statement->execute();
  }
 
- if ($add === ""){
+ if ($add == ""){
   echo "REMMMMMMMOOOOOOOVVVVVVVEEDDDDD";
 
  }
