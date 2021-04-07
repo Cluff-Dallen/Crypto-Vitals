@@ -66,7 +66,7 @@ if (!$result) {
 $favorites = array("chainlink");
 
 while ($row = pg_fetch_row($result)) {
-  $favorites = $favorites + $row[1];
+  array_push($favorites, $row[1]);
 }
 
 echo $favorites;
