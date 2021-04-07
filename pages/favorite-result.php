@@ -17,16 +17,13 @@ session_start();
  $remove = $_POST['false'];
  $you = $_SESSION["currentUser"];
 
-echo "You added: " .$add;
-echo "You removed: " . $remove;
-
  //Connect to DB
  require "../db/dbConnect.php";
  $db = get_db();
 
 
  if ($remove == ""){
-   echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!";
+   echo ">Adding<";
  
  //Insert results into DB
  $statement = $db->prepare("INSERT INTO favorites(favorite_coingecko_id, emailOfThisFavorite) SELECT '$add', '$you' WHERE NOT EXISTS (SELECT favorite_coingecko_id, emailOfThisFavorite FROM favorites WHERE (emailOfThisFavorite = '$you' AND favorite_coingecko_id = '$add'));"); 
@@ -34,8 +31,11 @@ echo "You removed: " . $remove;
  }
 
  if ($add == ""){
-  echo "REMMMMMMMOOOOOOOVVVVVVVEEDDDDD";
+  echo ">Removing<";
 
+  //Delete results from DB
+ $statement = $db->prepare("DELETE FROM favorites where emailOfThisFavorite = '$you' AND favorite_coingecko_id = '$remove';"); 
+ $statement->execute();
  }
 
 
