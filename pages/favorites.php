@@ -51,6 +51,7 @@ console.log("Work type after split:" + typeof work);
 console.log("Stored in work after split: " + work);
 
 var favoritesList = list;
+console.log(favoritesList);
 
 var urlList = "bitcoin";
 
