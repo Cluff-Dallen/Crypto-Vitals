@@ -1,3 +1,11 @@
+<?php 
+
+session_start();
+$_SESSION["currentUser"] = "PLEASE LOG IN!";
+echo "Session variables are set.";
+?>
+
+
 <html>
 <head>
   <?php include '../inc/head.php';?>

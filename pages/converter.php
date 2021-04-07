@@ -9,6 +9,11 @@
 </header>
 
 <body onload="atStart()">
+<?php 
+
+echo "Welcome, " . $_SESSION["currentUser"];
+
+?>
   <div id="content">
     <?php $pageTitle = "Converter"; ?>
     <h3><?php echo $pageTitle ?></h3>

@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <?php require_once "../db/dbConnect.php";
 ?>
 
@@ -13,6 +16,11 @@
 </header>
 
 <body>
+<?php 
+
+echo "Welcome, " . $_SESSION["currentUser"];
+
+?>
   <div id="sign-in-form">
     <h1>Sign-in</h1>
     <form action="sign-in-result.php" method="POST">

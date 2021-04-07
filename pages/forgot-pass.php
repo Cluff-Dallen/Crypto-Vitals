@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <html>
 
 <head>
@@ -10,6 +13,11 @@
 </header>
 
 <body>
+<?php 
+
+echo "Welcome, " . $_SESSION["currentUser"];
+
+?>
   <div id="forgot-pass-form">
     <h1>Reset password</h1>
     <br>

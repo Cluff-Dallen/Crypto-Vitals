@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <html>
 
 <head>
@@ -9,6 +12,11 @@
 </header>
 
 <body>
+<?php 
+
+echo "Welcome, " . $_SESSION["currentUser"];
+
+?>
 <script type="text/javascript">
 
 var urlBeginning = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=";

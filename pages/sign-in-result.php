@@ -1,3 +1,7 @@
+<?php 
+session_start();
+?>
+
 <html>
 
 <head>
@@ -27,8 +31,11 @@ $stmt2->execute([$pass]);
 $password = $stmt2->fetch();
 
 if($password){
-  echo "password found";
+  echo "*Valid Credentials!*";
   echo 'console.log("password Found")';
+
+  $_SESSION["currentUser"] = $email;
+
   
 } else {
   echo "INVALID CREDENTIALS (Password)";
@@ -46,6 +53,11 @@ if($password){
 </header>
 
 <body>
+<?php 
+
+echo "Welcome, " . $_SESSION["currentUser"];
+
+?>
 <div id="sign-in-form">
 <h3>Registration Complete</h3>
 <p>Thank you for signing up. You can now sign in <strong><a href="sign-in.php">here</a></strong> to begin.</p>

@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <html>
 
 <head>
@@ -9,6 +12,11 @@
 </header>
 
 <body>
+<?php 
+
+echo "Welcome, " . $_SESSION["currentUser"];
+
+?>
 <div class="content">
 <?php $token =$_GET['id'];?>
 <script type="text/javascript">

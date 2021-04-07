@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <html>
 
 <head>
@@ -22,6 +25,11 @@ $statement->execute();
 </header>
 
 <body>
+<?php 
+
+echo "Welcome, " . $_SESSION["currentUser"];
+
+?>
 <div id="sign-in-form">
 <h3>Registration Complete</h3>
 <p>Thank you for signing up. You can now sign in <strong><a href="sign-in.php">here</a></strong> to begin.</p>

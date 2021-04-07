@@ -1,3 +1,7 @@
+<?php 
+session_start();
+?>
+
 <html>
 
 <head>
@@ -10,6 +14,11 @@
 </header>
 
 <body>
+<?php 
+
+echo "Welcome, " . $_SESSION["currentUser"];
+
+?>
   <div class="content">
     <?php $pageTitle = "Exchanges"; ?>
     <h3><?php echo $pageTitle ?></h3>

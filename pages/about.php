@@ -9,6 +9,11 @@
 </header>
 
 <body>
+<?php 
+
+echo "Welcome, " . $_SESSION["currentUser"];
+
+?>
   <div id="about-content" class="content">
     <?php $pageTitle = "Meet the Team"; ?>
     <h3><?php echo $pageTitle?></h3>

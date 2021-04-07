@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <html>
   <head>
   <?php include '../inc/head.php'; ?>
@@ -8,6 +11,11 @@
   </header>
 
   <body>
+  <?php 
+
+echo "Welcome, " . $_SESSION["currentUser"];
+
+?>
   <?php $pageTitle = "Crypto News"; ?>
   <div id="twitters">
     <div class="newsTitle">
