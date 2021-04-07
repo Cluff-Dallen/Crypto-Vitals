@@ -15,6 +15,8 @@ $userP = $_POST['password'];
 require "../db/dbConnect.php";
 $db = get_db();
 $statement = $db->prepare("INSERT INTO users(user_name, user_email, user_password) SELECT '$userN', '$userE', '$userP' WHERE NOT EXISTS (SELECT user_name, user_email, user_password FROM users WHERE (user_email = '$userE'));");
+echo "your statement:";
+echo $statement;
 //$statement = $db->prepare("INSERT INTO users(user_name, user_email, user_password) VALUES ('$userN', '$userE', '$userP');");
 $statement->execute(); 
   ?>
