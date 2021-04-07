@@ -5,10 +5,24 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <?php
 
-//$userE = $_POST['email'];
-//$userP = $_POST['password'];
+$userE = $_POST['email'];
+$userP = $_POST['password'];
 
 require "../db/dbConnect.php";
+
+$email = $_POST['email'];
+
+$stmt = $db->prepare("SELECT * FROM users WHERE user_email=?");
+$stmt->execute([$email]);
+$user = $stmt->fetch();
+if($user){
+echo "found";
+}else {
+  echo "nothing";
+
+}
+
+
 $db = get_db();
 $session_start();
 
