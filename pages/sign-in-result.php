@@ -1,51 +1,50 @@
-<?php 
-session_start();
+<?php
+  session_start();
 ?>
 
 <html>
-
 <head>
   <?php include '../inc/head.php'; ?>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
   <?php
 
-//$userE = $_POST['email'];
-//$userP = $_POST['password'];
+    //Connect to DB
+    require "../db/dbConnect.php";
+    $db = get_db();
 
-require "../db/dbConnect.php";
-$db = get_db();
+    //Catch results from sign-in
+    $email = $_POST['email'];
+    $pass = $_POST['password'];
 
-$email = $_POST['email'];
-$pass = $_POST['password'];
+    //If email is correct & valid
+    $stmt = $db->prepare("SELECT * FROM users WHERE user_email=?");
+    $stmt->execute([$email]);
+    $user = $stmt->fetch();
 
-$stmt = $db->prepare("SELECT * FROM users WHERE user_email=?");
-$stmt->execute([$email]);
-$user = $stmt->fetch();
+    $response = "Sorry but your credentials were invalid. Please try signing in again.";
 
-if($user){
-echo "email found";
-echo 'console.log("email found")';
+    if ($user) {
+    
+      //If password is correct & valid
+      $stmt2 = $db->prepare("SELECT * FROM users WHERE user_email='$email' AND user_password=?");
+      $stmt2->execute([$pass]);
+      $password = $stmt2->fetch();
 
-$stmt2 = $db->prepare("SELECT * FROM users WHERE user_email='$email' AND user_password=?");
-$stmt2->execute([$pass]);
-$password = $stmt2->fetch();
+      //Success -- login!
+      if ($password) {
+       
+        //Start session for current user
+        $_SESSION["currentUser"] = $email;
 
-if($password){
-  echo "********" . $password;
-  echo "*Valid Credentials!*";
-  echo 'console.log("password Found")';
-
-  $_SESSION["currentUser"] = $email;
-
-  
-} else {
-  echo "INVALID CREDENTIALS (Password)";
-}
-
-
-} else {
-  echo "INVALID CREDENTIALS (Email)";
-}
+        $response = "Welcome, " . $_SESSION["currentUser"] . "! Thank you for being a loyal user. Please enjoy.";
+        
+      } else {
+        echo "INVALID CREDENTIALS (Password)";
+      }
+    } else {
+      echo "INVALID CREDENTIALS (Email)";
+    }
   ?>
 </head>
 
@@ -54,22 +53,16 @@ if($password){
 </header>
 
 <body>
-<?php 
-
-echo "Welcome, " . $_SESSION["currentUser"];
-
-?>
-<div id="sign-in-form">
-<h3>Registration Complete</h3>
-<p>Thank you for signing up. You can now sign in <strong><a href="sign-in.php">here</a></strong> to begin.</p>
-<br>
-</div>
+  <div id="sign-in-form">
+    <h3>Sign in</h3>
+    <p><?php echo $result ?> Click <strong><a href="cryptocurrencies.php">here</a></strong> to begin.</p>
+    <br>
+  </div>
 </body>
 
 <footer>
   <?php
-  include('../inc/footer.php');
+    include('../inc/footer.php');
   ?>
 </footer>
-
 </html>
