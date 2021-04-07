@@ -24,14 +24,14 @@ echo "Welcome, " . $_SESSION["currentUser"];
 
 ?>
   <div class="content">
-  <form action="token-details.php" id="form-id" method="post">
+  <form action="" id="form-id" method="post">
     <?php $pageTitle = "Cryptocurrencies"; ?>
     <h3><?php echo $pageTitle ?></h3>
     <br>
     <hr>
     <table id="currencyList" width="100%" cellspacing="0" cellpadding="0">
     <tr>
-    <th><span id="testfav" onclick="favClick(this, 'red')" class="material-icons">star_rate</span></th>
+    <th><span id="testfav" class="material-icons">star_rate</span></th>
     <th>Rank</th>
     <th>Image</th>
     <th>Name</th>
@@ -42,9 +42,9 @@ echo "Welcome, " . $_SESSION["currentUser"];
     <th>Marketcap</th>
   </tr>
     </table>
-    <BUTTON>Try Me</BUTTON>
   </div>
   </form>
+  <BUTTON>Try Me</BUTTON>
 </body>
 
 <footer>
