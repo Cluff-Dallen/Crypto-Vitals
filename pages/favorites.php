@@ -15,6 +15,7 @@ session_start();
 <?php 
 
 echo "Welcome, " . $_SESSION["currentUser"];
+echo "Your List: " . $_SESSION["favoriteList"];
 
 ?>
 <script type="text/javascript">
@@ -22,6 +23,7 @@ echo "Welcome, " . $_SESSION["currentUser"];
 console.log('<?php echo $_SESSION["currentUser"]; ?>');
 
 var activeUser = '<?php echo $_SESSION["currentUser"]; ?>';
+var list = '<?php echo $_SESSION["favoriteList"]; ?> '
 
 if (activeUser != "PLEASE LOG IN!"){
   console.log("USER IS LOGGED IN.");
@@ -43,7 +45,7 @@ echo $stmt;
 
 var urlBeginning = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=";
 
-var work = sessionStorage.getItem("transferList");
+var work = sessionStorage.getItem(list);
 console.log(typeof work);
 work = work.split(",");
 console.log(typeof work);
