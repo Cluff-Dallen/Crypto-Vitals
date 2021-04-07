@@ -13,8 +13,20 @@ session_start();
 
 <body>
 <?php 
- $button = $_POST['submit'];
- echo $button;
+ $add = $_POST['true'];
+ $remove = $_POST['false'];
+ $you = $_SESSION["currentUser"];
+
+echo $add;
+echo $remove;
+
+ //Connect to DB
+ require "../db/dbConnect.php";
+ $db = get_db();
+
+ //Insert results into DB
+ $statement = $db->prepare("INSERT INTO favorites(favorite_coingecko_id, emailOfThisFavorite) SELECT '$add', '$you' WHERE NOT EXISTS (SELECT favorite_coingecko_id, emailOfThisFavorite FROM favorites WHERE (emailOfThisFavorite = '$you'));");
+ $statement->execute();
 
 echo "Welcome, " . $_SESSION["currentUser"];
 echo "Your List: " . $_SESSION["favoriteList"];

@@ -17,7 +17,13 @@
   ?>
   <div class="content">
     <?php $token = $_GET['id']; ?>
+
     <script type="text/javascript">
+
+    var $true = "hello";
+    var $testing = "hi";
+
+
       var asset = "<?php echo $token; ?>";
       var coingeckoRequestURL = "https://api.coingecko.com/api/v3/coins/" + asset + "?localization=false&tickers=true&market_data=true&community_data=true&developer_data=true&sparkline=true";
       var myRequest = new XMLHttpRequest();
@@ -115,9 +121,13 @@
     <br>
 
     <span class="token-details-line">Description: <span class="token-details" id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor consequuntur corrupti laudantium doloribus laborum vero accusantium rerum deserunt voluptatem dolorem, tempore temporibus magnam commodi dolore explicabo tempora eius, facilis sit.</span></span>
-
+      
     <br>
 
+    <form action="favorite-result.php" method="POST">
+    <button name="true" value="<?php echo $token; ?>" type="submit"></button>
+    <button name="false" value="<?php echo $token; ?>" type="submit"></button>
+    </form>
   </div>
 </body>
 

@@ -43,8 +43,7 @@ echo "Welcome, " . $_SESSION["currentUser"];
   </tr>
     </table>
   </div>
-  </form>
-  <BUTTON>Try Me</BUTTON>
+  <input type="submit" id="signinSubmit" name="loginSubmit"></form>
 </body>
 
 <footer>
