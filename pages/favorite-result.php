@@ -22,17 +22,13 @@ session_start();
  $db = get_db();
 
 
- if ($remove == ""){
-   echo "Adding:";
- 
+ if ($remove == ""){ 
  //Insert results into DB
  $statement = $db->prepare("INSERT INTO favorites(favorite_coingecko_id, emailOfThisFavorite) SELECT '$add', '$you' WHERE NOT EXISTS (SELECT favorite_coingecko_id, emailOfThisFavorite FROM favorites WHERE (emailOfThisFavorite = '$you' AND favorite_coingecko_id = '$add'));"); 
  $statement->execute();
  }
 
  if ($add == ""){
-  echo "Removing:";
-
   //Delete results from DB
  $statement = $db->prepare("DELETE FROM favorites where emailOfThisFavorite = '$you' AND favorite_coingecko_id = '$remove';"); 
  $statement->execute();
@@ -59,16 +55,8 @@ while ($row = pg_fetch_row($result)) {
   array_push($favorites, $row[1]);
 }
 $_SESSION["favoriteList"] = implode( ", ", $favorites ); 
-
-echo $_SESSION["favoriteList"];
-
-echo "Welcome, " . $_SESSION["currentUser"];
-echo "Your List: " . $_SESSION["favoriteList"];
-
 ?>
 <script type="text/javascript">
-
-console.log('<?php echo $_SESSION["currentUser"]; ?>');
 
 var activeUser = '<?php echo $_SESSION["currentUser"]; ?>';
 var list = '<?php echo $_SESSION["favoriteList"]; ?> '
@@ -78,35 +66,17 @@ if (activeUser !== "PLEASE LOG IN!"){
 
 var urlBeginning = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=";
 
-console.log("list type:" + typeof list);
-console.log("Stored in list: " + list);
-
 list = list.split(",");
 
-console.log("list type after split:" + typeof list);
-console.log("Stored in work after list: " + list);
-
 var favoritesList = list;
-console.log(favoritesList);
-
 var urlList = "bitcoin";
 
-console.log(favoritesList.length);
-
 for (x = 1; x < favoritesList.length; x++){
-  console.log(favoritesList[x]);
   urlList = urlList + "%2C%20" + favoritesList[x];
-  console.log(favoritesList[x]);
-  console.log(x);
 }
 
-console.log(urlList);
-
 var urlEnd = "&order=market_cap_desc&per_page=100&page=1&sparkline=true&price_change_percentage=1h%2C%2024h%2C%207d%2C%2030d";
-
 var urlComplete = urlBeginning + urlList + urlEnd;
-
-console.log(urlComplete);
 
 //Where is the data coming from?
 var coingeckoRequestURL = urlComplete;
