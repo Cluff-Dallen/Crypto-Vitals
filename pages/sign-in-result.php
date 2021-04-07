@@ -31,15 +31,12 @@ if($password){
   echo 'console.log("password Found")';
   
 } else {
-  echo "no pass match";
-  echo 'console.log("no pass match")';
+  echo "INVALID CREDENTIALS (Password)";
 }
 
 
-}else {
-  echo "no email match";
-  echo 'console.log("no email match")';
-
+} else {
+  echo "INVALID CREDENTIALS (Email)";
 }
   ?>
 </head>
