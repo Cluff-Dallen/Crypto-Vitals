@@ -25,28 +25,14 @@ console.log('<?php echo $_SESSION["currentUser"]; ?>');
 var activeUser = '<?php echo $_SESSION["currentUser"]; ?>';
 var list = '<?php echo $_SESSION["favoriteList"]; ?> '
 
-if (activeUser != "PLEASE LOG IN!"){
+if (activeUser !== "PLEASE LOG IN!"){
   console.log("USER IS LOGGED IN.");
-
-
-
-
-<?php 
-require "../db/dbConnect.php";
-$db = get_db();
-$stmt = $db->prepare("SELECT * FROM favorites WHERE user_email=?");
-$stmt->execute([$email]);
-$user = $stmt->fetch();
-
-echo $stmt;
-
-?>
-
 
 var urlBeginning = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=";
 
 var work = sessionStorage.getItem("transferList");
 console.log(typeof work);
+
 work = work.split(",");
 console.log(typeof work);
 
