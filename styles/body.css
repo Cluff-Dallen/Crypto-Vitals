@@ -258,7 +258,7 @@ text-align: center;
   justify-content: center;
   text-align: center;
   color: black;
-  background-color: #ffe607;
+  background-color: lightgoldenrodyellow;
   display: block;
   border: solid black 0.1px;
   border-radius: 5px;
@@ -271,10 +271,16 @@ margin:auto;
 }
 
 .profile-bar {
-  width: 25%;
-  margin: auto;
+  width: 20%;
   margin-top: 15px;
+  margin-left: 75%;
   color: black;
-  background-color: white;
-  padding-left: 3%;
+  background-color: lightgoldenrodyellow;
+  padding: 3px;
+  justify-content: center;
+  text-align: center;
+}
+
+#details {
+  width: 55%;;
 }

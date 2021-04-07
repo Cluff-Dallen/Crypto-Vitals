@@ -14,7 +14,7 @@
 <body>
 <div class="profile-bar"><?php echo "Welcome, " . $_SESSION["currentUser"]; ?></div>
 
-  <div class="content">
+  <div class="content" id="details">
     <?php $token = $_GET['id']; ?>
 
     <script type="text/javascript">
@@ -92,7 +92,7 @@
       }
     </script>
     <h3><?php echo ucfirst($token); ?></h3>
-    
+    <div id="details-text">
     <br>
     <img id="cImage" class="token-details-img" src="tokenImage.png" alt="token-image">
     <br>
@@ -127,6 +127,8 @@
     <button class="favbtns" name="true" value="<?php echo $token; ?>" type="submit">Add as Favorites</button>
     <br>
     <button class="favbtns" name="false" value="<?php echo $token; ?>" type="submit">Remove from Favorites</button>
+    <br>
+    </div>
     </form>
   </div>
 </body>
