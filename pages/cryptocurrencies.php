@@ -1,5 +1,3 @@
-<?php include 'session.php';?>
-
 <html>
 <head>
   <?php include '../inc/head.php';?>
@@ -17,10 +15,6 @@
   <form action="token-details.php" id="form-id" method="post">
     <?php $pageTitle = "Cryptocurrencies"; ?>
     <h3><?php echo $pageTitle ?></h3>
-    <h3>Welcome<?php echo $login_session; ?></h3>
-    <h3><a href="logout.php">Sign Out</a></h3>
-
-
     <br>
     <hr>
     <table id="currencyList" width="100%" cellspacing="0" cellpadding="0">
