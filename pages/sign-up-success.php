@@ -20,6 +20,19 @@ echo "your statement:";
 
 //$statement = $db->prepare("INSERT INTO users(user_name, user_email, user_password) VALUES ('$userN', '$userE', '$userP');");
 $statement->execute(); 
+
+
+
+$res = pg_query($db, "SELECT * FROM users;");
+$val = pg_fetch_result($res, 1, 0);
+
+echo "first field in teh second row is: ", $val, "\n";
+
+
+
+
+
+
   ?>
 </head>
 
