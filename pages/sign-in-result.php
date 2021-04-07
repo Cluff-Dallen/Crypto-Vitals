@@ -63,13 +63,13 @@ if (!$result) {
   exit;
 }
 
-$_SESSION["favoritesArray"] = array();
+$favorites = array("chainlink");
 
 while ($row = pg_fetch_row($result)) {
-  $_SESSION["favoritesArray"] = $_SESSION["favoritesArray"] + $row[1];
+  $favorites = $favorites + $row[1];
 }
 
-echo $_SESSION["favoritesArray"];
+echo $favorites;
 
 ?>
 
