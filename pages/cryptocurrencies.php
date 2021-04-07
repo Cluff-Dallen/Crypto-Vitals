@@ -17,7 +17,7 @@ session_start();
   <?php include '../inc/header.php'; ?>
 </header>
 
-<body>
+<body onload="js/coingecko_currencies.js">
 <?php 
 
 echo "Welcome, " . $_SESSION["currentUser"];
