@@ -28,6 +28,27 @@ echo $remove;
  $statement = $db->prepare("INSERT INTO favorites(favorite_coingecko_id, emailOfThisFavorite) SELECT '$add', '$you' WHERE NOT EXISTS (SELECT favorite_coingecko_id, emailOfThisFavorite FROM favorites WHERE (emailOfThisFavorite = '$you' AND favorite_coingecko_id = '$add'));"); 
  $statement->execute();
 
+ 
+$conn = pg_connect("host=ec2-3-216-181-219.compute-1.amazonaws.com port=5432 dbname=d807d5gmkubr3a user=girkmmugorgrnp password=3d9767bc57920a3bc22f771b885d47b7d3a880f23f8fb2a9cc08a5aa5ed96be8");
+if (!$conn) {
+  echo "An error occurred.\n";
+  exit;
+}
+$result = pg_query($conn, "SELECT * FROM favorites WHERE emailOfThisFavorite = 'cluffrdallen@gmail.com'");
+if (!$result) {
+  echo "An error occurred.\n";
+  exit;
+}
+
+$favorites = array("chainlink");
+
+while ($row = pg_fetch_row($result)) {
+  array_push($favorites, $row[1]);
+}
+$_SESSION["favoriteList"] = implode( ", ", $favorites ); 
+
+echo $_SESSION["favoriteList"];
+
 echo "Welcome, " . $_SESSION["currentUser"];
 echo "Your List: " . $_SESSION["favoriteList"];
 
