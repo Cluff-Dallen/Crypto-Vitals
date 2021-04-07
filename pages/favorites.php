@@ -21,6 +21,16 @@ echo "Welcome, " . $_SESSION["currentUser"];
 
 console.log('<?php echo $_SESSION["currentUser"]; ?>');
 
+var activeUser = '<?php echo $_SESSION["currentUser"]; ?>';
+
+if (activeUser != "PLEASE LOG IN!"){
+  console.log("USER IS LOGGED IN.");
+} else {
+  console.log("User hasn't logged in.");
+}
+
+
+
 var urlBeginning = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=";
 
 var work = sessionStorage.getItem("transferList");
