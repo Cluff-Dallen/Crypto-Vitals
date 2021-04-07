@@ -45,7 +45,9 @@ if (!$conn) {
   echo "An error occurred.\n";
   exit;
 }
+
 $result = pg_query($conn, "SELECT * FROM favorites WHERE emailOfThisFavorite = 'cluffrdallen@gmail.com'");
+
 if (!$result) {
   echo "An error occurred.\n";
   exit;
