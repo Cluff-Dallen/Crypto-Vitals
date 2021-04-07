@@ -25,7 +25,7 @@ echo $remove;
  $db = get_db();
 
  //Insert results into DB
- $statement = $db->prepare("INSERT INTO favorites(favorite_coingecko_id, emailOfThisFavorite) SELECT '$add', '$you' WHERE NOT EXISTS (SELECT favorite_coingecko_id, emailOfThisFavorite FROM favorites WHERE (emailOfThisFavorite = '$you' AND favorite_coingeck_id = '$add'));"); 
+ $statement = $db->prepare("INSERT INTO favorites(favorite_coingecko_id, emailOfThisFavorite) SELECT '$add', '$you' WHERE NOT EXISTS (SELECT favorite_coingecko_id, emailOfThisFavorite FROM favorites WHERE (emailOfThisFavorite = '$you' AND favorite_coingecko_id = '$add'));"); 
  $statement->execute();
 
 echo "Welcome, " . $_SESSION["currentUser"];
