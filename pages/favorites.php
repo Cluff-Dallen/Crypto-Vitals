@@ -19,6 +19,8 @@ echo "Welcome, " . $_SESSION["currentUser"];
 ?>
 <script type="text/javascript">
 
+console.log('<?php echo $_SESSION["currentUser"]; ?>');
+
 var urlBeginning = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=";
 
 var work = sessionStorage.getItem("transferList");

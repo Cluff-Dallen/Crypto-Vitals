@@ -42,6 +42,7 @@ echo "Welcome, " . $_SESSION["currentUser"];
     <th>Marketcap</th>
   </tr>
     </table>
+    <BUTTON>Try Me</BUTTON>
   </div>
   </form>
 </body>

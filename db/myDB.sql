@@ -7,9 +7,9 @@ DROP TABLE IF EXISTS favorites cascade;
 CREATE TABLE users
 (
 	
-	user_id SERIAL NOT NULL PRIMARY KEY,
+	/*user_id SERIAL NOT NULL PRIMARY KEY, */
+	user_email VARCHAR(55) NOT NULL PRIMARY KEY,
 	user_name VARCHAR(55) NOT NULL,
-	user_email VARCHAR(55) NOT NULL,
 	user_password VARCHAR(55) NOT NULL
 );
 
@@ -19,7 +19,7 @@ CREATE TABLE favorites
 (
 	favorite_id SERIAL NOT NULL PRIMARY KEY,	
 	favorite_coingecko_id VARCHAR(55) NOT NULL UNIQUE,
-	favorite_name VARCHAR(55) NOT NULL
+	emailOfThisFavorite VARCHAR(55) NOT NULL
 );
 
 
@@ -29,7 +29,7 @@ INSERT INTO users (user_name, user_email, user_password) VALUES
 			('userTwo', 'userTwo@yahoo.com', 'Password'),
 			('userThree', 'userThree@protonmail.com', 'WeakPass');
 
-INSERT INTO favorites (favorite_coingecko_id, favorite_name) VALUES ('bitcoin', 'Bitcoin'),('ethereum', 'Ethereum'),('ripple', 'XRP');
+INSERT INTO favorites (favorite_coingecko_id, emailOfThisFavorite) VALUES ('bitcoin', 'cluffrdallen@gmail.com'),('ethereum', 'cluffrdallen@gmail.com'),('ripple', 'sofia@gmail.com');
 
 /* Display each table to ensure everything works as intended */
 
