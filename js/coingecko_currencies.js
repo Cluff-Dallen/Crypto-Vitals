@@ -1,6 +1,4 @@
 
-  //var favoritesList = ["bitcoin", "ethereum", "chainlink" ];
-
   var favoritesList = sessionStorage.getItem("transferList");
   favoritesList = favoritesList + " ";
   favoritesList = favoritesList.split(",");
@@ -32,11 +30,7 @@ var myRequest = new XMLHttpRequest();
 
 //How is the data coming? 
 myRequest.open('GET', coingeckoRequestURL);
-
-//Research..
 myRequest.send();
-
-//More Research
 myRequest.onload = function () {
 
   /* Create a variable called currency, and store the entire JSON text inside it.*/

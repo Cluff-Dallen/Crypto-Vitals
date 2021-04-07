@@ -23,7 +23,7 @@ session_start();
 
 
  if ($remove == ""){
-   echo ">Adding<";
+   echo "Adding:";
  
  //Insert results into DB
  $statement = $db->prepare("INSERT INTO favorites(favorite_coingecko_id, emailOfThisFavorite) SELECT '$add', '$you' WHERE NOT EXISTS (SELECT favorite_coingecko_id, emailOfThisFavorite FROM favorites WHERE (emailOfThisFavorite = '$you' AND favorite_coingecko_id = '$add'));"); 
@@ -31,7 +31,7 @@ session_start();
  }
 
  if ($add == ""){
-  echo ">Removing<";
+  echo "Removing:";
 
   //Delete results from DB
  $statement = $db->prepare("DELETE FROM favorites where emailOfThisFavorite = '$you' AND favorite_coingecko_id = '$remove';"); 

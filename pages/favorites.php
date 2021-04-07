@@ -12,14 +12,6 @@ session_start();
 </header>
 
 <body>
-<?php 
- $button = $_POST['submit'];
- echo $button;
-
-echo "Welcome, " . $_SESSION["currentUser"];
-echo "Your List: " . $_SESSION["favoriteList"];
-
-?>
 <script type="text/javascript">
 
 console.log('<?php echo $_SESSION["currentUser"]; ?>');
