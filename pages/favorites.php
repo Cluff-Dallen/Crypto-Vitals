@@ -45,7 +45,7 @@ echo $stmt;
 
 var urlBeginning = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=";
 
-var work = sessionStorage.getItem(list);
+var work = sessionStorage.getItem("transferList");
 console.log(typeof work);
 work = work.split(",");
 console.log(typeof work);
