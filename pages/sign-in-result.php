@@ -5,10 +5,11 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <?php
 
-$userE = $_POST['email'];
-$userP = $_POST['password'];
+//$userE = $_POST['email'];
+//$userP = $_POST['password'];
 
 require "../db/dbConnect.php";
+$db = get_db();
 
 $email = $_POST['email'];
 
@@ -23,14 +24,6 @@ echo 'console.log("Found")';
   echo 'console.log("Noething")';
 
 }
-
-
-$db = get_db();
-$session_start();
-
-$statement = $db->prepare("INSERT INTO users(user_name, user_email, user_password) SELECT '$userN', '$userE', '$userP' WHERE NOT EXISTS (SELECT user_name, user_email, user_password FROM users WHERE (user_email = '$userE'));");
-//$statement = $db->prepare("INSERT INTO users(user_name, user_email, user_password) VALUES ('$userN', '$userE', '$userP');");
-$statement->execute(); 
   ?>
 </head>
 
