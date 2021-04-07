@@ -1,8 +1,7 @@
 <?php 
 
 session_start();
-$_SESSION["currentUser"] = "PLEASE LOG IN!";
-echo "Session variables are set.";
+
 ?>
 
 
@@ -19,6 +18,11 @@ echo "Session variables are set.";
 </header>
 
 <body>
+<?php 
+
+echo "Welcome, " . $_SESSION["currentUser"];
+
+?>
   <div class="content">
   <form action="token-details.php" id="form-id" method="post">
     <?php $pageTitle = "Cryptocurrencies"; ?>
