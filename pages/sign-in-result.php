@@ -63,7 +63,7 @@ if (!$result) {
   exit;
 }
 
-$_SESSION["favoritesArray"] = array("");
+$_SESSION["favoritesArray"] = array();
 
 while ($row = pg_fetch_row($result)) {
   $_SESSION["favoritesArray"] = $_SESSION["favoritesArray"] + $row[1];
