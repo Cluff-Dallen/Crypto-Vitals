@@ -12,16 +12,33 @@ require "../db/dbConnect.php";
 $db = get_db();
 
 $email = $_POST['email'];
+$pass = $_POST['password'];
 
 $stmt = $db->prepare("SELECT * FROM users WHERE user_email=?");
 $stmt->execute([$email]);
 $user = $stmt->fetch();
+
 if($user){
-echo "found";
-echo 'console.log("Found")';
+echo "email found";
+echo 'console.log("email found")';
+
+$stmt2 = $db->prepare("SELECT * FROM users WHERE user_email='$email' AND user_password=?");
+$stmt->execute([$pass]);
+$password = $stmt2->fetch();
+
+if($password){
+  echo "password found";
+  echo 'console.log("password Found")';
+  
+} else {
+  echo "no pass match";
+  echo 'console.log("no pass match")';
+}
+
+
 }else {
-  echo "nothing";
-  echo 'console.log("Noething")';
+  echo "no email match";
+  echo 'console.log("no email match")';
 
 }
   ?>
