@@ -17,8 +17,10 @@ $stmt->execute([$email]);
 $user = $stmt->fetch();
 if($user){
 echo "found";
+echo 'console.log("Found")';
 }else {
   echo "nothing";
+  echo 'console.log("Noething")';
 
 }
 
