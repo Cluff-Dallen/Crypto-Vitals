@@ -30,11 +30,23 @@ if (activeUser !== "PLEASE LOG IN!"){
 
 var urlBeginning = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=";
 
+console.log("list type:" + typeof list);
+console.log("Stored in list: " + list);
+
+list = list.split(",");
+
+console.log("list type after split:" + typeof list);
+console.log("Stored in work after list: " + list);
+
 var work = sessionStorage.getItem("transferList");
-console.log(typeof work);
+console.log("Work type:" + typeof work);
+console.log("Stored in work: " + work);
+
 
 work = work.split(",");
-console.log(typeof work);
+
+console.log("Work type after split:" + typeof work);
+console.log("Stored in work after split: " + work);
 
 var favoritesList = work;
 
