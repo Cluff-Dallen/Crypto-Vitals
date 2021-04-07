@@ -45,7 +45,7 @@ console.log("Work type:" + typeof work);
 console.log("Stored in work: " + work);
 
 
-work = work.split(",");
+//work = work.split(",");
 
 console.log("Work type after split:" + typeof work);
 console.log("Stored in work after split: " + work);
