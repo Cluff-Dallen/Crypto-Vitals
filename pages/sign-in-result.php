@@ -68,8 +68,9 @@ $favorites = array("chainlink");
 while ($row = pg_fetch_row($result)) {
   array_push($favorites, $row[1]);
 }
-echo implode( ", ", $favorites ); 
-echo $favorites;
+$_SESSION["favoriteList"] = implode( ", ", $favorites ); 
+
+echo $_SESSION["favoriteList"];
 
 ?>
 
