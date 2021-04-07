@@ -1,5 +1,14 @@
 <?php 
 session_start();
+
+$add = $_POST['true'];
+ $remove = $_POST['false'];
+ $you = $_SESSION["currentUser"];
+
+  //Connect to DB
+  require "../db/dbConnect.php";
+  $db = get_db();
+
 ?>
 <html>
 
@@ -12,72 +21,44 @@ session_start();
 </header>
 
 <body>
-<?php 
- $add = $_POST['true'];
- $remove = $_POST['false'];
- $you = $_SESSION["currentUser"];
-
- 
- //Connect to DB
- require "../db/dbConnect.php";
- $db = get_db();
-
-
- if ($remove == ""){ 
- //Insert results into DB
- $statement = $db->prepare("INSERT INTO favorites(favorite_coingecko_id, emailOfThisFavorite) SELECT '$add', '$you' WHERE NOT EXISTS (SELECT favorite_coingecko_id, emailOfThisFavorite FROM favorites WHERE (emailOfThisFavorite = '$you' AND favorite_coingecko_id = '$add'));"); 
- $statement->execute();
- }
-
- if ($add == ""){
-  //Delete results from DB
- $statement = $db->prepare("DELETE FROM favorites where emailOfThisFavorite = '$you' AND favorite_coingecko_id = '$remove';"); 
- $statement->execute();
- }
-
-
- 
-$conn = pg_connect("host=ec2-3-216-181-219.compute-1.amazonaws.com port=5432 dbname=d807d5gmkubr3a user=girkmmugorgrnp password=3d9767bc57920a3bc22f771b885d47b7d3a880f23f8fb2a9cc08a5aa5ed96be8");
-if (!$conn) {
-  echo "An error occurred.\n";
-  exit;
-}
-
-$result = pg_query($conn, "SELECT * FROM favorites WHERE emailOfThisFavorite = '$you'");
-
-if (!$result) {
-  echo "An error occurred.\n";
-  exit;
-}
-
-$favorites = array("chainlink");
-
-while ($row = pg_fetch_row($result)) {
-  array_push($favorites, $row[1]);
-}
-$_SESSION["favoriteList"] = implode( ", ", $favorites ); 
-?>
 <script type="text/javascript">
 
 var activeUser = '<?php echo $_SESSION["currentUser"]; ?>';
 var list = '<?php echo $_SESSION["favoriteList"]; ?> '
 
 if (activeUser !== "PLEASE LOG IN!"){
-  console.log("USER IS LOGGED IN.");
 
 var urlBeginning = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=";
 
+console.log("list type:" + typeof list);
+console.log("Stored in list: " + list);
+
 list = list.split(",");
 
+console.log("list type after split:" + typeof list);
+console.log("Stored in work after list: " + list);
+
 var favoritesList = list;
+console.log(favoritesList);
+
 var urlList = "bitcoin";
 
+console.log(favoritesList.length);
+
 for (x = 1; x < favoritesList.length; x++){
+  console.log(favoritesList[x]);
   urlList = urlList + "%2C%20" + favoritesList[x];
+  console.log(favoritesList[x]);
+  console.log(x);
 }
 
+console.log(urlList);
+
 var urlEnd = "&order=market_cap_desc&per_page=100&page=1&sparkline=true&price_change_percentage=1h%2C%2024h%2C%207d%2C%2030d";
+
 var urlComplete = urlBeginning + urlList + urlEnd;
+
+console.log(urlComplete);
 
 //Where is the data coming from?
 var coingeckoRequestURL = urlComplete;
