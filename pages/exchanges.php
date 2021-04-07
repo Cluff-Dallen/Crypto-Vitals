@@ -14,11 +14,7 @@ session_start();
 </header>
 
 <body onload="js/coingecko_exchanges.js">
-<?php 
-
-echo "Welcome, " . $_SESSION["currentUser"];
-
-?>
+<div class="profile-bar"><?php echo "Welcome, " . $_SESSION["currentUser"]; ?></div>
   <div class="content">
     <?php $pageTitle = "Exchanges"; ?>
     <h3><?php echo $pageTitle ?></h3>

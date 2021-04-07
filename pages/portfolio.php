@@ -13,16 +13,9 @@ session_start();
 
 <body>
 <?php 
+/* 
 
-echo "Welcome, " . $_SESSION["currentUser"];
-
-?>
-  <div class="content">
-    <?php $pageTitle = "Portfolio"; ?>
-    <h3><?php echo $pageTitle ?></h3>
-    <br>
-    <div id="portfolio">
-      <h5>Portfolio Total Value:</h5>
+   <h5>Portfolio Total Value:</h5>
       <span id="portfolioTotalValue">$0.00</span>USD
       <br><br>
       <h5>Current Holdings:</h5>
@@ -35,6 +28,36 @@ echo "Welcome, " . $_SESSION["currentUser"];
         <span id="portfolioTotalValue">Bought 1 BTC on March 9th 2021</span>
       </table>
       <br>
+
+*/
+
+?>
+  <div class="content">
+    <?php $pageTitle = "Portfolio"; ?>
+    <h3><?php echo $pageTitle ?></h3>
+    <br>
+    <div id="portfolio">
+
+     <p id="portfolio-intro">Hello, <?php $_SESSION["currentUser"]; ?> welcome to your portfolio. Please enter your transacitons in the form below
+     to keep track of your portfolio. Be sure to include the asset name, purchase location, usd value, and date.</p>
+
+     <br>
+
+     <form action="" id="transactions">
+     <input type="text" name="asset" id="asset" placeholder="Token Name" required>
+     <input type="date" name="date" id="date" required>
+     <input type="text" name="exchange" id="exchange" placeholder="Purchase Location" required>
+     <input type="number" name="USD" id="USD" placeholder="Value in USD" required>
+     <input type="submit" value="Submit Transaction">
+     </form>
+
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+
     </div>
   </div>
   <br><br>

@@ -263,3 +263,18 @@ text-align: center;
   border: solid black 0.1px;
   border-radius: 5px;
 }
+
+#portfolio-intro {
+width: 60%;
+text-align: center;
+margin:auto;
+}
+
+.profile-bar {
+  width: 25%;
+  margin: auto;
+  margin-top: 15px;
+  color: black;
+  background-color: white;
+  padding-left: 3%;
+}

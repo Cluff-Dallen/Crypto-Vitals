@@ -12,11 +12,7 @@ session_start();
 </header>
 
 <body>
-<?php 
-
-echo "Welcome, " . $_SESSION["currentUser"];
-
-?>
+<div class="profile-bar"><?php echo "Welcome, " . $_SESSION["currentUser"]; ?></div>
   <div id="about-content" class="content">
     <?php $pageTitle = "Meet the Team"; ?>
     <h3><?php echo $pageTitle?></h3>

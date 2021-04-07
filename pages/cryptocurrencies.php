@@ -18,11 +18,7 @@ session_start();
 </header>
 
 <body onload="js/coingecko_currencies.js">
-<?php 
-
-echo "Welcome, " . $_SESSION["currentUser"];
-
-?>
+<div class="profile-bar"><?php echo "Welcome, " . $_SESSION["currentUser"]; ?></div>
   <div class="content">
   <form action="" id="form-id" method="post">
     <?php $pageTitle = "Cryptocurrencies"; ?>

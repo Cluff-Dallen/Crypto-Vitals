@@ -1,7 +1,7 @@
 <?php 
 
 session_start();
-$_SESSION["currentUser"] = "PLEASE LOG IN!";
+$_SESSION["currentUser"] = "Please log in for full functionality.";
 ?>
 <html>
 

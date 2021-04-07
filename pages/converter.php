@@ -12,11 +12,7 @@ session_start();
 </header>
 
 <body onload="atStart()">
-<?php 
-
-echo "Welcome, " . $_SESSION["currentUser"];
-
-?>
+<div class="profile-bar"><?php echo "Welcome, " . $_SESSION["currentUser"]; ?></div>
   <div id="content">
     <?php $pageTitle = "Converter"; ?>
     <h3><?php echo $pageTitle ?></h3>

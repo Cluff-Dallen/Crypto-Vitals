@@ -1,5 +1,6 @@
 DROP TABLE IF EXISTS users cascade;
 DROP TABLE IF EXISTS favorites cascade;
+DROP TABLE IF EXISTS transactions cascade;
 
 
 /* Table to store data for each user */
@@ -22,6 +23,24 @@ CREATE TABLE favorites
 	emailOfThisFavorite VARCHAR(55) NOT NULL
 );
 
+/* Table to store data for each user's transactions */
+
+CREATE TABLE transactions
+(
+	transaction_id SERIAL NOT NULL PRIMARY KEY,	
+	emailOfThisTransaction VARCHAR(55) NOT NULL,
+	transaction_asset VARCHAR(55) NOT NULL,
+	transaction_date VARCHAR(55) NOT NULL,
+	transaction_exchange VARCHAR(55) NOT NULL,
+	transaction_USD_value decimal
+);
+
+INSERT INTO transactions (emailOfThisTransaction, transaction_asset, transaction_date, transaction_exchange, transaction_USD_value) VALUES
+			('cluffrdallen@gmail.com', 'bitcoin', 'July 2020', 'Beaxy', 3001.97),
+			('cluffrdallen@gmail.com', 'bitcoin', 'November 2020', 'Beaxy', 5591.48),
+			('CieraFord@yahoo.com', 'chainlink', 'December 2018', 'Binancey', 0.15),
+			('cluffrdallen@gmail.com', 'ripple', 'December 2017', 'Coinbase', 4.89);
+
 
 INSERT INTO users (user_name, user_email, user_password) VALUES
 			('cluffrdallen', 'cluffrdallen@gmail.com', 'HardPass'),
@@ -35,3 +54,5 @@ INSERT INTO favorites (favorite_coingecko_id, emailOfThisFavorite) VALUES ('bitc
 
 SELECT * FROM users;
 SELECT * FROM favorites;
+SELECT * FROM transactions;
+
