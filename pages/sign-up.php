@@ -43,7 +43,7 @@ $statement->execute(); */
       <div class="signupInput"><span class="material-icons">perm_identity</span><input type="text" name="username" placeholder="Username"></div>
       <div class="signupInput"><span class="material-icons">mail_outline</span><input type="email" name="email" placeholder="Email Address"></div>
       <div class="signupInput"><span class="material-icons">lock_outline</span><input type="password" name="password" placeholder="Password"></div>
-      <div class="signupInput"><span class="material-icons">lock_outline</span><input type="passwordConfirm" name="passwordConfirm" placeholder="Confirm password"></div>
+      <div class="signupInput"><span class="material-icons">lock_outline</span><input type="password" name="passwordConfirm" placeholder="Confirm password"></div>
       <div class="signupInput"><input id="signupSubmit" type="submit" name="signupSubmit"></div>
     </form>
     <p><a href="sign-in.php">Already have an account</a> | <a href="forgot-pass.php">Forgot Password</a></p>
