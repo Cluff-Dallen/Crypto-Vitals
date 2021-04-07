@@ -52,25 +52,7 @@
 
 <?php 
 
-$dbconn = pg_connect("dbname=d807d5gmkubr3a");
-//connect to a database named "mary"
-
-$dbconn2 = pg_connect("host=ec2-3-216-181-219.compute-1.amazonaws.com port=5432 dbname=d807d5gmkubr3a");
-// connect to a database named "mary" on "localhost" at port "5432"
-
-$dbconn3 = pg_connect("host=ec2-3-216-181-219.compute-1.amazonaws.com port=5432 dbname=d807d5gmkubr3a user=girkmmugorgrnp password=3d9767bc57920a3bc22f771b885d47b7d3a880f23f8fb2a9cc08a5aa5ed96be8");
-//connect to a database named "mary" on the host "sheep" with a username and password
-
-$conn_string = "host=ec2-3-216-181-219.compute-1.amazonaws.com port=5432 dbname=d807d5gmkubr3a user=girkmmugorgrnp password=3d9767bc57920a3bc22f771b885d47b7d3a880f23f8fb2a9cc08a5aa5ed96be8";
-$dbconn4 = pg_connect($conn_string);
-//connect to a database named "test" on the host "sheep" with a username and password
-
-/*
-$dbconn5 = pg_connect("host==ec2-3-216-181-219.compute-1.amazonaws.com options='--client_encoding=UTF8'");
-//connect to a database on "localhost" and set the command line parameter which tells the encoding is in UTF-8 /
-*/
-
-$conn = pg_pconnect("dbname=d807d5gmkubr3a");
+$conn = pg_connect("host=ec2-3-216-181-219.compute-1.amazonaws.com port=5432 dbname=d807d5gmkubr3a user=girkmmugorgrnp password=3d9767bc57920a3bc22f771b885d47b7d3a880f23f8fb2a9cc08a5aa5ed96be8");
 if (!$conn) {
   echo "An error occurred.\n";
   exit;
