@@ -13,10 +13,10 @@
   <div id="forgot-pass-form">
     <h1>Reset password</h1>
     <br>
-    <form action="">
+    <form action="forgot-pass-success.php" method="POST">
 
-      <div class="forgotPassInput"><span class="material-icons">mail_outline</span><input type="email" name="email" placeholder="Email address"></div>
-      <div class="forgotPassInput"><span class="material-icons">lock_outline</span><input type="new-password" name="new-password" placeholder="New password"></div>
+      <div class="forgotPassInput"><span class="material-icons">mail_outline</span><input type="email" name="email" placeholder="Email address" required></div>
+      <div class="forgotPassInput"><span class="material-icons">lock_outline</span><input type="new-password" name="new-password" placeholder="New password" required></div>
 
       <br>
 
@@ -29,6 +29,18 @@
 
     <p><a href="forgot-pass.php">Register</a> | <a href="sign-in.php">Sign In</a></p>
   </div>
+
+  <?php
+  
+require "../db/dbConnect.php";
+$db = get_db();
+
+$statement = $db->prepare("DELETE FROM users WHERE user_name LIKE '$userN';");
+$statement->execute(); 
+  ?>
+
+
+
 </body>
 
 <footer>

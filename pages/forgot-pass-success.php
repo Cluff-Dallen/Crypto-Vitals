@@ -5,14 +5,13 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <?php
 
-$userN = $_POST['username'];
-$userE = $_POST['email'];
-$userP = $_POST['password'];
+$userEmail = $_POST['email'];
+$newPassword = $_POST['new-password'];
 
 require "../db/dbConnect.php";
 $db = get_db();
 
-$statement = $db->prepare("INSERT INTO users(user_name, user_email, user_password) VALUES ('$userN', '$userE', '$userP');");
+$statement = $db->prepare("UPDATE users SET user_password = '$newPassword' WHERE user_email = '$userEmail';");
 $statement->execute(); 
   ?>
 </head>
@@ -23,8 +22,8 @@ $statement->execute();
 
 <body>
 <div id="sign-in-form">
-<h3>Registration Complete</h3>
-<p>Thank you for signing up. You can now sign in <strong><a href="sign-in.php">here</a></strong>to begin.</p>
+<h3>Password Reset Complete</h3>
+<p>Your password has now been reset. You can now sign in <strong><a href="sign-in.php">here</a></strong>to begin.</p>
 <br>
 </div>
 
