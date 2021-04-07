@@ -27,13 +27,16 @@ if (activeUser != "PLEASE LOG IN!"){
   console.log("USER IS LOGGED IN.");
 
 
-require "../db/dbConnect.php";
-$db = get_db();
+
 
 <?php 
+require "../db/dbConnect.php";
+$db = get_db();
 $stmt = $db->prepare("SELECT * FROM favorites WHERE user_email=?");
 $stmt->execute([$email]);
 $user = $stmt->fetch();
+
+echo $stmt;
 
 ?>
 
