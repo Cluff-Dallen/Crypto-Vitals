@@ -23,7 +23,7 @@ echo "email found";
 echo 'console.log("email found")';
 
 $stmt2 = $db->prepare("SELECT * FROM users WHERE user_email='$email' AND user_password=?");
-$stmt->execute([$pass]);
+$stmt2->execute([$pass]);
 $password = $stmt2->fetch();
 
 if($password){
