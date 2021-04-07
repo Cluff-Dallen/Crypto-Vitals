@@ -24,7 +24,6 @@ $_SESSION["currentUser"] = "PLEASE LOG IN!";
     <hr>
     <table id="currencyList" width="100%" cellspacing="0" cellpadding="0">
     <tr>
-    <th><span id="testfav" onclick="favClick(this, 'red')" class="material-icons">star_rate</span></th>
     <th>Rank</th>
     <th>Image</th>
     <th>Name</th>
