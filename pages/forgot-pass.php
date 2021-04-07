@@ -1,5 +1,5 @@
-<?php 
-session_start();
+<?php
+  session_start();
 ?>
 <html>
 
@@ -13,11 +13,6 @@ session_start();
 </header>
 
 <body>
-<?php 
-
-echo "Welcome, " . $_SESSION["currentUser"];
-
-?>
   <div id="forgot-pass-form">
     <h1>Reset password</h1>
     <br>
@@ -28,26 +23,13 @@ echo "Welcome, " . $_SESSION["currentUser"];
 
       <div class="forgotPassInput"><input type="submit" id="forgotpassSubmit" name="forgotpassSubmit"></div>
     </form>
-
     <p><a href="forgot-pass.php">Register</a> | <a href="sign-in.php">Sign In</a></p>
   </div>
-
-  <?php
-  
-require "../db/dbConnect.php";
-$db = get_db();
-
-$statement = $db->prepare("DELETE FROM users WHERE user_name LIKE '$userN';");
-$statement->execute(); 
-  ?>
-
-
-
 </body>
 
 <footer>
   <?php
-  include('../inc/footer.php');
+    include('../inc/footer.php');
   ?>
 </footer>
 
