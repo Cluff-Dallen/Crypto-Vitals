@@ -67,7 +67,8 @@ echo "transactions: " . $transactions;
 
 
 while ($row = pg_fetch_row($result)) {
-  array_push($transactions, $row[1]);
+  echo "ID: $row[0] email: $row[1] asset: $row[2] date: $row[3]";
+  echo "<br />\n";
 }
 
 echo "array transactions: " . $transactions;
