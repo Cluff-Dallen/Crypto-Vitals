@@ -15,6 +15,23 @@ session_start();
 <div class="profile-bar"><?php echo "Welcome, " . $_SESSION["currentUser"]; ?></div>
 
 <?php 
+ /*$asset= $_POST['asset'];
+ $date = $_POST['date'];
+ $exchange = $_POST['exchange'];
+ $USD = $_POST['USD']; 
+ $user = $_SESSION["currentUser"];
+
+ //Connect to DB
+ require "../db/dbConnect.php";
+ $db = get_db(); */
+
+/*
+ if ($remove == ""){ 
+ //Insert results into DB
+ $statement = $db->prepare("INSERT INTO transactions (emailOfThisTransaction, transaction_asset, transaction_date, transaction_exchange, transaction_USD_value) VALUES
+ ('$user', '$asset', '$date', '$exchange', $USD);"); 
+ $statement->execute(); */
+ }
 /* 
 
    <h5>Portfolio Total Value:</h5>
@@ -45,7 +62,7 @@ session_start();
 
      <br>
 
-     <form action="" id="transactions">
+     <form action="portfolio.php" id="transactions" method="POST">
      <input type="text" name="asset" id="asset" placeholder="Token Name" required>
      <input type="date" name="date" id="date" required>
      <input type="text" name="exchange" id="exchange" placeholder="Purchase Location" required>
