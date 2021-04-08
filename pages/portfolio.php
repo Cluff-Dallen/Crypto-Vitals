@@ -23,7 +23,7 @@ session_start();
  $USD = $_POST['USD']; 
  $user = $_SESSION["currentUser"];
 
- if ($user !== "Please log in for full functionality."){ 
+ if ($user !== "Please log in for full functionality." && $asset !== ""){ 
  //Connect to DB
   require "../db/dbConnect.php";
  $db = get_db(); 
