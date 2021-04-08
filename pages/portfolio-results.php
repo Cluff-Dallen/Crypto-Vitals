@@ -20,13 +20,15 @@ session_start();
  $asset= $_POST['asset'];
  $date = $_POST['date'];
  $exchange = $_POST['exchange'];
- $USD = $_POST['USD']; 
+ $amount = $_POST['amount']; 
+ $type = $_POST['type']; 
  $user = $_SESSION["currentUser"];
 
  echo $asset;
  echo $date;
  echo $exchange;
- echo $USD;
+ echo $amount;
+ echo $type;
  echo $user;
 
 
@@ -67,7 +69,7 @@ echo "transactions: " . $transactions;
 
 
 while ($row = pg_fetch_row($result)) {
-  echo "ID: $row[0] email: $row[1] asset: $row[2] date: $row[3]";
+  echo "You $row[6]: $row[5] $row[2] on $row[3]";
   echo "<br />\n";
 }
 

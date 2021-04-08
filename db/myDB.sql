@@ -32,14 +32,15 @@ CREATE TABLE transactions
 	transaction_asset VARCHAR(55) NOT NULL,
 	transaction_date VARCHAR(55) NOT NULL,
 	transaction_exchange VARCHAR(55) NOT NULL,
-	transaction_USD_value decimal
+	transaction_amount decimal,
+	transaction_type VARCHAR(10) NOT NULL
 );
 
-INSERT INTO transactions (emailOfThisTransaction, transaction_asset, transaction_date, transaction_exchange, transaction_USD_value) VALUES
-			('cluffrdallen@gmail.com', 'bitcoin', 'July 2020', 'Beaxy', 3001.97),
-			('cluffrdallen@gmail.com', 'bitcoin', 'November 2020', 'Beaxy', 5591.48),
-			('CieraFord@yahoo.com', 'chainlink', 'December 2018', 'Binancey', 0.15),
-			('cluffrdallen@gmail.com', 'ripple', 'December 2017', 'Coinbase', 4.89);
+INSERT INTO transactions (emailOfThisTransaction, transaction_asset, transaction_date, transaction_exchange, transaction_amount, transaction_type) VALUES
+			('cluffrdallen@gmail.com', 'bitcoin', 'July 2020', 'Beaxy', 3001.97, 'BUY'),
+			('cluffrdallen@gmail.com', 'bitcoin', 'November 2020', 'Beaxy', 5591.48, 'SELL'),
+			('CieraFord@yahoo.com', 'chainlink', 'December 2018', 'Binancey', 0.15, 'BUY'),
+			('cluffrdallen@gmail.com', 'ripple', 'December 2017', 'Coinbase', 4.89, 'SELL');
 
 
 INSERT INTO users (user_name, user_email, user_password) VALUES

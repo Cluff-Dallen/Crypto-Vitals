@@ -64,10 +64,14 @@ session_start();
      <br>
 
      <form action="portfolio-results.php" id="transactions" method="POST">
-     <input type="text" name="asset" id="asset" placeholder="Token Name" required>
+     <select name="type" id="type">
+        <option value="BOUGHT">BOUGHT</option>
+        <option value="SOLD">SOLD</option>
+      </select>
+      <input type="text" name="asset" id="asset" placeholder="Token Name" required>
      <input type="date" name="date" id="date" required>
      <input type="text" name="exchange" id="exchange" placeholder="Purchase Location" required>
-     <input type="number" name="USD" id="USD" placeholder="Value in USD" required>
+     <input type="number" name="amount" id="amount" placeholder="Quantity" required>
      <input type="submit" value="Submit Transaction">
      </form>
 
