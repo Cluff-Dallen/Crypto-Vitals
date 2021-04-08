@@ -24,11 +24,15 @@ session_start();
 
      <br>
 
-     <form action="portfolio.php" id="transactions" method="POST">
-     <input type="text" name="asset" id="asset" placeholder="Token Name" required>
+     <form action="portfolio-results.php" id="transactions" method="POST">
+     <select name="type" id="type">
+        <option value="BOUGHT">BOUGHT</option>
+        <option value="SOLD">SOLD</option>
+      </select>
+      <input type="text" name="asset" id="asset" placeholder="Token Name" required>
      <input type="date" name="date" id="date" required>
      <input type="text" name="exchange" id="exchange" placeholder="Purchase Location" required>
-     <input type="number" name="USD" id="USD" placeholder="Value in USD" required>
+     <input type="number" name="amount" id="amount" placeholder="Quantity" required>
      <input type="submit" value="Submit Transaction">
      </form>
 
@@ -80,40 +84,12 @@ echo "array transactions: " . $transactions;
 
 $_SESSION["transactionList"] = implode( ", ", $transactions );
 echo "session: " . $_SESSION["transactionList"];
-
- 
-/* 
-
-   <h5>Portfolio Total Value:</h5>
-      <span id="portfolioTotalValue">$0.00</span>USD
-      <br><br>
-      <h5>Current Holdings:</h5>
-      <table id="holdingsList" width="100%" cellspacing="0" cellpadding="0">
-        <span id="portfolioTotalValue">1 BTC</span>
-      </table>
-      <br>
-      <h5>Recent Transactions:</h5>
-      <table id="holdingsList" width="100%" cellspacing="0" cellpadding="0">
-        <span id="portfolioTotalValue">Bought 1 BTC on March 9th 2021</span>
-      </table>
-      <br>
-
-*/
-
 ?>
 </div>
 
     </div>
   </div>
   <br><br>
-      <br><br>
-      <br><br>
-      <br><br>
-      <br><br>
-      <br><br>
-      <br><br>
-      <br><br>
-      <br><br>
 </body>
 
 <footer>

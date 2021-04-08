@@ -19,7 +19,7 @@ session_start();
       <h3><?php echo $pageTitle?></h3>
       <br>
     </div>
-    <a class="twitter-timeline" data-chrome="noheader noborders" href="https://twitter.com/Dallen_C?ref_src=twsrc%5Etfw"></a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <a class="twitter-timeline" data-chrome="noheader noborders" href="https://twitter.com/Crypto_Vitals?ref_src=twsrc%5Etfw"></a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   </div> 
  </body>
 
