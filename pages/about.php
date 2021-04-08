@@ -1,10 +1,10 @@
 <?php 
-session_start();
+  session_start();
 ?>
+
 <html>
 <head>
   <?php include '../inc/head.php'; ?>
-  <?php /*include ('../db/db.php') */?>
 </head>
 
 <header>
@@ -46,21 +46,6 @@ session_start();
     <span class="qrCode"><img class="qrCode" src="/images/Eth_QR.PNG" alt="Qr code">
     <br>
     <br>
-
-
-
-  <?php
-  /*
-  $sql = 'SELECT * FROM family';
-  $stmt = $pdo->prepare($sql);
-  $stmt->execute();
-  $rowCount = $stmt->rowCount();
-  $details = $stmt->fetch();
-
-  print_r ($details);
-*/
-  
-  ?>
 
 <br>
 

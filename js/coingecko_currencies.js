@@ -59,7 +59,6 @@ myRequest.onload = function () {
     currency_image.setAttribute("width", "5%");
 
 
-
     var currency_name = row.insertCell(2);
      result = currency[i].name;
      id = currency[i].id;

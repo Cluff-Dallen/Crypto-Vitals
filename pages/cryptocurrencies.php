@@ -1,9 +1,6 @@
 <?php 
-
-session_start();
-
+  session_start();
 ?>
-
 
 <html>
 <head>
@@ -42,8 +39,7 @@ session_start();
 
 <footer>
   <?php
-  include('../inc/footer.php');
+    include('../inc/footer.php');
   ?>
 </footer>
-
 </html>

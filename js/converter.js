@@ -4,18 +4,10 @@ var myRequest = new XMLHttpRequest();
 
 //How is the data coming? 
 myRequest.open('GET', coingeckoRequestURL);
-
-//Research..
 myRequest.send();
-
-
-//More Research
 myRequest.onload = function () {
 
   /* Create a variable called currency, and store the entire JSON text inside it.*/
   var currentTokenPrice = JSON.parse(myRequest.responseText);
   tokenPrice = currentTokenPrice.bitcoin.usd;
-
- //document.getElementById('usdInput').value = btcPrice;
-
 }

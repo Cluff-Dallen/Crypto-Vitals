@@ -1,5 +1,5 @@
 <?php 
-session_start();
+  session_start();
 ?>
 <html>
 
@@ -16,7 +16,9 @@ session_start();
   <div id="content">
     <?php $pageTitle = "Converter"; ?>
     <h3><?php echo $pageTitle ?></h3>
+
     <br>
+
     <script>
       function atStart() {
         var tokenID = "Bitcoin"; //default
@@ -26,19 +28,12 @@ session_start();
         //Where is the data coming from?
         var coingeckoRequestURL = 'https://api.coingecko.com/api/v3/simple/price?ids=' + tokenID + '&vs_currencies=USD&include_market_cap=true&include_24hr_vol=true&include_24hr_change=true';
 
-
         var myRequest = new XMLHttpRequest();
 
         //How is the data coming? 
         myRequest.open('GET', coingeckoRequestURL);
-
-        //Research..
         myRequest.send();
-
-
-        //More Research
         myRequest.onload = function() {
-
 
           /* Create a variable called currency, and store the entire JSON text inside it.*/
           var currentTokenPrice = JSON.parse(myRequest.responseText);
@@ -46,11 +41,6 @@ session_start();
           var tokenPrice = currentTokenPrice.bitcoin.usd;
           document.getElementById("usdInput").value = tokenPrice;
           document.getElementById("tokenInput").value = 1;
-
-
-
-          //document.getElementById('usdInput').value = btcPrice;
-
         }
       }
 
@@ -60,8 +50,6 @@ session_start();
 
         document.getElementById("token").innerHTML = tokenID;
 
-
-
         //Where is the data coming from?
         var coingeckoRequestURL = 'https://api.coingecko.com/api/v3/simple/price?ids=' + tokenID + '&vs_currencies=USD&include_market_cap=true&include_24hr_vol=true&include_24hr_change=true';
 
@@ -70,16 +58,9 @@ session_start();
 
         //How is the data coming? 
         myRequest.open('GET', coingeckoRequestURL);
-
-        //Research..
         myRequest.send();
-
-
-        //More Research
         myRequest.onload = function() {
 
-
-          /* Create a variable called currency, and store the entire JSON text inside it.*/
           var currentTokenPrice = JSON.parse(myRequest.responseText);
 
           console.log(tokenID);
@@ -92,11 +73,6 @@ session_start();
 
           document.getElementById("usdInput").value = tokenPrice;
           document.getElementById("tokenInput").value = 1;
-
-
-
-          //document.getElementById('usdInput').value = btcPrice;
-
         }
       }
     </script>
@@ -142,7 +118,6 @@ session_start();
       <br><br>
       <br><br>
       <br><br>
-      <br>
 </body>
 
 <footer>

@@ -1,5 +1,5 @@
 <?php 
-session_start();
+  session_start();
 ?>
 
 <html>
@@ -36,8 +36,7 @@ session_start();
 
 <footer>
   <?php
-  include('../inc/footer.php');
+    include('../inc/footer.php');
   ?>
 </footer>
-
 </html>
