@@ -287,8 +287,9 @@ margin:auto;
 
 #transactions {
   width: 55%;
-  color: green;
+  color: black;
   margin: auto;
   justify-content: center;
-  text-align: center;;
+  text-align: center;
+  background-color: white;
 }

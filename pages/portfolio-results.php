@@ -36,6 +36,9 @@ session_start();
      <input type="submit" value="Submit Transaction">
      </form>
 
+<br>
+<br>
+
      <div id="transactions">
 
      <?php 
@@ -79,8 +82,6 @@ while ($row = pg_fetch_row($result)) {
   echo "You $row[6]: $row[5] $row[2] on $row[3]";
   echo "<br />\n";
 }
-
-echo "array transactions: " . $transactions;
 
 $_SESSION["transactionList"] = implode( ", ", $transactions );
 echo "session: " . $_SESSION["transactionList"];
