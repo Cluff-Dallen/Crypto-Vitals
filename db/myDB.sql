@@ -37,10 +37,10 @@ CREATE TABLE transactions
 );
 
 INSERT INTO transactions (emailOfThisTransaction, transaction_asset, transaction_date, transaction_exchange, transaction_amount, transaction_type) VALUES
-			('cluffrdallen@gmail.com', 'bitcoin', 'July 2020', 'Beaxy', 3001.97, 'BUY'),
-			('cluffrdallen@gmail.com', 'bitcoin', 'November 2020', 'Beaxy', 5591.48, 'SELL'),
-			('CieraFord@yahoo.com', 'chainlink', 'December 2018', 'Binancey', 0.15, 'BUY'),
-			('cluffrdallen@gmail.com', 'ripple', 'December 2017', 'Coinbase', 4.89, 'SELL');
+			('cluffrdallen@gmail.com', 'bitcoin', 'July 2020', 'Beaxy', 3001.97, 'BOUGHT'),
+			('cluffrdallen@gmail.com', 'bitcoin', 'November 2020', 'Beaxy', 5591.48, 'SOLD'),
+			('CieraFord@yahoo.com', 'chainlink', 'December 2018', 'Binancey', 0.15, 'BOUGHT'),
+			('cluffrdallen@gmail.com', 'ripple', 'December 2017', 'Coinbase', 4.89, 'SOLD');
 
 
 INSERT INTO users (user_name, user_email, user_password) VALUES
