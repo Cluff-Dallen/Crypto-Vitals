@@ -52,7 +52,7 @@ if (!$conn) {
   exit;
 }
 
-$result = pg_query($conn, "SELECT * FROM transactions WHERE emailOfThisFavorite = '$user'");
+$result = pg_query($conn, "SELECT * FROM transactions WHERE emailOfThisTransaction = '$user'");
 
 if (!$result) {
   echo "An error occurred.\n";
