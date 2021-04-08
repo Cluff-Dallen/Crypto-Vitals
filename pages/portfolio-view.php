@@ -43,7 +43,8 @@ session_start();
 
      <?php 
 
- if ($user !== "Please log in for full functionality." && $asset !== ""){ 
+     $user = $_SESSION["currentUser"];
+ if ($user !== "Please log in for full functionality."){ 
 
 $conn = pg_connect("host=ec2-3-216-181-219.compute-1.amazonaws.com port=5432 dbname=d807d5gmkubr3a user=girkmmugorgrnp password=3d9767bc57920a3bc22f771b885d47b7d3a880f23f8fb2a9cc08a5aa5ed96be8");
 if (!$conn) {
@@ -66,7 +67,7 @@ while ($row = pg_fetch_row($result)) {
 }
 
 $_SESSION["transactionList"] = implode( ", ", $transactions );
-echo "session: " . $_SESSION["transactionList"];
+echo $_SESSION["transactionList"];
  }
 ?>
 </div>
