@@ -40,7 +40,7 @@ session_start();
 
 
  //Insert results into DB
- $statement = $db->prepare("INSERT INTO transactions (emailOfThisTransaction, transaction_asset, transaction_date, transaction_exchange, transaction_USD_value) VALUES('$user', '$asset', '$date', '$exchange', $USD);"); 
+ $statement = $db->prepare("INSERT INTO transactions (emailOfThisTransaction, transaction_asset, transaction_date, transaction_exchange, transaction_amount, transaction_type) VALUES('$user', '$asset', '$date', '$exchange', '$amount', '$type');"); 
  $statement->execute(); 
 echo "success";
 } 
