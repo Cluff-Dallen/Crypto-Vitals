@@ -30,8 +30,8 @@ session_start();
  //Insert results into DB
  $statement = $db->prepare("INSERT INTO transactions (emailOfThisTransaction, transaction_asset, transaction_date, transaction_exchange, transaction_USD_value) VALUES
  ('$user', '$asset', '$date', '$exchange', $USD);"); 
- $statement->execute(); */
- }
+ $statement->execute(); }*/
+ 
 /* 
 
    <h5>Portfolio Total Value:</h5>
