@@ -30,8 +30,8 @@ session_start();
  echo $user;
 
 
- /*
- if ($user !== "Please log in for full functionality." && $asset !== ""){ 
+ 
+ if ($user !== "Please log n for full functionality." && $asset !== ""){ 
  //Connect to DB
   require "../db/dbConnect.php";
  $db = get_db(); 
@@ -39,7 +39,9 @@ session_start();
 
  //Insert results into DB
  $statement = $db->prepare("INSERT INTO transactions (emailOfThisTransaction, transaction_asset, transaction_date, transaction_exchange, transaction_USD_value) VALUES('$user', '$asset', '$date', '$exchange', $USD);"); 
- $statement->execute(); } */
+ $statement->execute(); 
+echo "success";
+} 
  
 /* 
 
