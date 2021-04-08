@@ -15,22 +15,23 @@ session_start();
 <div class="profile-bar"><?php echo "Welcome, " . $_SESSION["currentUser"]; ?></div>
 
 <?php 
- /*$asset= $_POST['asset'];
+
+
+ $asset= $_POST['asset'];
  $date = $_POST['date'];
  $exchange = $_POST['exchange'];
  $USD = $_POST['USD']; 
  $user = $_SESSION["currentUser"];
 
+ if ($user !== "Please log in for full functionality."){ 
  //Connect to DB
- require "../db/dbConnect.php";
- $db = get_db(); */
+  require "../db/dbConnect.php";
+ $db = get_db(); 
 
-/*
- if ($remove == ""){ 
+
  //Insert results into DB
- $statement = $db->prepare("INSERT INTO transactions (emailOfThisTransaction, transaction_asset, transaction_date, transaction_exchange, transaction_USD_value) VALUES
- ('$user', '$asset', '$date', '$exchange', $USD);"); 
- $statement->execute(); }*/
+ $statement = $db->prepare("INSERT INTO transactions (emailOfThisTransaction, transaction_asset, transaction_date, transaction_exchange, transaction_USD_value) VALUES('$user', '$asset', '$date', '$exchange', $USD);"); 
+ $statement->execute(); } 
  
 /* 
 
