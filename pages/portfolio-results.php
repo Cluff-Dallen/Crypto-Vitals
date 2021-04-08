@@ -86,6 +86,9 @@ while ($row = pg_fetch_row($result)) {
 $_SESSION["transactionList"] = implode( ", ", $transactions );
 echo $_SESSION["transactionList"];
 ?>
+
+<br>
+<br>
 </div>
 
     </div>

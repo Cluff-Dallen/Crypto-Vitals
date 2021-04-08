@@ -37,16 +37,18 @@ CREATE TABLE transactions
 );
 
 INSERT INTO transactions (emailOfThisTransaction, transaction_asset, transaction_date, transaction_exchange, transaction_amount, transaction_type) VALUES
-			('cluffrdallen@gmail.com', 'bitcoin', 'July 2020', 'Beaxy', 3001.97, 'BOUGHT'),
-			('cluffrdallen@gmail.com', 'bitcoin', 'November 2020', 'Beaxy', 5591.48, 'SOLD'),
-			('CieraFord@yahoo.com', 'chainlink', 'December 2018', 'Binancey', 0.15, 'BOUGHT'),
-			('cluffrdallen@gmail.com', 'ripple', 'December 2017', 'Coinbase', 4.89, 'SOLD');
+			('cluffrdallen@gmail.com', 'bitcoin', '07/22/2021', 'Beaxy', 3001.97, 'BOUGHT'),
+			('cluffrdallen@gmail.com', 'bitcoin', '04/05/2019', 'Beaxy', 5591.48, 'SOLD'),
+			('testAccount@gmail.com', 'chainlink', '12/12/2016', 'Binance', 0.15, 'BOUGHT'),
+			('cluffrdallen@gmail.com', 'XRP', '02/05/2017', 'Coinbase', 4.89, 'SOLD'),
+		    ('cluffrdallen@gmail.com', 'litecoin', '02/04/2021', 'Coinbase', 4.89, 'SOLD');
+
 
 
 INSERT INTO users (user_name, user_email, user_password) VALUES
 			('cluffrdallen', 'cluffrdallen@gmail.com', 'HardPass'),
-			('userOne', 'userOne@gmail.com', 'Password#4321'),
-			('userTwo', 'userTwo@yahoo.com', 'Password'),
+			('testAccount', 'testAccount@gmail.com', 'Password'),
+			('userTwo', 'userTwo@yahoo.com', 'PasswordOne'),
 			('userThree', 'userThree@protonmail.com', 'WeakPass');
 
 INSERT INTO favorites (favorite_coingecko_id, emailOfThisFavorite) VALUES ('bitcoin', 'cluffrdallen@gmail.com'),('ethereum', 'cluffrdallen@gmail.com'),('ripple', 'sofia@gmail.com');

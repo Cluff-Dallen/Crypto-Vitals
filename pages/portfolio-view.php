@@ -70,6 +70,9 @@ $_SESSION["transactionList"] = implode( ", ", $transactions );
 echo $_SESSION["transactionList"];
  }
 ?>
+<br>
+<br>
+
 </div>
     </div>
   </div>
