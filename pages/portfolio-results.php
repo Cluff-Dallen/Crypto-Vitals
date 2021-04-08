@@ -17,12 +17,20 @@ session_start();
 <?php 
 
 
- /*$asset= $_POST['asset'];
+ $asset= $_POST['asset'];
  $date = $_POST['date'];
  $exchange = $_POST['exchange'];
  $USD = $_POST['USD']; 
  $user = $_SESSION["currentUser"];
 
+ echo $asset;
+ echo $date;
+ echo $exchange;
+ echo $USD;
+ echo $user;
+
+
+ /*
  if ($user !== "Please log in for full functionality." && $asset !== ""){ 
  //Connect to DB
   require "../db/dbConnect.php";
@@ -63,7 +71,7 @@ session_start();
 
      <br>
 
-     <form action="portfolio-results.php" id="transactions" method="POST">
+     <form action="portfolio.php" id="transactions" method="POST">
      <input type="text" name="asset" id="asset" placeholder="Token Name" required>
      <input type="date" name="date" id="date" required>
      <input type="text" name="exchange" id="exchange" placeholder="Purchase Location" required>
