@@ -37,6 +37,7 @@
       </form>
 
       <form action="portfolio-view.php">
+      <br>
         <button type="submit">View Transactions</button>
       </form>
 
